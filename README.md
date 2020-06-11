@@ -3,7 +3,7 @@ Runtime tables and dlg files for Diogo's 42 ligand test case on a Titan V
 
 Runs are for collaboration publication and contain sets for the following options:
 
-All runs used `rand-0.pdbqt` as the ligand and `-lsrat 100.0`. Sequential runs (w/o the filelist option) used the respective `flex-xray.pdbqt` as the xray-ligand for RMSD calculations.
+All runs used `rand-0.pdbqt` as the ligand and `-lsrat 100.0`. Sequential runs (w/o the filelist option) used the respective `flex-xray.pdbqt` as the xray-ligand for RMSD calculations. Run and Idle times in the results table add up to the overall runtime of a given system. Also, there is a summary at the bottom of each results table.
 
 ADADELTA:
 
