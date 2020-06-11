@@ -1,0 +1,1291 @@
+AutoDock-GPU version: 
+
+**********************************************************
+**    AutoDock-GPU AUTODOCKTOOLS-COMPATIBLE DLG FILE    **
+**********************************************************
+
+
+    DOCKING PARAMETERS
+    ________________________
+
+
+Ligand file:                               ../data/5wlo/rand-0.pdbqt
+Grid fld file:                             ../data/5wlo/protein.maps.fld
+
+Number of runs:                            10
+Number of energy evaluations:              2500000
+Number of generations:                     27000
+Size of population:                        150
+Rate of crossover:                         80.000000%
+Tournament selection probability limit:    60.000000%
+Rate of mutation:                          2.000000%
+Maximal allowed delta movement:            +/- 6.000000A
+Maximal allowed delta angle:               +/- 90.000000
+
+Rate of local search:                      100.000000%
+Maximal number of local search iterations: 300
+Rho lower bound:                           0.010000
+Spread of local search delta movement:     2.000000A
+Spread of local search delta angle:        74.999999
+Limit of consecutive successes/failures:   4
+
+Handle symmetry during clustering:         YES
+RMSD tolerance:                            2.000000A
+
+Program call in command line was:          ./autodock_gpu_128wi.opencl -ffile ../data/5wlo/protein.maps.fld -lfile ../data/5wlo/rand-0.pdbqt -xraylfile ../data/5wlo/flex-xray.pdbqt -nrun 100 -lsmet ad -resnam docking-5wlo-test.opencl -lsrat 100.0 -nrun 10 
+
+
+    GRID PARAMETERS
+    ________________________
+
+
+Receptor name:                             protein
+Number of grid points (x, y, z):           51, 51, 51
+Grid size (x, y, z):                       18.750000, 18.750000, 18.750000A
+Grid spacing:                              0.375000A
+
+
+    LIGAND PARAMETERS
+    ________________________
+
+
+Ligand name:                               ../data/5wlo/rand-0
+Number of atoms:                           46
+Number of rotatable bonds:                 10
+Number of atom types:                      6
+
+
+    DUMMY DATA (only for ADT-compatibility)
+    ________________________
+
+
+DPF> outlev 1
+DPF> ga_run 10
+DPF> fld protein.maps.fld
+DPF> move ../data/5wlo/rand-0.pdbqt
+
+
+           COUNTER STATES           
+___________________________________
+
+Number of energy evaluations performed:    2507212
+Number of generations used:                135
+
+
+    INPUT LIGAND PDBQT FILE:
+    ________________________
+
+
+INPUT-LIGAND-PDBQT: REMARK  10 active torsions:
+INPUT-LIGAND-PDBQT: REMARK  status: ('A' for Active; 'I' for Inactive)
+INPUT-LIGAND-PDBQT: REMARK    1  A    between atoms: C1_1  and  O38_38 
+INPUT-LIGAND-PDBQT: REMARK    2  A    between atoms: N10_10  and  C15_15 
+INPUT-LIGAND-PDBQT: REMARK    3  A    between atoms: C15_15  and  C16_16 
+INPUT-LIGAND-PDBQT: REMARK    4  A    between atoms: C16_16  and  O17_17 
+INPUT-LIGAND-PDBQT: REMARK    5  A    between atoms: C16_16  and  C18_18 
+INPUT-LIGAND-PDBQT: REMARK    6  A    between atoms: C18_18  and  N19_19 
+INPUT-LIGAND-PDBQT: REMARK    7  A    between atoms: C18_18  and  C31_31 
+INPUT-LIGAND-PDBQT: REMARK       I    between atoms: N19_19  and  C20_20 
+INPUT-LIGAND-PDBQT: REMARK    8  A    between atoms: C20_20  and  O22_22 
+INPUT-LIGAND-PDBQT: REMARK    9  A    between atoms: O22_22  and  C23_23 
+INPUT-LIGAND-PDBQT: REMARK   10  A    between atoms: C31_31  and  C37_37 
+INPUT-LIGAND-PDBQT: ROOT
+INPUT-LIGAND-PDBQT: HETATM    1  C16 GR7 B 201      -7.337   2.431  -5.413  0.65 11.09     0.160 C 
+INPUT-LIGAND-PDBQT: ENDROOT
+INPUT-LIGAND-PDBQT: BRANCH   1   2
+INPUT-LIGAND-PDBQT: HETATM    2  C15 GR7 B 201      -8.574   3.288  -5.122  0.65 12.50     0.169 C 
+INPUT-LIGAND-PDBQT: BRANCH   2   3
+INPUT-LIGAND-PDBQT: HETATM    3  N10 GR7 B 201      -9.789   2.603  -5.499  0.65 15.26    -0.304 N 
+INPUT-LIGAND-PDBQT: HETATM    4  S7  GR7 B 201     -11.134   3.383  -5.897  0.65 15.90     0.261 S 
+INPUT-LIGAND-PDBQT: HETATM    5  C4  GR7 B 201     -11.168   3.851  -7.603  0.65 13.42     0.088 A 
+INPUT-LIGAND-PDBQT: HETATM    6  O8  GR7 B 201     -11.049   4.753  -5.183  0.65 15.29    -0.200 OA
+INPUT-LIGAND-PDBQT: HETATM    7  O9  GR7 B 201     -12.330   2.593  -5.629  0.65 16.57    -0.200 OA
+INPUT-LIGAND-PDBQT: HETATM    8  C3  GR7 B 201     -11.784   3.155  -8.629  0.65 13.99    -0.009 A 
+INPUT-LIGAND-PDBQT: HETATM    9  C5  GR7 B 201     -10.517   5.030  -7.968  0.65 13.26     0.028 A 
+INPUT-LIGAND-PDBQT: HETATM   10  C2  GR7 B 201     -11.746   3.628  -9.962  0.65 14.14     0.047 A 
+INPUT-LIGAND-PDBQT: HETATM   11  C40 GR7 B 201     -12.486   1.951  -8.456  0.65 16.21     0.207 C 
+INPUT-LIGAND-PDBQT: HETATM   12  C1  GR7 B 201     -11.092   4.805 -10.300  0.65 14.73     0.068 A 
+INPUT-LIGAND-PDBQT: HETATM   13  C6  GR7 B 201     -10.478   5.495  -9.265  0.65 13.78     0.038 A 
+INPUT-LIGAND-PDBQT: HETATM   14  O41 GR7 B 201     -11.647   0.973  -9.184  0.65 19.51    -0.387 OA
+INPUT-LIGAND-PDBQT: HETATM   15  C42 GR7 B 201     -12.009  -0.414  -9.091  0.65 20.26     0.168 C 
+INPUT-LIGAND-PDBQT: HETATM   16  C43 GR7 B 201     -11.198  -1.074  -8.157  0.65 20.30     0.026 C 
+INPUT-LIGAND-PDBQT: HETATM   17  C44 GR7 B 201     -11.513  -1.341  -6.857  0.65 20.47     0.002 C 
+INPUT-LIGAND-PDBQT: HETATM   18  C14 GR7 B 201     -10.779  -1.914  -5.842  0.65 20.92     0.000 C 
+INPUT-LIGAND-PDBQT: HETATM   19  C13 GR7 B 201      -9.998  -1.086  -4.891  0.65 19.92     0.002 C 
+INPUT-LIGAND-PDBQT: HETATM   20  C12 GR7 B 201     -10.457   0.341  -4.751  0.65 18.52     0.021 C 
+INPUT-LIGAND-PDBQT: HETATM   21  C11 GR7 B 201      -9.751   1.204  -5.785  0.65 16.50     0.135 C 
+INPUT-LIGAND-PDBQT: BRANCH  12  22
+INPUT-LIGAND-PDBQT: HETATM   22  O38 GR7 B 201     -11.020   5.312 -11.565  0.65 14.38    -0.356 OA
+INPUT-LIGAND-PDBQT: HETATM   23  C39 GR7 B 201     -11.430   6.672 -11.626  0.65 19.75     0.210 C 
+INPUT-LIGAND-PDBQT: ENDBRANCH  12  22
+INPUT-LIGAND-PDBQT: ENDBRANCH   2   3
+INPUT-LIGAND-PDBQT: ENDBRANCH   1   2
+INPUT-LIGAND-PDBQT: BRANCH   1  24
+INPUT-LIGAND-PDBQT: HETATM   24  O17 GR7 B 201      -7.085   2.397  -6.833  0.65 11.94    -0.392 OA
+INPUT-LIGAND-PDBQT: HETATM   25  H11 GR7 B 201      -6.238   1.978  -6.998  0.65 11.94     0.210 HD
+INPUT-LIGAND-PDBQT: ENDBRANCH   1  24
+INPUT-LIGAND-PDBQT: BRANCH   1  26
+INPUT-LIGAND-PDBQT: HETATM   26  C18 GR7 B 201      -6.089   2.926  -4.693  0.65 11.44     0.121 C 
+INPUT-LIGAND-PDBQT: BRANCH  26  27
+INPUT-LIGAND-PDBQT: HETATM   27  N19 GR7 B 201      -5.422   1.781  -4.056  0.65 12.38    -0.329 N 
+INPUT-LIGAND-PDBQT: HETATM   28  C20 GR7 B 201      -5.928   1.049  -3.071  0.65 12.57     0.361 C 
+INPUT-LIGAND-PDBQT: HETATM   29  O21 GR7 B 201      -7.030   1.162  -2.472  0.65 12.86    -0.238 OA
+INPUT-LIGAND-PDBQT: HETATM   30  H13 GR7 B 201      -4.504   1.531  -4.395  0.65 12.38     0.165 HD
+INPUT-LIGAND-PDBQT: BRANCH  28  31
+INPUT-LIGAND-PDBQT: HETATM   31  O22 GR7 B 201      -5.143   0.008  -2.720  0.65 12.10    -0.296 OA
+INPUT-LIGAND-PDBQT: BRANCH  31  32
+INPUT-LIGAND-PDBQT: HETATM   32  C23 GR7 B 201      -5.814  -1.253  -2.580  0.65 12.33     0.166 C 
+INPUT-LIGAND-PDBQT: HETATM   33  C24 GR7 B 201      -6.111  -1.725  -4.021  0.65 11.72     0.204 C 
+INPUT-LIGAND-PDBQT: HETATM   34  O25 GR7 B 201      -4.810  -2.154  -4.475  0.65 12.04    -0.358 OA
+INPUT-LIGAND-PDBQT: HETATM   35  C26 GR7 B 201      -4.113  -2.776  -3.396  0.65 13.46     0.266 C 
+INPUT-LIGAND-PDBQT: HETATM   36  O27 GR7 B 201      -2.788  -2.249  -3.331  0.65 12.98    -0.361 OA
+INPUT-LIGAND-PDBQT: HETATM   37  C30 GR7 B 201      -4.826  -2.330  -2.131  0.65 12.55     0.075 C 
+INPUT-LIGAND-PDBQT: HETATM   38  C28 GR7 B 201      -2.620  -1.423  -2.171  0.65 12.99     0.171 C 
+INPUT-LIGAND-PDBQT: HETATM   39  C29 GR7 B 201      -3.690  -1.922  -1.211  0.65 13.37     0.038 C 
+INPUT-LIGAND-PDBQT: ENDBRANCH  31  32
+INPUT-LIGAND-PDBQT: ENDBRANCH  28  31
+INPUT-LIGAND-PDBQT: ENDBRANCH  26  27
+INPUT-LIGAND-PDBQT: BRANCH  26  40
+INPUT-LIGAND-PDBQT: HETATM   40  C31 GR7 B 201      -5.086   3.588  -5.651  0.65 12.46     0.066 C 
+INPUT-LIGAND-PDBQT: BRANCH  40  41
+INPUT-LIGAND-PDBQT: HETATM   41  C37 GR7 B 201      -4.331   4.721  -4.939  0.65 13.02    -0.056 C 
+INPUT-LIGAND-PDBQT: HETATM   42  C32 GR7 B 201      -3.091   5.142  -5.403  0.65 14.03     0.007 C 
+INPUT-LIGAND-PDBQT: HETATM   43  C33 GR7 B 201      -2.355   6.142  -4.745  0.65 13.26     0.001 C 
+INPUT-LIGAND-PDBQT: HETATM   44  C34 GR7 B 201      -2.855   6.609  -3.536  0.65 13.23     0.000 C 
+INPUT-LIGAND-PDBQT: HETATM   45  C35 GR7 B 201      -4.113   6.253  -3.081  0.65 13.71     0.001 C 
+INPUT-LIGAND-PDBQT: HETATM   46  C36 GR7 B 201      -4.835   5.243  -3.723  0.65 12.94     0.007 C 
+INPUT-LIGAND-PDBQT: ENDBRANCH  40  41
+INPUT-LIGAND-PDBQT: ENDBRANCH  26  40
+INPUT-LIGAND-PDBQT: ENDBRANCH   1  26
+INPUT-LIGAND-PDBQT: TORSDOF 10
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   1 / 10
+Time taken for this run:   0.784s
+
+DOCKED: MODEL        1
+DOCKED: USER    Run = 1
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    = -11.92 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -14.91 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -14.63 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  -0.28 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -2.57 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -2.57 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  O38_38 
+DOCKED: REMARK    2  A    between atoms: N10_10  and  C15_15 
+DOCKED: REMARK    3  A    between atoms: C15_15  and  C16_16 
+DOCKED: REMARK    4  A    between atoms: C16_16  and  O17_17 
+DOCKED: REMARK    5  A    between atoms: C16_16  and  C18_18 
+DOCKED: REMARK    6  A    between atoms: C18_18  and  N19_19 
+DOCKED: REMARK    7  A    between atoms: C18_18  and  C31_31 
+DOCKED: REMARK       I    between atoms: N19_19  and  C20_20 
+DOCKED: REMARK    8  A    between atoms: C20_20  and  O22_22 
+DOCKED: REMARK    9  A    between atoms: O22_22  and  C23_23 
+DOCKED: REMARK   10  A    between atoms: C31_31  and  C37_37 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: HETATM    1  C16 GR7 B 201      15.105 -20.417  -5.159 -0.35 -0.12    +0.160 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: HETATM    2  C15 GR7 B 201      14.885 -21.675  -6.007 -0.31 -0.05    +0.169 C 
+DOCKED: BRANCH   2   3
+DOCKED: HETATM    3  N10 GR7 B 201      13.611 -22.291  -5.714 -0.28 +0.10    -0.304 N 
+DOCKED: HETATM    4  S7  GR7 B 201      12.305 -22.046  -6.614 -0.34 -0.09    +0.261 S 
+DOCKED: HETATM    5  C4  GR7 B 201      12.226 -23.134  -8.007 -0.27 -0.00    +0.088 A 
+DOCKED: HETATM    6  O8  GR7 B 201      12.514 -20.668  -7.286 -0.32 +0.10    -0.200 OA
+DOCKED: HETATM    7  O9  GR7 B 201      11.072 -22.208  -5.853 -0.43 +0.08    -0.200 OA
+DOCKED: HETATM    8  C3  GR7 B 201      11.519 -24.322  -8.076 -0.22 -0.00    -0.009 A 
+DOCKED: HETATM    9  C5  GR7 B 201      12.937 -22.778  -9.153 -0.35 -0.00    +0.028 A 
+DOCKED: HETATM   10  C2  GR7 B 201      11.529 -25.114  -9.249 -0.14 +0.00    +0.047 A 
+DOCKED: HETATM   11  C40 GR7 B 201      10.746 -24.844  -7.026 -0.28 +0.01    +0.207 C 
+DOCKED: HETATM   12  C1  GR7 B 201      12.244 -24.738 -10.377 -0.31 +0.01    +0.068 A 
+DOCKED: HETATM   13  C6  GR7 B 201      12.949 -23.545 -10.298 -0.36 +0.00    +0.038 A 
+DOCKED: HETATM   14  O41 GR7 B 201      11.484 -26.071  -6.651 -0.42 +0.03    -0.387 OA
+DOCKED: HETATM   15  C42 GR7 B 201      11.034 -26.790  -5.492 -0.42 -0.03    +0.168 C 
+DOCKED: HETATM   16  C43 GR7 B 201      11.840 -26.494  -4.384 -0.32 -0.01    +0.026 C 
+DOCKED: HETATM   17  C44 GR7 B 201      11.567 -25.586  -3.404 -0.53 -0.00    +0.002 C 
+DOCKED: HETATM   18  C14 GR7 B 201      12.306 -25.167  -2.319 -0.64 -0.00    +0.000 C 
+DOCKED: HETATM   19  C13 GR7 B 201      13.183 -23.973  -2.396 -0.59 -0.00    +0.002 C 
+DOCKED: HETATM   20  C12 GR7 B 201      12.827 -22.981  -3.471 -0.33 -0.01    +0.021 C 
+DOCKED: HETATM   21  C11 GR7 B 201      13.542 -23.352  -4.761 -0.37 -0.03    +0.135 C 
+DOCKED: BRANCH  12  22
+DOCKED: HETATM   22  O38 GR7 B 201      12.293 -25.457 -11.536 -0.33 -0.05    -0.356 OA
+DOCKED: HETATM   23  C39 GR7 B 201      12.944 -26.710 -11.367 -0.39 +0.02    +0.210 C 
+DOCKED: ENDBRANCH  12  22
+DOCKED: ENDBRANCH   2   3
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  24
+DOCKED: HETATM   24  O17 GR7 B 201      15.036 -20.750  -3.757 -0.43 +0.38    -0.392 OA
+DOCKED: HETATM   25  H11 GR7 B 201      14.992 -19.945  -3.239 -0.53 -0.40    +0.210 HD
+DOCKED: ENDBRANCH   1  24
+DOCKED: BRANCH   1  26
+DOCKED: HETATM   26  C18 GR7 B 201      16.434 -19.731  -5.448 -0.30 -0.08    +0.121 C 
+DOCKED: BRANCH  26  27
+DOCKED: HETATM   27  N19 GR7 B 201      17.399 -20.106  -4.404 -0.26 +0.15    -0.329 N 
+DOCKED: HETATM   28  C20 GR7 B 201      18.035 -21.268  -4.329 -0.42 -0.03    +0.361 C 
+DOCKED: HETATM   29  O21 GR7 B 201      17.959 -22.275  -5.082 -1.08 -0.05    -0.238 OA
+DOCKED: HETATM   30  H13 GR7 B 201      17.594 -19.423  -3.685 +0.00 -0.11    +0.165 HD
+DOCKED: BRANCH  28  31
+DOCKED: HETATM   31  O22 GR7 B 201      18.926 -21.327  -3.316 -0.58 +0.02    -0.296 OA
+DOCKED: BRANCH  31  32
+DOCKED: HETATM   32  C23 GR7 B 201      18.491 -20.749  -2.076 -0.51 -0.05    +0.166 C 
+DOCKED: HETATM   33  C24 GR7 B 201      18.767 -21.823  -1.000 -0.57 -0.07    +0.204 C 
+DOCKED: HETATM   34  O25 GR7 B 201      20.201 -21.744  -0.853 -1.01 +0.07    -0.358 OA
+DOCKED: HETATM   35  C26 GR7 B 201      20.614 -20.383  -0.965 -0.62 -0.02    +0.266 C 
+DOCKED: HETATM   36  O27 GR7 B 201      21.726 -20.305  -1.857 -0.54 -0.02    -0.361 OA
+DOCKED: HETATM   37  C30 GR7 B 201      19.462 -19.654  -1.634 -0.49 -0.02    +0.075 C 
+DOCKED: HETATM   38  C28 GR7 B 201      21.355 -19.666  -3.086 -0.41 -0.00    +0.171 C 
+DOCKED: HETATM   39  C29 GR7 B 201      20.145 -18.825  -2.707 -0.34 -0.01    +0.038 C 
+DOCKED: ENDBRANCH  31  32
+DOCKED: ENDBRANCH  28  31
+DOCKED: ENDBRANCH  26  27
+DOCKED: BRANCH  26  40
+DOCKED: HETATM   40  C31 GR7 B 201      17.020 -20.142  -6.808 -0.37 -0.02    +0.066 C 
+DOCKED: BRANCH  40  41
+DOCKED: HETATM   41  C37 GR7 B 201      18.183 -19.216  -7.194 -0.37 +0.01    -0.056 C 
+DOCKED: HETATM   42  C32 GR7 B 201      19.498 -19.604  -6.969 -0.40 +0.00    +0.007 C 
+DOCKED: HETATM   43  C33 GR7 B 201      20.581 -18.759  -7.266 -0.44 +0.00    +0.001 C 
+DOCKED: HETATM   44  C34 GR7 B 201      20.284 -17.465  -7.677 -0.40 -0.00    +0.000 C 
+DOCKED: HETATM   45  C35 GR7 B 201      18.989 -17.071  -7.967 -0.43 -0.00    +0.001 C 
+DOCKED: HETATM   46  C36 GR7 B 201      17.912 -17.903  -7.650 -0.40 -0.00    +0.007 C 
+DOCKED: ENDBRANCH  40  41
+DOCKED: ENDBRANCH  26  40
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   2 / 10
+Time taken for this run:   0.784s
+
+DOCKED: MODEL        2
+DOCKED: USER    Run = 2
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    = -10.70 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -13.68 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -13.41 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  -0.27 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -4.36 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -4.36 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  O38_38 
+DOCKED: REMARK    2  A    between atoms: N10_10  and  C15_15 
+DOCKED: REMARK    3  A    between atoms: C15_15  and  C16_16 
+DOCKED: REMARK    4  A    between atoms: C16_16  and  O17_17 
+DOCKED: REMARK    5  A    between atoms: C16_16  and  C18_18 
+DOCKED: REMARK    6  A    between atoms: C18_18  and  N19_19 
+DOCKED: REMARK    7  A    between atoms: C18_18  and  C31_31 
+DOCKED: REMARK       I    between atoms: N19_19  and  C20_20 
+DOCKED: REMARK    8  A    between atoms: C20_20  and  O22_22 
+DOCKED: REMARK    9  A    between atoms: O22_22  and  C23_23 
+DOCKED: REMARK   10  A    between atoms: C31_31  and  C37_37 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: HETATM    1  C16 GR7 B 201      16.954 -18.680  -5.972 -0.34 -0.11    +0.160 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: HETATM    2  C15 GR7 B 201      15.693 -19.304  -5.363 -0.37 -0.17    +0.169 C 
+DOCKED: BRANCH   2   3
+DOCKED: HETATM    3  N10 GR7 B 201      15.135 -20.315  -6.231 -0.26 +0.18    -0.304 N 
+DOCKED: HETATM    4  S7  GR7 B 201      15.587 -21.854  -6.169 -0.43 -0.04    +0.261 S 
+DOCKED: HETATM    5  C4  GR7 B 201      14.698 -22.773  -4.946 -0.32 -0.02    +0.088 A 
+DOCKED: HETATM    6  O8  GR7 B 201      17.023 -21.844  -5.593 -0.50 +0.00    -0.200 OA
+DOCKED: HETATM    7  O9  GR7 B 201      15.413 -22.532  -7.448 -0.36 -0.01    -0.200 OA
+DOCKED: HETATM    8  C3  GR7 B 201      13.581 -23.561  -5.168 -0.31 +0.00    -0.009 A 
+DOCKED: HETATM    9  C5  GR7 B 201      15.150 -22.710  -3.628 -0.30 -0.01    +0.028 A 
+DOCKED: HETATM   10  C2  GR7 B 201      12.951 -24.254  -4.108 -0.38 -0.01    +0.047 A 
+DOCKED: HETATM   11  C40 GR7 B 201      12.983 -23.746  -6.425 -0.29 -0.04    +0.207 C 
+DOCKED: HETATM   12  C1  GR7 B 201      13.421 -24.176  -2.804 -0.48 -0.01    +0.068 A 
+DOCKED: HETATM   13  C6  GR7 B 201      14.540 -23.384  -2.592 -0.03 -0.01    +0.038 A 
+DOCKED: HETATM   14  O41 GR7 B 201      11.668 -23.084  -6.264 -0.34 +0.07    -0.387 OA
+DOCKED: HETATM   15  C42 GR7 B 201      10.837 -22.965  -7.429 -0.33 +0.02    +0.168 C 
+DOCKED: HETATM   16  C43 GR7 B 201      10.928 -21.675  -7.971 -0.40 +0.00    +0.026 C 
+DOCKED: HETATM   17  C44 GR7 B 201      11.718 -21.289  -9.014 -0.39 +0.00    +0.002 C 
+DOCKED: HETATM   18  C14 GR7 B 201      11.938 -20.053  -9.580 -0.26 -0.00    +0.000 C 
+DOCKED: HETATM   19  C13 GR7 B 201      13.068 -19.195  -9.146 -0.32 -0.00    +0.002 C 
+DOCKED: HETATM   20  C12 GR7 B 201      14.215 -19.920  -8.494 -0.38 -0.01    +0.021 C 
+DOCKED: HETATM   21  C11 GR7 B 201      13.966 -20.021  -6.997 -0.37 -0.09    +0.135 C 
+DOCKED: BRANCH  12  22
+DOCKED: HETATM   22  O38 GR7 B 201      12.857 -24.820  -1.740 -0.70 +0.08    -0.356 OA
+DOCKED: HETATM   23  C39 GR7 B 201      12.315 -26.084  -2.100 -0.49 -0.09    +0.210 C 
+DOCKED: ENDBRANCH  12  22
+DOCKED: ENDBRANCH   2   3
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  24
+DOCKED: HETATM   24  O17 GR7 B 201      16.723 -17.285  -6.260 -0.49 +0.42    -0.392 OA
+DOCKED: HETATM   25  H11 GR7 B 201      15.781 -17.106  -6.241 -0.46 -0.45    +0.210 HD
+DOCKED: ENDBRANCH   1  24
+DOCKED: BRANCH   1  26
+DOCKED: HETATM   26  C18 GR7 B 201      18.175 -18.811  -5.071 -0.29 -0.05    +0.121 C 
+DOCKED: BRANCH  26  27
+DOCKED: HETATM   27  N19 GR7 B 201      19.240 -17.936  -5.583 -0.26 +0.09    -0.329 N 
+DOCKED: HETATM   28  C20 GR7 B 201      20.534 -18.065  -5.316 -0.28 -0.04    +0.361 C 
+DOCKED: HETATM   29  O21 GR7 B 201      21.123 -18.909  -4.590 -0.32 +0.02    -0.238 OA
+DOCKED: HETATM   30  H13 GR7 B 201      18.965 -17.175  -6.188 -0.01 -0.05    +0.165 HD
+DOCKED: BRANCH  28  31
+DOCKED: HETATM   31  O22 GR7 B 201      21.308 -17.177  -5.976 -0.27 +0.02    -0.296 OA
+DOCKED: BRANCH  31  32
+DOCKED: HETATM   32  C23 GR7 B 201      21.785 -17.606  -7.260 -0.44 +0.00    +0.166 C 
+DOCKED: HETATM   33  C24 GR7 B 201      20.924 -18.835  -7.630 -0.50 +0.01    +0.204 C 
+DOCKED: HETATM   34  O25 GR7 B 201      19.666 -18.227  -7.992 -0.40 +0.01    -0.358 OA
+DOCKED: HETATM   35  C26 GR7 B 201      19.913 -16.998  -8.675 -0.44 -0.01    +0.266 C 
+DOCKED: HETATM   36  O27 GR7 B 201      19.078 -15.981  -8.122 -0.51 +0.05    -0.361 OA
+DOCKED: HETATM   37  C30 GR7 B 201      21.346 -16.620  -8.342 -0.44 +0.00    +0.075 C 
+DOCKED: HETATM   38  C28 GR7 B 201      19.852 -15.028  -7.381 -0.46 -0.01    +0.171 C 
+DOCKED: HETATM   39  C29 GR7 B 201      21.247 -15.151  -7.976 -0.53 -0.00    +0.038 C 
+DOCKED: ENDBRANCH  31  32
+DOCKED: ENDBRANCH  28  31
+DOCKED: ENDBRANCH  26  27
+DOCKED: BRANCH  26  40
+DOCKED: HETATM   40  C31 GR7 B 201      17.878 -18.398  -3.620 -0.35 -0.05    +0.066 C 
+DOCKED: BRANCH  40  41
+DOCKED: HETATM   41  C37 GR7 B 201      18.447 -19.435  -2.640 -0.40 +0.03    -0.056 C 
+DOCKED: HETATM   42  C32 GR7 B 201      19.291 -19.041  -1.609 -0.45 -0.00    +0.007 C 
+DOCKED: HETATM   43  C33 GR7 B 201      19.866 -19.971  -0.726 -0.60 -0.00    +0.001 C 
+DOCKED: HETATM   44  C34 GR7 B 201      19.661 -21.318  -0.999 -0.72 -0.00    +0.000 C 
+DOCKED: HETATM   45  C35 GR7 B 201      18.779 -21.737  -1.979 -0.59 -0.00    +0.001 C 
+DOCKED: HETATM   46  C36 GR7 B 201      18.225 -20.814  -2.871 -0.46 -0.00    +0.007 C 
+DOCKED: ENDBRANCH  40  41
+DOCKED: ENDBRANCH  26  40
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   3 / 10
+Time taken for this run:   0.784s
+
+DOCKED: MODEL        3
+DOCKED: USER    Run = 3
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    = -10.59 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -13.57 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -13.30 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  -0.27 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -4.27 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -4.27 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  O38_38 
+DOCKED: REMARK    2  A    between atoms: N10_10  and  C15_15 
+DOCKED: REMARK    3  A    between atoms: C15_15  and  C16_16 
+DOCKED: REMARK    4  A    between atoms: C16_16  and  O17_17 
+DOCKED: REMARK    5  A    between atoms: C16_16  and  C18_18 
+DOCKED: REMARK    6  A    between atoms: C18_18  and  N19_19 
+DOCKED: REMARK    7  A    between atoms: C18_18  and  C31_31 
+DOCKED: REMARK       I    between atoms: N19_19  and  C20_20 
+DOCKED: REMARK    8  A    between atoms: C20_20  and  O22_22 
+DOCKED: REMARK    9  A    between atoms: O22_22  and  C23_23 
+DOCKED: REMARK   10  A    between atoms: C31_31  and  C37_37 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: HETATM    1  C16 GR7 B 201      18.058 -17.749  -7.117 -0.38 -0.06    +0.160 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: HETATM    2  C15 GR7 B 201      19.545 -17.882  -7.466 -0.38 -0.02    +0.169 C 
+DOCKED: BRANCH   2   3
+DOCKED: HETATM    3  N10 GR7 B 201      20.298 -16.739  -7.004 -0.31 +0.02    -0.304 N 
+DOCKED: HETATM    4  S7  GR7 B 201      20.375 -16.322  -5.456 -0.45 -0.04    +0.261 S 
+DOCKED: HETATM    5  C4  GR7 B 201      21.643 -17.192  -4.581 -0.24 -0.00    +0.088 A 
+DOCKED: HETATM    6  O8  GR7 B 201      19.086 -16.881  -4.808 -0.32 +0.10    -0.200 OA
+DOCKED: HETATM    7  O9  GR7 B 201      20.614 -14.894  -5.280 -0.91 +0.01    -0.200 OA
+DOCKED: HETATM    8  C3  GR7 B 201      22.921 -16.729  -4.321 -0.22 -0.00    -0.009 A 
+DOCKED: HETATM    9  C5  GR7 B 201      21.344 -18.468  -4.100 -0.25 -0.00    +0.028 A 
+DOCKED: HETATM   10  C2  GR7 B 201      23.855 -17.517  -3.608 -0.21 +0.01    +0.047 A 
+DOCKED: HETATM   11  C40 GR7 B 201      23.404 -15.474  -4.724 -0.18 -0.03    +0.207 C 
+DOCKED: HETATM   12  C1  GR7 B 201      23.534 -18.784  -3.139 -0.25 +0.00    +0.068 A 
+DOCKED: HETATM   13  C6  GR7 B 201      22.250 -19.238  -3.404 -0.27 -0.00    +0.038 A 
+DOCKED: HETATM   14  O41 GR7 B 201      24.444 -15.824  -5.717 -0.24 -0.01    -0.387 OA
+DOCKED: HETATM   15  C42 GR7 B 201      25.058 -14.748  -6.445 -0.23 +0.00    +0.168 C 
+DOCKED: HETATM   16  C43 GR7 B 201      24.496 -14.636  -7.725 -0.32 +0.00    +0.026 C 
+DOCKED: HETATM   17  C44 GR7 B 201      23.514 -13.769  -8.104 -0.47 -0.00    +0.002 C 
+DOCKED: HETATM   18  C14 GR7 B 201      22.845 -13.617  -9.299 -0.46 -0.00    +0.000 C 
+DOCKED: HETATM   19  C13 GR7 B 201      21.556 -14.304  -9.556 -0.62 +0.00    +0.002 C 
+DOCKED: HETATM   20  C12 GR7 B 201      20.783 -14.705  -8.327 -0.61 -0.00    +0.021 C 
+DOCKED: HETATM   21  C11 GR7 B 201      21.217 -16.095  -7.888 -0.44 -0.00    +0.135 C 
+DOCKED: BRANCH  12  22
+DOCKED: HETATM   22  O38 GR7 B 201      24.389 -19.591  -2.446 -0.32 -0.04    -0.356 OA
+DOCKED: HETATM   23  C39 GR7 B 201      25.130 -18.876  -1.464 -0.29 +0.05    +0.210 C 
+DOCKED: ENDBRANCH  12  22
+DOCKED: ENDBRANCH   2   3
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  24
+DOCKED: HETATM   24  O17 GR7 B 201      17.316 -17.323  -8.279 -0.43 +0.16    -0.392 OA
+DOCKED: HETATM   25  H11 GR7 B 201      16.501 -16.901  -8.001 -0.06 -0.16    +0.210 HD
+DOCKED: ENDBRANCH   1  24
+DOCKED: BRANCH   1  26
+DOCKED: HETATM   26  C18 GR7 B 201      17.455 -19.042  -6.583 -0.34 -0.05    +0.121 C 
+DOCKED: BRANCH  26  27
+DOCKED: HETATM   27  N19 GR7 B 201      18.153 -19.415  -5.343 -0.24 +0.10    -0.329 N 
+DOCKED: HETATM   28  C20 GR7 B 201      18.601 -20.630  -5.051 -0.37 -0.01    +0.361 C 
+DOCKED: HETATM   29  O21 GR7 B 201      18.529 -21.694  -5.720 -0.92 -0.06    -0.238 OA
+DOCKED: HETATM   30  H13 GR7 B 201      18.302 -18.688  -4.658 +0.01 -0.08    +0.165 HD
+DOCKED: BRANCH  28  31
+DOCKED: HETATM   31  O22 GR7 B 201      19.274 -20.685  -3.881 -0.45 +0.01    -0.296 OA
+DOCKED: BRANCH  31  32
+DOCKED: HETATM   32  C23 GR7 B 201      18.647 -21.452  -2.843 -0.52 -0.02    +0.166 C 
+DOCKED: HETATM   33  C24 GR7 B 201      19.799 -22.184  -2.118 -0.50 -0.02    +0.204 C 
+DOCKED: HETATM   34  O25 GR7 B 201      20.400 -21.120  -1.350 -0.74 +0.03    -0.358 OA
+DOCKED: HETATM   35  C26 GR7 B 201      19.379 -20.246  -0.870 -0.56 -0.06    +0.266 C 
+DOCKED: HETATM   36  O27 GR7 B 201      19.761 -18.895  -1.129 -0.49 +0.06    -0.361 OA
+DOCKED: HETATM   37  C30 GR7 B 201      18.156 -20.529  -1.727 -0.42 -0.03    +0.075 C 
+DOCKED: HETATM   38  C28 GR7 B 201      18.939 -18.316  -2.151 -0.39 -0.08    +0.171 C 
+DOCKED: HETATM   39  C29 GR7 B 201      17.664 -19.144  -2.107 -0.41 -0.03    +0.038 C 
+DOCKED: ENDBRANCH  31  32
+DOCKED: ENDBRANCH  28  31
+DOCKED: ENDBRANCH  26  27
+DOCKED: BRANCH  26  40
+DOCKED: HETATM   40  C31 GR7 B 201      15.959 -18.901  -6.263 -0.36 -0.06    +0.066 C 
+DOCKED: BRANCH  40  41
+DOCKED: HETATM   41  C37 GR7 B 201      15.443 -20.155  -5.542 -0.33 +0.04    -0.056 C 
+DOCKED: HETATM   42  C32 GR7 B 201      15.008 -20.082  -4.224 -0.41 -0.01    +0.007 C 
+DOCKED: HETATM   43  C33 GR7 B 201      14.576 -21.221  -3.523 -0.41 -0.00    +0.001 C 
+DOCKED: HETATM   44  C34 GR7 B 201      14.720 -22.450  -4.155 -0.38 -0.00    +0.000 C 
+DOCKED: HETATM   45  C35 GR7 B 201      15.093 -22.547  -5.484 -0.36 -0.00    +0.001 C 
+DOCKED: HETATM   46  C36 GR7 B 201      15.543 -21.418  -6.174 -0.32 -0.00    +0.007 C 
+DOCKED: ENDBRANCH  40  41
+DOCKED: ENDBRANCH  26  40
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   4 / 10
+Time taken for this run:   0.784s
+
+DOCKED: MODEL        4
+DOCKED: USER    Run = 4
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    = -10.61 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -13.60 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -13.39 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  -0.21 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -5.28 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -5.28 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  O38_38 
+DOCKED: REMARK    2  A    between atoms: N10_10  and  C15_15 
+DOCKED: REMARK    3  A    between atoms: C15_15  and  C16_16 
+DOCKED: REMARK    4  A    between atoms: C16_16  and  O17_17 
+DOCKED: REMARK    5  A    between atoms: C16_16  and  C18_18 
+DOCKED: REMARK    6  A    between atoms: C18_18  and  N19_19 
+DOCKED: REMARK    7  A    between atoms: C18_18  and  C31_31 
+DOCKED: REMARK       I    between atoms: N19_19  and  C20_20 
+DOCKED: REMARK    8  A    between atoms: C20_20  and  O22_22 
+DOCKED: REMARK    9  A    between atoms: O22_22  and  C23_23 
+DOCKED: REMARK   10  A    between atoms: C31_31  and  C37_37 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: HETATM    1  C16 GR7 B 201      15.674 -18.960  -6.617 -0.36 -0.15    +0.160 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: HETATM    2  C15 GR7 B 201      16.574 -18.243  -5.604 -0.41 -0.17    +0.169 C 
+DOCKED: BRANCH   2   3
+DOCKED: HETATM    3  N10 GR7 B 201      17.896 -18.825  -5.570 -0.25 +0.13    -0.304 N 
+DOCKED: HETATM    4  S7  GR7 B 201      18.875 -18.823  -6.842 -0.45 -0.04    +0.261 S 
+DOCKED: HETATM    5  C4  GR7 B 201      19.811 -17.328  -6.975 -0.30 -0.01    +0.088 A 
+DOCKED: HETATM    6  O8  GR7 B 201      17.951 -18.743  -8.080 -0.35 +0.04    -0.200 OA
+DOCKED: HETATM    7  O9  GR7 B 201      19.816 -19.937  -6.815 -0.42 -0.02    -0.200 OA
+DOCKED: HETATM    8  C3  GR7 B 201      21.106 -17.132  -6.524 -0.27 +0.00    -0.009 A 
+DOCKED: HETATM    9  C5  GR7 B 201      19.205 -16.232  -7.590 -0.38 -0.00    +0.028 A 
+DOCKED: HETATM   10  C2  GR7 B 201      21.758 -15.887  -6.688 -0.31 -0.00    +0.047 A 
+DOCKED: HETATM   11  C40 GR7 B 201      21.876 -18.115  -5.883 -0.31 -0.01    +0.207 C 
+DOCKED: HETATM   12  C1  GR7 B 201      21.133 -14.811  -7.304 -0.45 -0.00    +0.068 A 
+DOCKED: HETATM   13  C6  GR7 B 201      19.836 -15.018  -7.752 -0.47 -0.00    +0.038 A 
+DOCKED: HETATM   14  O41 GR7 B 201      22.020 -17.577  -4.511 -0.27 +0.01    -0.387 OA
+DOCKED: HETATM   15  C42 GR7 B 201      22.650 -18.416  -3.530 -0.31 +0.01    +0.168 C 
+DOCKED: HETATM   16  C43 GR7 B 201      21.689 -19.032  -2.717 -0.39 +0.00    +0.026 C 
+DOCKED: HETATM   17  C44 GR7 B 201      21.194 -20.295  -2.862 -0.48 +0.00    +0.002 C 
+DOCKED: HETATM   18  C14 GR7 B 201      20.211 -20.972  -2.174 -0.61 -0.00    +0.000 C 
+DOCKED: HETATM   19  C13 GR7 B 201      18.803 -20.976  -2.642 -0.51 -0.00    +0.002 C 
+DOCKED: HETATM   20  C12 GR7 B 201      18.610 -20.688  -4.107 -0.39 -0.00    +0.021 C 
+DOCKED: HETATM   21  C11 GR7 B 201      18.475 -19.188  -4.316 -0.29 -0.05    +0.135 C 
+DOCKED: BRANCH  12  22
+DOCKED: HETATM   22  O38 GR7 B 201      21.708 -13.587  -7.490 -0.84 +0.02    -0.356 OA
+DOCKED: HETATM   23  C39 GR7 B 201      22.842 -13.648  -8.346 -0.52 -0.04    +0.210 C 
+DOCKED: ENDBRANCH  12  22
+DOCKED: ENDBRANCH   2   3
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  24
+DOCKED: HETATM   24  O17 GR7 B 201      16.258 -20.228  -6.982 -0.33 +0.13    -0.392 OA
+DOCKED: HETATM   25  H11 GR7 B 201      16.432 -20.241  -7.926 -0.01 -0.04    +0.210 HD
+DOCKED: ENDBRANCH   1  24
+DOCKED: BRANCH   1  26
+DOCKED: HETATM   26  C18 GR7 B 201      14.260 -19.189  -6.099 -0.40 -0.16    +0.121 C 
+DOCKED: BRANCH  26  27
+DOCKED: HETATM   27  N19 GR7 B 201      13.538 -20.047  -7.050 -0.34 +0.23    -0.329 N 
+DOCKED: HETATM   28  C20 GR7 B 201      12.876 -19.621  -8.118 -0.43 -0.19    +0.361 C 
+DOCKED: HETATM   29  O21 GR7 B 201      12.705 -18.447  -8.540 -0.52 +0.16    -0.238 OA
+DOCKED: HETATM   30  H13 GR7 B 201      13.547 -21.042  -6.876 -0.01 -0.08    +0.165 HD
+DOCKED: BRANCH  28  31
+DOCKED: HETATM   31  O22 GR7 B 201      12.367 -20.622  -8.867 -0.44 +0.04    -0.296 OA
+DOCKED: BRANCH  31  32
+DOCKED: HETATM   32  C23 GR7 B 201      13.194 -21.063  -9.954 -0.50 -0.01    +0.166 C 
+DOCKED: HETATM   33  C24 GR7 B 201      14.637 -20.677  -9.558 -0.53 -0.03    +0.204 C 
+DOCKED: HETATM   34  O25 GR7 B 201      14.952 -21.664  -8.554 -0.45 +0.03    -0.358 OA
+DOCKED: HETATM   35  C26 GR7 B 201      14.370 -22.915  -8.920 -0.39 -0.01    +0.266 C 
+DOCKED: HETATM   36  O27 GR7 B 201      13.697 -23.465  -7.788 -0.34 +0.06    -0.361 OA
+DOCKED: HETATM   37  C30 GR7 B 201      13.302 -22.588  -9.950 -0.49 +0.00    +0.075 C 
+DOCKED: HETATM   38  C28 GR7 B 201      12.275 -23.433  -7.970 -0.30 -0.01    +0.171 C 
+DOCKED: HETATM   39  C29 GR7 B 201      12.102 -23.391  -9.481 -0.37 +0.00    +0.038 C 
+DOCKED: ENDBRANCH  31  32
+DOCKED: ENDBRANCH  28  31
+DOCKED: ENDBRANCH  26  27
+DOCKED: BRANCH  26  40
+DOCKED: HETATM   40  C31 GR7 B 201      14.246 -19.882  -4.727 -0.45 -0.08    +0.066 C 
+DOCKED: BRANCH  40  41
+DOCKED: HETATM   41  C37 GR7 B 201      14.363 -21.405  -4.894 -0.36 +0.03    -0.056 C 
+DOCKED: HETATM   42  C32 GR7 B 201      13.240 -22.214  -4.783 -0.35 -0.00    +0.007 C 
+DOCKED: HETATM   43  C33 GR7 B 201      13.323 -23.614  -4.882 -0.37 -0.00    +0.001 C 
+DOCKED: HETATM   44  C34 GR7 B 201      14.592 -24.171  -4.969 -0.45 -0.00    +0.000 C 
+DOCKED: HETATM   45  C35 GR7 B 201      15.722 -23.390  -5.141 -0.42 -0.00    +0.001 C 
+DOCKED: HETATM   46  C36 GR7 B 201      15.642 -22.000  -5.021 -0.36 -0.00    +0.007 C 
+DOCKED: ENDBRANCH  40  41
+DOCKED: ENDBRANCH  26  40
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   5 / 10
+Time taken for this run:   0.784s
+
+DOCKED: MODEL        5
+DOCKED: USER    Run = 5
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    = -11.65 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -14.63 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -14.35 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  -0.28 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -5.42 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -5.42 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  O38_38 
+DOCKED: REMARK    2  A    between atoms: N10_10  and  C15_15 
+DOCKED: REMARK    3  A    between atoms: C15_15  and  C16_16 
+DOCKED: REMARK    4  A    between atoms: C16_16  and  O17_17 
+DOCKED: REMARK    5  A    between atoms: C16_16  and  C18_18 
+DOCKED: REMARK    6  A    between atoms: C18_18  and  N19_19 
+DOCKED: REMARK    7  A    between atoms: C18_18  and  C31_31 
+DOCKED: REMARK       I    between atoms: N19_19  and  C20_20 
+DOCKED: REMARK    8  A    between atoms: C20_20  and  O22_22 
+DOCKED: REMARK    9  A    between atoms: O22_22  and  C23_23 
+DOCKED: REMARK   10  A    between atoms: C31_31  and  C37_37 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: HETATM    1  C16 GR7 B 201      15.347 -22.491  -5.604 -0.37 -0.02    +0.160 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: HETATM    2  C15 GR7 B 201      15.636 -21.191  -4.845 -0.33 -0.08    +0.169 C 
+DOCKED: BRANCH   2   3
+DOCKED: HETATM    3  N10 GR7 B 201      17.052 -21.016  -4.621 -0.30 +0.09    -0.304 N 
+DOCKED: HETATM    4  S7  GR7 B 201      18.118 -20.968  -5.819 -0.54 +0.00    +0.261 S 
+DOCKED: HETATM    5  C4  GR7 B 201      18.286 -19.350  -6.516 -0.30 -0.02    +0.088 A 
+DOCKED: HETATM    6  O8  GR7 B 201      17.475 -21.761  -6.982 -0.93 -0.04    -0.200 OA
+DOCKED: HETATM    7  O9  GR7 B 201      19.443 -21.410  -5.398 +0.13 -0.08    -0.200 OA
+DOCKED: HETATM    8  C3  GR7 B 201      19.257 -18.418  -6.193 -0.27 +0.00    -0.009 A 
+DOCKED: HETATM    9  C5  GR7 B 201      17.359 -18.958  -7.482 -0.32 -0.01    +0.028 A 
+DOCKED: HETATM   10  C2  GR7 B 201      19.293 -17.150  -6.819 -0.30 -0.01    +0.047 A 
+DOCKED: HETATM   11  C40 GR7 B 201      20.272 -18.631  -5.246 -0.30 -0.02    +0.207 C 
+DOCKED: HETATM   12  C1  GR7 B 201      18.360 -16.784  -7.779 -0.37 -0.02    +0.068 A 
+DOCKED: HETATM   13  C6  GR7 B 201      17.390 -17.724  -8.095 -0.27 -0.01    +0.038 A 
+DOCKED: HETATM   14  O41 GR7 B 201      19.931 -17.668  -4.175 -0.29 +0.11    -0.387 OA
+DOCKED: HETATM   15  C42 GR7 B 201      20.702 -17.718  -2.964 -0.32 -0.01    +0.168 C 
+DOCKED: HETATM   16  C43 GR7 B 201      20.003 -18.408  -1.963 -0.40 -0.00    +0.026 C 
+DOCKED: HETATM   17  C44 GR7 B 201      20.164 -19.718  -1.620 -0.52 -0.00    +0.002 C 
+DOCKED: HETATM   18  C14 GR7 B 201      19.496 -20.510  -0.712 -0.64 -0.00    +0.000 C 
+DOCKED: HETATM   19  C13 GR7 B 201      18.340 -21.346  -1.120 -0.37 -0.00    +0.002 C 
+DOCKED: HETATM   20  C12 GR7 B 201      18.281 -21.695  -2.583 -0.47 -0.00    +0.021 C 
+DOCKED: HETATM   21  C11 GR7 B 201      17.519 -20.613  -3.332 -0.40 -0.06    +0.135 C 
+DOCKED: BRANCH  12  22
+DOCKED: HETATM   22  O38 GR7 B 201      18.341 -15.577  -8.417 -0.48 +0.08    -0.356 OA
+DOCKED: HETATM   23  C39 GR7 B 201      19.647 -15.050  -8.613 -0.59 -0.02    +0.210 C 
+DOCKED: ENDBRANCH  12  22
+DOCKED: ENDBRANCH   2   3
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  24
+DOCKED: HETATM   24  O17 GR7 B 201      15.562 -23.624  -4.738 -0.45 +0.01    -0.392 OA
+DOCKED: HETATM   25  H11 GR7 B 201      14.825 -24.233  -4.817 -0.02 -0.01    +0.210 HD
+DOCKED: ENDBRANCH   1  24
+DOCKED: BRANCH   1  26
+DOCKED: HETATM   26  C18 GR7 B 201      13.932 -22.549  -6.165 -0.32 -0.03    +0.121 C 
+DOCKED: BRANCH  26  27
+DOCKED: HETATM   27  N19 GR7 B 201      13.017 -22.994  -5.104 -0.30 +0.08    -0.329 N 
+DOCKED: HETATM   28  C20 GR7 B 201      11.700 -23.101  -5.222 -0.40 -0.09    +0.361 C 
+DOCKED: HETATM   29  O21 GR7 B 201      10.959 -22.849  -6.209 -0.43 +0.04    -0.238 OA
+DOCKED: HETATM   30  H13 GR7 B 201      13.424 -23.238  -4.212 +0.00 -0.04    +0.165 HD
+DOCKED: BRANCH  28  31
+DOCKED: HETATM   31  O22 GR7 B 201      11.103 -23.607  -4.121 -0.94 +0.05    -0.296 OA
+DOCKED: BRANCH  31  32
+DOCKED: HETATM   32  C23 GR7 B 201      10.985 -25.037  -4.083 -0.51 -0.07    +0.166 C 
+DOCKED: HETATM   33  C24 GR7 B 201      11.759 -25.548  -5.319 -0.41 -0.04    +0.204 C 
+DOCKED: HETATM   34  O25 GR7 B 201      13.132 -25.373  -4.912 -0.47 +0.05    -0.358 OA
+DOCKED: HETATM   35  C26 GR7 B 201      13.257 -25.674  -3.523 -0.49 -0.04    +0.266 C 
+DOCKED: HETATM   36  O27 GR7 B 201      14.006 -24.638  -2.887 -0.52 +0.05    -0.361 OA
+DOCKED: HETATM   37  C30 GR7 B 201      11.848 -25.608  -2.958 -0.55 -0.04    +0.075 C 
+DOCKED: HETATM   38  C28 GR7 B 201      13.169 -23.853  -2.027 -0.60 -0.04    +0.171 C 
+DOCKED: HETATM   39  C29 GR7 B 201      12.014 -24.785  -1.693 -0.41 -0.01    +0.038 C 
+DOCKED: ENDBRANCH  31  32
+DOCKED: ENDBRANCH  28  31
+DOCKED: ENDBRANCH  26  27
+DOCKED: BRANCH  26  40
+DOCKED: HETATM   40  C31 GR7 B 201      13.447 -21.181  -6.669 -0.30 -0.03    +0.066 C 
+DOCKED: BRANCH  40  41
+DOCKED: HETATM   41  C37 GR7 B 201      13.878 -20.961  -8.127 -0.36 +0.02    -0.056 C 
+DOCKED: HETATM   42  C32 GR7 B 201      13.116 -20.167  -8.975 -0.46 -0.00    +0.007 C 
+DOCKED: HETATM   43  C33 GR7 B 201      13.459 -19.987 -10.326 -0.43 -0.00    +0.001 C 
+DOCKED: HETATM   44  C34 GR7 B 201      14.519 -20.736 -10.820 -0.71 -0.00    +0.000 C 
+DOCKED: HETATM   45  C35 GR7 B 201      15.331 -21.487  -9.987 -0.62 -0.00    +0.001 C 
+DOCKED: HETATM   46  C36 GR7 B 201      14.979 -21.684  -8.649 -0.47 -0.00    +0.007 C 
+DOCKED: ENDBRANCH  40  41
+DOCKED: ENDBRANCH  26  40
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   6 / 10
+Time taken for this run:   0.784s
+
+DOCKED: MODEL        6
+DOCKED: USER    Run = 6
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    = -12.71 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -15.69 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -15.61 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  -0.08 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -4.72 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -4.72 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  O38_38 
+DOCKED: REMARK    2  A    between atoms: N10_10  and  C15_15 
+DOCKED: REMARK    3  A    between atoms: C15_15  and  C16_16 
+DOCKED: REMARK    4  A    between atoms: C16_16  and  O17_17 
+DOCKED: REMARK    5  A    between atoms: C16_16  and  C18_18 
+DOCKED: REMARK    6  A    between atoms: C18_18  and  N19_19 
+DOCKED: REMARK    7  A    between atoms: C18_18  and  C31_31 
+DOCKED: REMARK       I    between atoms: N19_19  and  C20_20 
+DOCKED: REMARK    8  A    between atoms: C20_20  and  O22_22 
+DOCKED: REMARK    9  A    between atoms: O22_22  and  C23_23 
+DOCKED: REMARK   10  A    between atoms: C31_31  and  C37_37 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: HETATM    1  C16 GR7 B 201      14.632 -21.025  -4.974 -0.36 -0.10    +0.160 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: HETATM    2  C15 GR7 B 201      15.509 -19.855  -5.435 -0.34 -0.14    +0.169 C 
+DOCKED: BRANCH   2   3
+DOCKED: HETATM    3  N10 GR7 B 201      16.902 -20.234  -5.493 -0.24 +0.12    -0.304 N 
+DOCKED: HETATM    4  S7  GR7 B 201      17.724 -20.297  -6.870 -0.51 -0.02    +0.261 S 
+DOCKED: HETATM    5  C4  GR7 B 201      18.392 -18.726  -7.335 -0.32 -0.02    +0.088 A 
+DOCKED: HETATM    6  O8  GR7 B 201      16.669 -20.544  -7.975 -0.48 +0.02    -0.200 OA
+DOCKED: HETATM    7  O9  GR7 B 201      18.827 -21.250  -6.811 -0.78 -0.05    -0.200 OA
+DOCKED: HETATM    8  C3  GR7 B 201      19.681 -18.282  -7.090 -0.32 +0.00    -0.009 A 
+DOCKED: HETATM    9  C5  GR7 B 201      17.557 -17.837  -8.012 -0.32 -0.01    +0.028 A 
+DOCKED: HETATM   10  C2  GR7 B 201      20.106 -17.000  -7.511 -0.34 -0.00    +0.047 A 
+DOCKED: HETATM   11  C40 GR7 B 201      20.662 -19.034  -6.424 -0.30 +0.00    +0.207 C 
+DOCKED: HETATM   12  C1  GR7 B 201      19.256 -16.133  -8.185 -0.44 -0.01    +0.068 A 
+DOCKED: HETATM   13  C6  GR7 B 201      17.967 -16.588  -8.425 -0.42 -0.01    +0.038 A 
+DOCKED: HETATM   14  O41 GR7 B 201      20.868 -18.270  -5.173 -0.29 +0.03    -0.387 OA
+DOCKED: HETATM   15  C42 GR7 B 201      21.726 -18.847  -4.175 -0.29 -0.01    +0.168 C 
+DOCKED: HETATM   16  C43 GR7 B 201      20.968 -19.453  -3.163 -0.38 -0.00    +0.026 C 
+DOCKED: HETATM   17  C44 GR7 B 201      20.666 -20.780  -3.063 -0.50 +0.00    +0.002 C 
+DOCKED: HETATM   18  C14 GR7 B 201      19.883 -21.470  -2.164 -0.65 -0.00    +0.000 C 
+DOCKED: HETATM   19  C13 GR7 B 201      18.452 -21.744  -2.437 -0.50 -0.00    +0.002 C 
+DOCKED: HETATM   20  C12 GR7 B 201      18.057 -21.723  -3.890 -0.42 -0.00    +0.021 C 
+DOCKED: HETATM   21  C11 GR7 B 201      17.664 -20.309  -4.288 -0.33 -0.05    +0.135 C 
+DOCKED: BRANCH  12  22
+DOCKED: HETATM   22  O38 GR7 B 201      19.606 -14.887  -8.615 -0.71 +0.04    -0.356 OA
+DOCKED: HETATM   23  C39 GR7 B 201      21.001 -14.642  -8.482 -0.61 -0.00    +0.210 C 
+DOCKED: ENDBRANCH  12  22
+DOCKED: ENDBRANCH   2   3
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  24
+DOCKED: HETATM   24  O17 GR7 B 201      13.451 -20.524  -4.314 -0.44 +0.40    -0.392 OA
+DOCKED: HETATM   25  H11 GR7 B 201      12.713 -21.112  -4.489 -0.35 -0.16    +0.210 HD
+DOCKED: ENDBRANCH   1  24
+DOCKED: BRANCH   1  26
+DOCKED: HETATM   26  C18 GR7 B 201      14.217 -21.943  -6.118 -0.31 -0.04    +0.121 C 
+DOCKED: BRANCH  26  27
+DOCKED: HETATM   27  N19 GR7 B 201      13.755 -23.221  -5.558 -0.29 +0.06    -0.329 N 
+DOCKED: HETATM   28  C20 GR7 B 201      14.542 -24.193  -5.114 -0.44 -0.02    +0.361 C 
+DOCKED: HETATM   29  O21 GR7 B 201      15.799 -24.256  -5.080 -0.50 -0.02    -0.238 OA
+DOCKED: HETATM   30  H13 GR7 B 201      12.758 -23.372  -5.507 +0.00 -0.04    +0.165 HD
+DOCKED: BRANCH  28  31
+DOCKED: HETATM   31  O22 GR7 B 201      13.862 -25.230  -4.578 -0.52 +0.02    -0.296 OA
+DOCKED: BRANCH  31  32
+DOCKED: HETATM   32  C23 GR7 B 201      13.596 -25.135  -3.171 -0.53 -0.02    +0.166 C 
+DOCKED: HETATM   33  C24 GR7 B 201      13.946 -23.681  -2.782 -0.48 -0.04    +0.204 C 
+DOCKED: HETATM   34  O25 GR7 B 201      12.829 -22.944  -3.324 -0.47 +0.09    -0.358 OA
+DOCKED: HETATM   35  C26 GR7 B 201      11.635 -23.710  -3.166 -0.47 -0.05    +0.266 C 
+DOCKED: HETATM   36  O27 GR7 B 201      10.916 -23.713  -4.399 -1.00 +0.07    -0.361 OA
+DOCKED: HETATM   37  C30 GR7 B 201      12.089 -25.138  -2.917 -0.61 -0.03    +0.075 C 
+DOCKED: HETATM   38  C28 GR7 B 201      10.950 -25.010  -5.009 -0.43 -0.05    +0.171 C 
+DOCKED: HETATM   39  C29 GR7 B 201      11.207 -25.954  -3.844 -0.44 -0.02    +0.038 C 
+DOCKED: ENDBRANCH  31  32
+DOCKED: ENDBRANCH  28  31
+DOCKED: ENDBRANCH  26  27
+DOCKED: BRANCH  26  40
+DOCKED: HETATM   40  C31 GR7 B 201      13.074 -21.350  -6.957 -0.29 -0.03    +0.066 C 
+DOCKED: BRANCH  40  41
+DOCKED: HETATM   41  C37 GR7 B 201      13.506 -21.202  -8.424 -0.37 +0.01    -0.056 C 
+DOCKED: HETATM   42  C32 GR7 B 201      14.431 -22.077  -8.978 -0.48 -0.00    +0.007 C 
+DOCKED: HETATM   43  C33 GR7 B 201      14.882 -21.938 -10.302 -0.59 -0.00    +0.001 C 
+DOCKED: HETATM   44  C34 GR7 B 201      14.464 -20.813 -11.001 -0.70 -0.00    +0.000 C 
+DOCKED: HETATM   45  C35 GR7 B 201      13.498 -19.958 -10.498 -0.35 -0.00    +0.001 C 
+DOCKED: HETATM   46  C36 GR7 B 201      13.067 -20.084  -9.174 -0.48 -0.00    +0.007 C 
+DOCKED: ENDBRANCH  40  41
+DOCKED: ENDBRANCH  26  40
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   7 / 10
+Time taken for this run:   0.784s
+
+DOCKED: MODEL        7
+DOCKED: USER    Run = 7
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    = -12.70 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -15.68 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -15.60 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  -0.08 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -4.71 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -4.71 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  O38_38 
+DOCKED: REMARK    2  A    between atoms: N10_10  and  C15_15 
+DOCKED: REMARK    3  A    between atoms: C15_15  and  C16_16 
+DOCKED: REMARK    4  A    between atoms: C16_16  and  O17_17 
+DOCKED: REMARK    5  A    between atoms: C16_16  and  C18_18 
+DOCKED: REMARK    6  A    between atoms: C18_18  and  N19_19 
+DOCKED: REMARK    7  A    between atoms: C18_18  and  C31_31 
+DOCKED: REMARK       I    between atoms: N19_19  and  C20_20 
+DOCKED: REMARK    8  A    between atoms: C20_20  and  O22_22 
+DOCKED: REMARK    9  A    between atoms: O22_22  and  C23_23 
+DOCKED: REMARK   10  A    between atoms: C31_31  and  C37_37 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: HETATM    1  C16 GR7 B 201      14.631 -21.104  -5.067 -0.35 -0.09    +0.160 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: HETATM    2  C15 GR7 B 201      15.488 -19.937  -5.569 -0.33 -0.13    +0.169 C 
+DOCKED: BRANCH   2   3
+DOCKED: HETATM    3  N10 GR7 B 201      16.890 -20.284  -5.589 -0.25 +0.11    -0.304 N 
+DOCKED: HETATM    4  S7  GR7 B 201      17.754 -20.314  -6.941 -0.51 -0.02    +0.261 S 
+DOCKED: HETATM    5  C4  GR7 B 201      18.401 -18.724  -7.370 -0.31 -0.02    +0.088 A 
+DOCKED: HETATM    6  O8  GR7 B 201      16.739 -20.572  -8.080 -0.49 +0.02    -0.200 OA
+DOCKED: HETATM    7  O9  GR7 B 201      18.875 -21.242  -6.859 -0.77 -0.05    -0.200 OA
+DOCKED: HETATM    8  C3  GR7 B 201      19.671 -18.254  -7.082 -0.32 +0.00    -0.009 A 
+DOCKED: HETATM    9  C5  GR7 B 201      17.566 -17.846  -8.063 -0.31 -0.01    +0.028 A 
+DOCKED: HETATM   10  C2  GR7 B 201      20.080 -16.958  -7.477 -0.34 -0.00    +0.047 A 
+DOCKED: HETATM   11  C40 GR7 B 201      20.648 -18.991  -6.394 -0.31 +0.00    +0.207 C 
+DOCKED: HETATM   12  C1  GR7 B 201      19.231 -16.104  -8.167 -0.44 -0.01    +0.068 A 
+DOCKED: HETATM   13  C6  GR7 B 201      17.961 -16.584  -8.450 -0.42 -0.01    +0.038 A 
+DOCKED: HETATM   14  O41 GR7 B 201      20.800 -18.237  -5.129 -0.28 +0.04    -0.387 OA
+DOCKED: HETATM   15  C42 GR7 B 201      21.640 -18.805  -4.112 -0.30 -0.01    +0.168 C 
+DOCKED: HETATM   16  C43 GR7 B 201      20.866 -19.439  -3.130 -0.38 -0.00    +0.026 C 
+DOCKED: HETATM   17  C44 GR7 B 201      20.591 -20.773  -3.053 -0.50 +0.00    +0.002 C 
+DOCKED: HETATM   18  C14 GR7 B 201      19.798 -21.489  -2.184 -0.65 -0.00    +0.000 C 
+DOCKED: HETATM   19  C13 GR7 B 201      18.381 -21.792  -2.503 -0.47 -0.00    +0.002 C 
+DOCKED: HETATM   20  C12 GR7 B 201      18.030 -21.764  -3.967 -0.42 -0.00    +0.021 C 
+DOCKED: HETATM   21  C11 GR7 B 201      17.618 -20.355  -4.362 -0.33 -0.05    +0.135 C 
+DOCKED: BRANCH  12  22
+DOCKED: HETATM   22  O38 GR7 B 201      19.567 -14.845  -8.574 -0.73 +0.04    -0.356 OA
+DOCKED: HETATM   23  C39 GR7 B 201      20.974 -14.661  -8.656 -0.61 -0.00    +0.210 C 
+DOCKED: ENDBRANCH  12  22
+DOCKED: ENDBRANCH   2   3
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  24
+DOCKED: HETATM   24  O17 GR7 B 201      13.457 -20.601  -4.396 -0.44 +0.38    -0.392 OA
+DOCKED: HETATM   25  H11 GR7 B 201      12.711 -21.174  -4.583 -0.35 -0.16    +0.210 HD
+DOCKED: ENDBRANCH   1  24
+DOCKED: BRANCH   1  26
+DOCKED: HETATM   26  C18 GR7 B 201      14.205 -22.051  -6.182 -0.31 -0.03    +0.121 C 
+DOCKED: BRANCH  26  27
+DOCKED: HETATM   27  N19 GR7 B 201      13.735 -23.309  -5.585 -0.30 +0.06    -0.329 N 
+DOCKED: HETATM   28  C20 GR7 B 201      14.517 -24.278  -5.124 -0.45 -0.02    +0.361 C 
+DOCKED: HETATM   29  O21 GR7 B 201      15.774 -24.353  -5.102 -0.51 -0.02    -0.238 OA
+DOCKED: HETATM   30  H13 GR7 B 201      12.737 -23.448  -5.520 +0.00 -0.03    +0.165 HD
+DOCKED: BRANCH  28  31
+DOCKED: HETATM   31  O22 GR7 B 201      13.832 -25.293  -4.555 -0.52 +0.02    -0.296 OA
+DOCKED: BRANCH  31  32
+DOCKED: HETATM   32  C23 GR7 B 201      13.578 -25.157  -3.149 -0.54 -0.02    +0.166 C 
+DOCKED: HETATM   33  C24 GR7 B 201      13.939 -23.694  -2.804 -0.48 -0.04    +0.204 C 
+DOCKED: HETATM   34  O25 GR7 B 201      12.822 -22.967  -3.358 -0.47 +0.09    -0.358 OA
+DOCKED: HETATM   35  C26 GR7 B 201      11.625 -23.720  -3.168 -0.47 -0.05    +0.266 C 
+DOCKED: HETATM   36  O27 GR7 B 201      10.896 -23.754  -4.395 -1.00 +0.07    -0.361 OA
+DOCKED: HETATM   37  C30 GR7 B 201      12.072 -25.143  -2.883 -0.61 -0.03    +0.075 C 
+DOCKED: HETATM   38  C28 GR7 B 201      10.917 -25.068  -4.969 -0.43 -0.06    +0.171 C 
+DOCKED: HETATM   39  C29 GR7 B 201      11.178 -25.981  -3.779 -0.40 -0.02    +0.038 C 
+DOCKED: ENDBRANCH  31  32
+DOCKED: ENDBRANCH  28  31
+DOCKED: ENDBRANCH  26  27
+DOCKED: BRANCH  26  40
+DOCKED: HETATM   40  C31 GR7 B 201      13.063 -21.473  -7.034 -0.30 -0.02    +0.066 C 
+DOCKED: BRANCH  40  41
+DOCKED: HETATM   41  C37 GR7 B 201      13.528 -21.261  -8.483 -0.38 +0.01    -0.056 C 
+DOCKED: HETATM   42  C32 GR7 B 201      14.490 -22.092  -9.043 -0.49 -0.00    +0.007 C 
+DOCKED: HETATM   43  C33 GR7 B 201      14.971 -21.893 -10.349 -0.60 -0.00    +0.001 C 
+DOCKED: HETATM   44  C34 GR7 B 201      14.541 -20.755 -11.019 -0.70 -0.00    +0.000 C 
+DOCKED: HETATM   45  C35 GR7 B 201      13.540 -19.944 -10.511 -0.33 -0.00    +0.001 C 
+DOCKED: HETATM   46  C36 GR7 B 201      13.078 -20.129  -9.204 -0.48 -0.00    +0.007 C 
+DOCKED: ENDBRANCH  40  41
+DOCKED: ENDBRANCH  26  40
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   8 / 10
+Time taken for this run:   0.784s
+
+DOCKED: MODEL        8
+DOCKED: USER    Run = 8
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    = -14.30 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -17.28 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -16.95 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  -0.33 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -2.87 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -2.87 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  O38_38 
+DOCKED: REMARK    2  A    between atoms: N10_10  and  C15_15 
+DOCKED: REMARK    3  A    between atoms: C15_15  and  C16_16 
+DOCKED: REMARK    4  A    between atoms: C16_16  and  O17_17 
+DOCKED: REMARK    5  A    between atoms: C16_16  and  C18_18 
+DOCKED: REMARK    6  A    between atoms: C18_18  and  N19_19 
+DOCKED: REMARK    7  A    between atoms: C18_18  and  C31_31 
+DOCKED: REMARK       I    between atoms: N19_19  and  C20_20 
+DOCKED: REMARK    8  A    between atoms: C20_20  and  O22_22 
+DOCKED: REMARK    9  A    between atoms: O22_22  and  C23_23 
+DOCKED: REMARK   10  A    between atoms: C31_31  and  C37_37 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: HETATM    1  C16 GR7 B 201      14.981 -19.168  -4.905 -0.47 -0.23    +0.160 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: HETATM    2  C15 GR7 B 201      15.991 -18.292  -5.655 -0.41 -0.22    +0.169 C 
+DOCKED: BRANCH   2   3
+DOCKED: HETATM    3  N10 GR7 B 201      17.297 -18.908  -5.691 -0.26 +0.17    -0.304 N 
+DOCKED: HETATM    4  S7  GR7 B 201      18.144 -19.060  -7.046 -0.45 -0.05    +0.261 S 
+DOCKED: HETATM    5  C4  GR7 B 201      19.094 -17.615  -7.420 -0.33 -0.01    +0.088 A 
+DOCKED: HETATM    6  O8  GR7 B 201      17.103 -19.074  -8.190 -0.40 +0.05    -0.200 OA
+DOCKED: HETATM    7  O9  GR7 B 201      19.060 -20.194  -6.999 -0.48 -0.02    -0.200 OA
+DOCKED: HETATM    8  C3  GR7 B 201      20.430 -17.415  -7.118 -0.31 +0.00    -0.009 A 
+DOCKED: HETATM    9  C5  GR7 B 201      18.452 -16.567  -8.079 -0.40 -0.01    +0.028 A 
+DOCKED: HETATM   10  C2  GR7 B 201      21.089 -16.213  -7.469 -0.35 -0.00    +0.047 A 
+DOCKED: HETATM   11  C40 GR7 B 201      21.240 -18.354  -6.459 -0.37 -0.00    +0.207 C 
+DOCKED: HETATM   12  C1  GR7 B 201      20.428 -15.184  -8.126 -0.50 -0.00    +0.068 A 
+DOCKED: HETATM   13  C6  GR7 B 201      19.090 -15.394  -8.423 -0.46 -0.01    +0.038 A 
+DOCKED: HETATM   14  O41 GR7 B 201      21.532 -17.689  -5.169 -0.27 +0.02    -0.387 OA
+DOCKED: HETATM   15  C42 GR7 B 201      22.239 -18.447  -4.175 -0.26 -0.01    +0.168 C 
+DOCKED: HETATM   16  C43 GR7 B 201      21.350 -18.950  -3.214 -0.35 -0.00    +0.026 C 
+DOCKED: HETATM   17  C44 GR7 B 201      20.817 -20.205  -3.182 -0.45 -0.00    +0.002 C 
+DOCKED: HETATM   18  C14 GR7 B 201      19.894 -20.781  -2.338 -0.56 -0.00    +0.000 C 
+DOCKED: HETATM   19  C13 GR7 B 201      18.447 -20.788  -2.664 -0.47 -0.00    +0.002 C 
+DOCKED: HETATM   20  C12 GR7 B 201      18.115 -20.640  -4.125 -0.38 -0.00    +0.021 C 
+DOCKED: HETATM   21  C11 GR7 B 201      17.991 -19.164  -4.469 -0.30 -0.07    +0.135 C 
+DOCKED: BRANCH  12  22
+DOCKED: HETATM   22  O38 GR7 B 201      21.007 -14.003  -8.489 -1.03 -0.00    -0.356 OA
+DOCKED: HETATM   23  C39 GR7 B 201      22.380 -13.940  -8.125 -0.54 -0.02    +0.210 C 
+DOCKED: ENDBRANCH  12  22
+DOCKED: ENDBRANCH   2   3
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  24
+DOCKED: HETATM   24  O17 GR7 B 201      13.886 -18.358  -4.429 -0.60 +1.01    -0.392 OA
+DOCKED: HETATM   25  H11 GR7 B 201      14.203 -17.757  -3.752 -0.58 -0.84    +0.210 HD
+DOCKED: ENDBRANCH   1  24
+DOCKED: BRANCH   1  26
+DOCKED: HETATM   26  C18 GR7 B 201      14.432 -20.304  -5.758 -0.36 -0.09    +0.121 C 
+DOCKED: BRANCH  26  27
+DOCKED: HETATM   27  N19 GR7 B 201      13.625 -21.191  -4.906 -0.33 +0.22    -0.329 N 
+DOCKED: HETATM   28  C20 GR7 B 201      14.110 -22.105  -4.075 -0.39 -0.16    +0.361 C 
+DOCKED: HETATM   29  O21 GR7 B 201      15.305 -22.424  -3.841 -0.39 +0.07    -0.238 OA
+DOCKED: HETATM   30  H13 GR7 B 201      12.621 -21.096  -4.958 -0.44 -0.14    +0.165 HD
+DOCKED: BRANCH  28  31
+DOCKED: HETATM   31  O22 GR7 B 201      13.156 -22.731  -3.352 -0.44 +0.09    -0.296 OA
+DOCKED: BRANCH  31  32
+DOCKED: HETATM   32  C23 GR7 B 201      13.314 -24.151  -3.216 -0.51 -0.03    +0.166 C 
+DOCKED: HETATM   33  C24 GR7 B 201      12.506 -24.537  -1.957 -0.67 -0.05    +0.204 C 
+DOCKED: HETATM   34  O25 GR7 B 201      11.146 -24.457  -2.432 -1.17 +0.11    -0.358 OA
+DOCKED: HETATM   35  C26 GR7 B 201      11.086 -24.922  -3.780 -0.53 -0.11    +0.266 C 
+DOCKED: HETATM   36  O27 GR7 B 201      10.335 -23.994  -4.562 -1.06 +0.10    -0.361 OA
+DOCKED: HETATM   37  C30 GR7 B 201      12.514 -24.878  -4.297 -0.45 -0.01    +0.075 C 
+DOCKED: HETATM   38  C28 GR7 B 201      11.184 -23.288  -5.477 -0.42 -0.04    +0.171 C 
+DOCKED: HETATM   39  C29 GR7 B 201      12.377 -24.215  -5.655 -0.34 -0.01    +0.038 C 
+DOCKED: ENDBRANCH  31  32
+DOCKED: ENDBRANCH  28  31
+DOCKED: ENDBRANCH  26  27
+DOCKED: BRANCH  26  40
+DOCKED: HETATM   40  C31 GR7 B 201      13.537 -19.798  -6.900 -0.36 -0.06    +0.066 C 
+DOCKED: BRANCH  40  41
+DOCKED: HETATM   41  C37 GR7 B 201      14.038 -20.330  -8.251 -0.39 +0.02    -0.056 C 
+DOCKED: HETATM   42  C32 GR7 B 201      13.422 -19.940  -9.434 -0.46 -0.00    +0.007 C 
+DOCKED: HETATM   43  C33 GR7 B 201      13.826 -20.448 -10.681 -0.59 -0.00    +0.001 C 
+DOCKED: HETATM   44  C34 GR7 B 201      14.784 -21.454 -10.678 -0.65 -0.00    +0.000 C 
+DOCKED: HETATM   45  C35 GR7 B 201      15.455 -21.819  -9.524 -0.46 -0.00    +0.001 C 
+DOCKED: HETATM   46  C36 GR7 B 201      15.039 -21.331  -8.282 -0.43 -0.00    +0.007 C 
+DOCKED: ENDBRANCH  40  41
+DOCKED: ENDBRANCH  26  40
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   9 / 10
+Time taken for this run:   0.784s
+
+DOCKED: MODEL        9
+DOCKED: USER    Run = 9
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    = -14.04 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -17.02 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -16.69 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  -0.33 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -2.82 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -2.82 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  O38_38 
+DOCKED: REMARK    2  A    between atoms: N10_10  and  C15_15 
+DOCKED: REMARK    3  A    between atoms: C15_15  and  C16_16 
+DOCKED: REMARK    4  A    between atoms: C16_16  and  O17_17 
+DOCKED: REMARK    5  A    between atoms: C16_16  and  C18_18 
+DOCKED: REMARK    6  A    between atoms: C18_18  and  N19_19 
+DOCKED: REMARK    7  A    between atoms: C18_18  and  C31_31 
+DOCKED: REMARK       I    between atoms: N19_19  and  C20_20 
+DOCKED: REMARK    8  A    between atoms: C20_20  and  O22_22 
+DOCKED: REMARK    9  A    between atoms: O22_22  and  C23_23 
+DOCKED: REMARK   10  A    between atoms: C31_31  and  C37_37 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: HETATM    1  C16 GR7 B 201      15.020 -19.195  -4.868 -0.46 -0.23    +0.160 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: HETATM    2  C15 GR7 B 201      16.061 -18.307  -5.558 -0.43 -0.21    +0.169 C 
+DOCKED: BRANCH   2   3
+DOCKED: HETATM    3  N10 GR7 B 201      17.358 -18.944  -5.592 -0.26 +0.17    -0.304 N 
+DOCKED: HETATM    4  S7  GR7 B 201      18.227 -19.065  -6.935 -0.45 -0.05    +0.261 S 
+DOCKED: HETATM    5  C4  GR7 B 201      19.208 -17.625  -7.241 -0.32 -0.01    +0.088 A 
+DOCKED: HETATM    6  O8  GR7 B 201      17.208 -19.021  -8.098 -0.41 +0.05    -0.200 OA
+DOCKED: HETATM    7  O9  GR7 B 201      19.123 -20.216  -6.911 -0.48 -0.02    -0.200 OA
+DOCKED: HETATM    8  C3  GR7 B 201      20.542 -17.459  -6.910 -0.30 +0.00    -0.009 A 
+DOCKED: HETATM    9  C5  GR7 B 201      18.596 -16.543  -7.876 -0.38 -0.01    +0.028 A 
+DOCKED: HETATM   10  C2  GR7 B 201      21.227 -16.257  -7.206 -0.32 -0.00    +0.047 A 
+DOCKED: HETATM   11  C40 GR7 B 201      21.323 -18.434  -6.268 -0.35 -0.01    +0.207 C 
+DOCKED: HETATM   12  C1  GR7 B 201      20.596 -15.194  -7.839 -0.48 -0.00    +0.068 A 
+DOCKED: HETATM   13  C6  GR7 B 201      19.260 -15.371  -8.167 -0.41 -0.00    +0.038 A 
+DOCKED: HETATM   14  O41 GR7 B 201      21.602 -17.819  -4.951 -0.28 +0.02    -0.387 OA
+DOCKED: HETATM   15  C42 GR7 B 201      22.277 -18.623  -3.971 -0.26 -0.01    +0.168 C 
+DOCKED: HETATM   16  C43 GR7 B 201      21.362 -19.143  -3.044 -0.37 -0.00    +0.026 C 
+DOCKED: HETATM   17  C44 GR7 B 201      20.808 -20.389  -3.066 -0.47 +0.00    +0.002 C 
+DOCKED: HETATM   18  C14 GR7 B 201      19.859 -20.977  -2.259 -0.60 -0.00    +0.000 C 
+DOCKED: HETATM   19  C13 GR7 B 201      18.419 -20.947  -2.611 -0.49 -0.00    +0.002 C 
+DOCKED: HETATM   20  C12 GR7 B 201      18.117 -20.743  -4.072 -0.39 -0.00    +0.021 C 
+DOCKED: HETATM   21  C11 GR7 B 201      18.024 -19.254  -4.367 -0.30 -0.07    +0.135 C 
+DOCKED: BRANCH  12  22
+DOCKED: HETATM   22  O38 GR7 B 201      21.202 -14.012  -8.151 -1.01 -0.00    -0.356 OA
+DOCKED: HETATM   23  C39 GR7 B 201      22.111 -14.140  -9.236 -0.58 -0.01    +0.210 C 
+DOCKED: ENDBRANCH  12  22
+DOCKED: ENDBRANCH   2   3
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  24
+DOCKED: HETATM   24  O17 GR7 B 201      13.887 -18.401  -4.462 -0.61 +0.99    -0.392 OA
+DOCKED: HETATM   25  H11 GR7 B 201      14.161 -17.769  -3.795 -0.58 -0.83    +0.210 HD
+DOCKED: ENDBRANCH   1  24
+DOCKED: BRANCH   1  26
+DOCKED: HETATM   26  C18 GR7 B 201      14.541 -20.342  -5.749 -0.36 -0.09    +0.121 C 
+DOCKED: BRANCH  26  27
+DOCKED: HETATM   27  N19 GR7 B 201      13.669 -21.219  -4.954 -0.33 +0.21    -0.329 N 
+DOCKED: HETATM   28  C20 GR7 B 201      14.068 -22.289  -4.278 -0.38 -0.14    +0.361 C 
+DOCKED: HETATM   29  O21 GR7 B 201      15.220 -22.788  -4.172 -0.39 +0.05    -0.238 OA
+DOCKED: HETATM   30  H13 GR7 B 201      12.686 -20.989  -4.920 -0.42 -0.15    +0.165 HD
+DOCKED: BRANCH  28  31
+DOCKED: HETATM   31  O22 GR7 B 201      13.079 -22.874  -3.568 -0.45 +0.08    -0.296 OA
+DOCKED: BRANCH  31  32
+DOCKED: HETATM   32  C23 GR7 B 201      13.190 -24.296  -3.408 -0.50 -0.03    +0.166 C 
+DOCKED: HETATM   33  C24 GR7 B 201      12.452 -24.623  -2.091 -0.67 -0.05    +0.204 C 
+DOCKED: HETATM   34  O25 GR7 B 201      11.068 -24.496  -2.478 -1.15 +0.12    -0.358 OA
+DOCKED: HETATM   35  C26 GR7 B 201      10.901 -24.988  -3.807 -0.53 -0.13    +0.266 C 
+DOCKED: HETATM   36  O27 GR7 B 201      10.137 -24.046  -4.560 -1.06 +0.12    -0.361 OA
+DOCKED: HETATM   37  C30 GR7 B 201      12.292 -25.013  -4.417 -0.44 -0.02    +0.075 C 
+DOCKED: HETATM   38  C28 GR7 B 201      10.950 -23.396  -5.546 -0.43 -0.04    +0.171 C 
+DOCKED: HETATM   39  C29 GR7 B 201      12.092 -24.374  -5.779 -0.34 -0.01    +0.038 C 
+DOCKED: ENDBRANCH  31  32
+DOCKED: ENDBRANCH  28  31
+DOCKED: ENDBRANCH  26  27
+DOCKED: BRANCH  26  40
+DOCKED: HETATM   40  C31 GR7 B 201      13.739 -19.849  -6.964 -0.38 -0.05    +0.066 C 
+DOCKED: BRANCH  40  41
+DOCKED: HETATM   41  C37 GR7 B 201      13.860 -20.846  -8.127 -0.37 +0.02    -0.056 C 
+DOCKED: HETATM   42  C32 GR7 B 201      14.809 -20.654  -9.123 -0.48 -0.00    +0.007 C 
+DOCKED: HETATM   43  C33 GR7 B 201      14.911 -21.521 -10.224 -0.66 -0.00    +0.001 C 
+DOCKED: HETATM   44  C34 GR7 B 201      13.943 -22.509 -10.349 -0.47 +0.00    +0.000 C 
+DOCKED: HETATM   45  C35 GR7 B 201      13.025 -22.761  -9.344 -0.42 -0.00    +0.001 C 
+DOCKED: HETATM   46  C36 GR7 B 201      12.909 -21.886  -8.260 -0.34 -0.00    +0.007 C 
+DOCKED: ENDBRANCH  40  41
+DOCKED: ENDBRANCH  26  40
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   10 / 10
+Time taken for this run:   0.784s
+
+DOCKED: MODEL        10
+DOCKED: USER    Run = 10
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    = -12.82 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -15.81 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -15.50 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  -0.30 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -3.51 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +2.98 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -3.51 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  10 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: C1_1  and  O38_38 
+DOCKED: REMARK    2  A    between atoms: N10_10  and  C15_15 
+DOCKED: REMARK    3  A    between atoms: C15_15  and  C16_16 
+DOCKED: REMARK    4  A    between atoms: C16_16  and  O17_17 
+DOCKED: REMARK    5  A    between atoms: C16_16  and  C18_18 
+DOCKED: REMARK    6  A    between atoms: C18_18  and  N19_19 
+DOCKED: REMARK    7  A    between atoms: C18_18  and  C31_31 
+DOCKED: REMARK       I    between atoms: N19_19  and  C20_20 
+DOCKED: REMARK    8  A    between atoms: C20_20  and  O22_22 
+DOCKED: REMARK    9  A    between atoms: O22_22  and  C23_23 
+DOCKED: REMARK   10  A    between atoms: C31_31  and  C37_37 
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: HETATM    1  C16 GR7 B 201      14.631 -19.184  -6.200 -0.39 -0.19    +0.160 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: HETATM    2  C15 GR7 B 201      15.743 -18.367  -5.535 -0.41 -0.24    +0.169 C 
+DOCKED: BRANCH   2   3
+DOCKED: HETATM    3  N10 GR7 B 201      17.010 -19.060  -5.588 -0.26 +0.19    -0.304 N 
+DOCKED: HETATM    4  S7  GR7 B 201      17.870 -19.187  -6.937 -0.44 -0.06    +0.261 S 
+DOCKED: HETATM    5  C4  GR7 B 201      18.914 -17.785  -7.211 -0.32 -0.02    +0.088 A 
+DOCKED: HETATM    6  O8  GR7 B 201      16.851 -19.068  -8.095 -0.41 +0.06    -0.200 OA
+DOCKED: HETATM    7  O9  GR7 B 201      18.713 -20.377  -6.945 -0.50 -0.01    -0.200 OA
+DOCKED: HETATM    8  C3  GR7 B 201      20.255 -17.687  -6.880 -0.30 +0.00    -0.009 A 
+DOCKED: HETATM    9  C5  GR7 B 201      18.350 -16.661  -7.817 -0.36 -0.01    +0.028 A 
+DOCKED: HETATM   10  C2  GR7 B 201      20.992 -16.510  -7.148 -0.32 -0.00    +0.047 A 
+DOCKED: HETATM   11  C40 GR7 B 201      20.993 -18.712  -6.265 -0.34 -0.00    +0.207 C 
+DOCKED: HETATM   12  C1  GR7 B 201      20.408 -15.405  -7.753 -0.46 -0.00    +0.068 A 
+DOCKED: HETATM   13  C6  GR7 B 201      19.065 -15.513  -8.081 -0.35 -0.01    +0.038 A 
+DOCKED: HETATM   14  O41 GR7 B 201      21.302 -18.143  -4.934 -0.29 +0.03    -0.387 OA
+DOCKED: HETATM   15  C42 GR7 B 201      21.942 -19.001  -3.977 -0.27 -0.01    +0.168 C 
+DOCKED: HETATM   16  C43 GR7 B 201      21.008 -19.502  -3.060 -0.40 -0.00    +0.026 C 
+DOCKED: HETATM   17  C44 GR7 B 201      20.397 -20.721  -3.111 -0.49 +0.00    +0.002 C 
+DOCKED: HETATM   18  C14 GR7 B 201      19.425 -21.286  -2.315 -0.61 -0.00    +0.000 C 
+DOCKED: HETATM   19  C13 GR7 B 201      17.987 -21.182  -2.662 -0.48 -0.00    +0.002 C 
+DOCKED: HETATM   20  C12 GR7 B 201      17.691 -20.929  -4.116 -0.39 -0.01    +0.021 C 
+DOCKED: HETATM   21  C11 GR7 B 201      17.664 -19.430  -4.374 -0.31 -0.07    +0.135 C 
+DOCKED: BRANCH  12  22
+DOCKED: HETATM   22  O38 GR7 B 201      21.066 -14.244  -8.037 -0.98 -0.00    -0.356 OA
+DOCKED: HETATM   23  C39 GR7 B 201      21.735 -14.295  -9.290 -0.61 -0.00    +0.210 C 
+DOCKED: ENDBRANCH  12  22
+DOCKED: ENDBRANCH   2   3
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  24
+DOCKED: HETATM   24  O17 GR7 B 201      14.381 -18.685  -7.530 -0.41 +0.47    -0.392 OA
+DOCKED: HETATM   25  H11 GR7 B 201      14.964 -17.944  -7.709 -0.42 -0.31    +0.210 HD
+DOCKED: ENDBRANCH   1  24
+DOCKED: BRANCH   1  26
+DOCKED: HETATM   26  C18 GR7 B 201      14.950 -20.672  -6.273 -0.31 -0.06    +0.121 C 
+DOCKED: BRANCH  26  27
+DOCKED: HETATM   27  N19 GR7 B 201      13.949 -21.412  -5.491 -0.30 +0.17    -0.329 N 
+DOCKED: HETATM   28  C20 GR7 B 201      14.197 -22.478  -4.740 -0.36 -0.11    +0.361 C 
+DOCKED: HETATM   29  O21 GR7 B 201      15.283 -23.083  -4.540 -0.40 +0.03    -0.238 OA
+DOCKED: HETATM   30  H13 GR7 B 201      12.995 -21.083  -5.528 -0.27 -0.12    +0.165 HD
+DOCKED: BRANCH  28  31
+DOCKED: HETATM   31  O22 GR7 B 201      13.115 -22.921  -4.064 -0.41 +0.08    -0.296 OA
+DOCKED: BRANCH  31  32
+DOCKED: HETATM   32  C23 GR7 B 201      13.248 -24.218  -3.466 -0.49 -0.03    +0.166 C 
+DOCKED: HETATM   33  C24 GR7 B 201      12.652 -24.081  -2.047 -0.65 -0.05    +0.204 C 
+DOCKED: HETATM   34  O25 GR7 B 201      11.234 -24.045  -2.314 -1.25 +0.06    -0.358 OA
+DOCKED: HETATM   35  C26 GR7 B 201      10.932 -24.933  -3.390 -0.53 -0.14    +0.266 C 
+DOCKED: HETATM   36  O27 GR7 B 201      10.090 -24.261  -4.327 -1.02 +0.13    -0.361 OA
+DOCKED: HETATM   37  C30 GR7 B 201      12.252 -25.194  -4.094 -0.48 -0.02    +0.075 C 
+DOCKED: HETATM   38  C28 GR7 B 201      10.794 -23.986  -5.545 -0.41 -0.04    +0.171 C 
+DOCKED: HETATM   39  C29 GR7 B 201      11.909 -25.022  -5.562 -0.37 -0.01    +0.038 C 
+DOCKED: ENDBRANCH  31  32
+DOCKED: ENDBRANCH  28  31
+DOCKED: ENDBRANCH  26  27
+DOCKED: BRANCH  26  40
+DOCKED: HETATM   40  C31 GR7 B 201      14.917 -21.206  -7.714 -0.38 -0.01    +0.066 C 
+DOCKED: BRANCH  40  41
+DOCKED: HETATM   41  C37 GR7 B 201      13.493 -21.637  -8.095 -0.34 +0.01    -0.056 C 
+DOCKED: HETATM   42  C32 GR7 B 201      12.459 -20.709  -8.124 -0.39 -0.00    +0.007 C 
+DOCKED: HETATM   43  C33 GR7 B 201      11.138 -21.082  -8.421 -0.41 +0.00    +0.001 C 
+DOCKED: HETATM   44  C34 GR7 B 201      10.875 -22.439  -8.561 -0.34 +0.00    +0.000 C 
+DOCKED: HETATM   45  C35 GR7 B 201      11.891 -23.378  -8.597 -0.33 +0.00    +0.001 C 
+DOCKED: HETATM   46  C36 GR7 B 201      13.202 -23.011  -8.280 -0.34 -0.00    +0.007 C 
+DOCKED: ENDBRANCH  40  41
+DOCKED: ENDBRANCH  26  40
+DOCKED: ENDBRANCH   1  26
+DOCKED: TORSDOF 10
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    CLUSTERING HISTOGRAM
+    ____________________
+
+
+________________________________________________________________________________
+     |           |     |           |     |
+Clus | Lowest    | Run | Mean      | Num | Histogram
+-ter | Binding   |     | Binding   | in  |
+Rank | Energy    |     | Energy    | Clus|    5    10   15   20   25   30   35
+_____|___________|_____|___________|_____|____:____|____:____|____:____|____:___
+   1 |    -14.30 |   8 |    -12.69 |   7 |#######
+   2 |    -11.92 |   1 |    -11.92 |   1 |#
+   3 |    -10.70 |   2 |    -10.70 |   1 |#
+   4 |    -10.59 |   3 |    -10.59 |   1 |#
+_____|___________|_____|___________|_____|______________________________________
+
+
+    RMSD TABLE
+    __________
+
+
+_____________________________________________________________________
+     |      |      |           |         |                 |
+Rank | Sub- | Run  | Binding   | Cluster | Reference       | Grep
+     | Rank |      | Energy    | RMSD    | RMSD            | Pattern
+_____|______|______|___________|_________|_________________|___________
+   1      1      8      -14.30      0.00      0.82           RANKING
+   1      2      9      -14.04      0.61      0.70           RANKING
+   1      3     10      -12.82      1.30      1.07           RANKING
+   1      4      6      -12.71      1.31      1.53           RANKING
+   1      5      7      -12.70      1.33      1.55           RANKING
+   1      6      5      -11.65      1.77      1.93           RANKING
+   1      7      4      -10.61      1.97      1.70           RANKING
+   2      1      1      -11.92      0.00      4.56           RANKING
+   3      1      2      -10.70      0.00      3.77           RANKING
+   4      1      3      -10.59      0.00      2.74           RANKING
+
+Run time 7.855 sec
+Idle time 0.574 sec

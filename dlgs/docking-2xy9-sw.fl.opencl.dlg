@@ -1,0 +1,1671 @@
+AutoDock-GPU version: 
+
+**********************************************************
+**    AutoDock-GPU AUTODOCKTOOLS-COMPATIBLE DLG FILE    **
+**********************************************************
+
+
+    DOCKING PARAMETERS
+    ________________________
+
+
+Ligand file:                               ../data/2xy9/rand-0.pdbqt
+Grid fld file:                             ../data/2xy9/protein.maps.fld
+
+Number of runs:                            10
+Number of energy evaluations:              2500000
+Number of generations:                     27000
+Size of population:                        150
+Rate of crossover:                         80.000000%
+Tournament selection probability limit:    60.000000%
+Rate of mutation:                          2.000000%
+Maximal allowed delta movement:            +/- 6.000000A
+Maximal allowed delta angle:               +/- 90.000000
+
+Rate of local search:                      100.000000%
+Maximal number of local search iterations: 300
+Rho lower bound:                           0.010000
+Spread of local search delta movement:     2.000000A
+Spread of local search delta angle:        74.999999
+Limit of consecutive successes/failures:   4
+
+Handle symmetry during clustering:         YES
+RMSD tolerance:                            2.000000A
+
+Program call in command line was:          ./autodock_gpu_128wi.opencl.fl -filelist opencl_file.list -nrun 10 -lsmet sw -lsrat 100.0 
+
+
+    GRID PARAMETERS
+    ________________________
+
+
+Receptor name:                             protein
+Number of grid points (x, y, z):           81, 81, 81
+Grid size (x, y, z):                       30.000000, 30.000000, 30.000000A
+Grid spacing:                              0.375000A
+
+
+    LIGAND PARAMETERS
+    ________________________
+
+
+Ligand name:                               ../data/2xy9/rand-0
+Number of atoms:                           54
+Number of rotatable bonds:                 18
+Number of atom types:                      7
+
+
+    DUMMY DATA (only for ADT-compatibility)
+    ________________________
+
+
+DPF> outlev 1
+DPF> ga_run 10
+DPF> fld protein.maps.fld
+DPF> move ../data/2xy9/rand-0.pdbqt
+
+
+           COUNTER STATES           
+___________________________________
+
+Number of energy evaluations performed:    2514979
+Number of generations used:                63
+
+
+    INPUT LIGAND PDBQT FILE:
+    ________________________
+
+
+INPUT-LIGAND-PDBQT: REMARK  Name = 2xy9_ligand
+INPUT-LIGAND-PDBQT: REMARK  18 active torsions:
+INPUT-LIGAND-PDBQT: REMARK  status: ('A' for Active; 'I' for Inactive)
+INPUT-LIGAND-PDBQT: REMARK    1  A    between atoms: CBP_6  and  CBB_7
+INPUT-LIGAND-PDBQT: REMARK    2  A    between atoms: CBB_7  and  OBJ_8
+INPUT-LIGAND-PDBQT: REMARK    3  A    between atoms: OBJ_8  and  CBM_9
+INPUT-LIGAND-PDBQT: REMARK    4  A    between atoms: NBI_11  and  CBX_12
+INPUT-LIGAND-PDBQT: REMARK    5  A    between atoms: CBX_12  and  CBE_13
+INPUT-LIGAND-PDBQT: REMARK    6  A    between atoms: CBX_12  and  PBY_20
+INPUT-LIGAND-PDBQT: REMARK    7  A    between atoms: CBE_13  and  CBQ_14
+INPUT-LIGAND-PDBQT: REMARK    8  A    between atoms: PBY_20  and  CBF_36
+INPUT-LIGAND-PDBQT: REMARK    9  A    between atoms: N_23  and  CA_24
+INPUT-LIGAND-PDBQT: REMARK   10  A    between atoms: CA_24  and  C_25
+INPUT-LIGAND-PDBQT: REMARK   11  A    between atoms: CA_24  and  CB_28
+INPUT-LIGAND-PDBQT: REMARK   12  A    between atoms: CB_28  and  CG_29
+INPUT-LIGAND-PDBQT: REMARK   13  A    between atoms: CZ_32  and  OH_33
+INPUT-LIGAND-PDBQT: REMARK   14  A    between atoms: CBF_36  and  CBV_37
+INPUT-LIGAND-PDBQT: REMARK   15  A    between atoms: CBV_37  and  CBN_38
+INPUT-LIGAND-PDBQT: REMARK   16  A    between atoms: CBV_37  and  CBC_40
+INPUT-LIGAND-PDBQT: REMARK   17  A    between atoms: CBC_40  and  CBS_41
+INPUT-LIGAND-PDBQT: REMARK   18  A    between atoms: CBU_45  and  CBT_46
+INPUT-LIGAND-PDBQT: REMARK                            x       y       z     vdW  Elec       q    Type
+INPUT-LIGAND-PDBQT: REMARK                         _______ _______ _______ _____ _____    ______ ____
+INPUT-LIGAND-PDBQT: ROOT
+INPUT-LIGAND-PDBQT: ATOM      1  C   UNK A   0       4.402  -2.005   2.097  0.00  0.00    +0.137 C 
+INPUT-LIGAND-PDBQT: ENDROOT
+INPUT-LIGAND-PDBQT: BRANCH   1   2
+INPUT-LIGAND-PDBQT: ATOM      2  C   UNK A   0       3.380  -2.739   1.206  0.00  0.00    +0.185 C 
+INPUT-LIGAND-PDBQT: ATOM      3  O   UNK A   0       3.425  -2.624  -0.019  0.00  0.00    -0.396 OA
+INPUT-LIGAND-PDBQT: ATOM      4  N   TYR A   1       2.453  -3.455   1.845  0.00  0.00    -0.269 N 
+INPUT-LIGAND-PDBQT: ATOM      5  H   TYR A   1       2.521  -3.567   2.857  0.00  0.00    +0.188 HD
+INPUT-LIGAND-PDBQT: BRANCH   4   6
+INPUT-LIGAND-PDBQT: ATOM      6  CA  TYR A   1       1.337  -4.088   1.129  0.00  0.00    +0.177 C 
+INPUT-LIGAND-PDBQT: BRANCH   6   7
+INPUT-LIGAND-PDBQT: ATOM      7  C   TYR A   1       0.248  -4.420   2.173  0.00  0.00    +0.062 C 
+INPUT-LIGAND-PDBQT: ATOM      8  OXT TYR A   1       0.456  -4.136   3.372  0.00  0.00    -0.567 OA
+INPUT-LIGAND-PDBQT: ATOM      9  O   TYR A   1      -0.757  -5.022   1.754  0.00  0.00    -0.567 OA
+INPUT-LIGAND-PDBQT: ENDBRANCH   6   7
+INPUT-LIGAND-PDBQT: BRANCH   6  10
+INPUT-LIGAND-PDBQT: ATOM     10  CB  TYR A   1       1.761  -5.344   0.357  0.00  0.00    +0.100 C 
+INPUT-LIGAND-PDBQT: BRANCH  10  11
+INPUT-LIGAND-PDBQT: ATOM     11  CG  TYR A   1       1.711  -6.673   1.120  0.00  0.00    -0.050 A 
+INPUT-LIGAND-PDBQT: ATOM     12  CD2 TYR A   1       2.436  -6.829   2.305  0.00  0.00    -0.016 A 
+INPUT-LIGAND-PDBQT: ATOM     13  CE2 TYR A   1       2.407  -8.044   2.989  0.00  0.00    +0.013 A 
+INPUT-LIGAND-PDBQT: ATOM     14  CZ  TYR A   1       1.655  -9.106   2.490  0.00  0.00    +0.081 A 
+INPUT-LIGAND-PDBQT: ATOM     15  CE1 TYR A   1       0.930  -8.957   1.305  0.00  0.00    +0.013 A 
+INPUT-LIGAND-PDBQT: ATOM     16  CD1 TYR A   1       0.965  -7.739   0.616  0.00  0.00    -0.016 A 
+INPUT-LIGAND-PDBQT: BRANCH  14  17
+INPUT-LIGAND-PDBQT: ATOM     17  OH  TYR A   1       1.637 -10.292   3.166  0.00  0.00    -0.338 OA
+INPUT-LIGAND-PDBQT: ATOM     18  HH  TYR A   1       2.349 -10.303   3.809  0.00  0.00    +0.246 HD
+INPUT-LIGAND-PDBQT: ENDBRANCH  14  17
+INPUT-LIGAND-PDBQT: ENDBRANCH  10  11
+INPUT-LIGAND-PDBQT: ENDBRANCH   6  10
+INPUT-LIGAND-PDBQT: ENDBRANCH   4   6
+INPUT-LIGAND-PDBQT: ENDBRANCH   1   2
+INPUT-LIGAND-PDBQT: BRANCH   1  19
+INPUT-LIGAND-PDBQT: ATOM     19  C   UNK A   0       5.266  -3.017   2.880  0.00  0.00    +0.137 C 
+INPUT-LIGAND-PDBQT: BRANCH  19  20
+INPUT-LIGAND-PDBQT: ATOM     20  P   UNK A   0       7.041  -2.920   2.511  0.00  0.00    +0.015 P 
+INPUT-LIGAND-PDBQT: ATOM     21  O   UNK A   0       7.375  -2.908   1.066  0.00  0.00    -0.617 OA
+INPUT-LIGAND-PDBQT: ATOM     22  O   UNK A   0       7.695  -4.119   3.323  0.00  0.00    -0.617 OA
+INPUT-LIGAND-PDBQT: BRANCH  20  23
+INPUT-LIGAND-PDBQT: ATOM     23  C   UNK A   0       7.734  -1.417   3.311  0.00  0.00    +0.196 C 
+INPUT-LIGAND-PDBQT: BRANCH  23  25
+INPUT-LIGAND-PDBQT: ATOM     24  C   UNK A   0      10.173  -1.836   3.389  0.00  0.00    +0.323 C 
+INPUT-LIGAND-PDBQT: ATOM     25  N   UNK A   0       9.111  -1.253   2.834  0.00  0.00    -0.242 N 
+INPUT-LIGAND-PDBQT: ATOM     26  H   UNK A   0       9.267  -0.652   2.024  0.00  0.00    +0.189 HD
+INPUT-LIGAND-PDBQT: ATOM     27  O   UNK A   0      10.121  -2.578   4.375  0.00  0.00    -0.377 OA
+INPUT-LIGAND-PDBQT: BRANCH  24  28
+INPUT-LIGAND-PDBQT: ATOM     28  O   UNK A   0      11.354  -1.524   2.788  0.00  0.00    -0.251 OA
+INPUT-LIGAND-PDBQT: BRANCH  28  29
+INPUT-LIGAND-PDBQT: ATOM     29  C   UNK A   0      12.596  -1.493   3.515  0.00  0.00    +0.267 C 
+INPUT-LIGAND-PDBQT: BRANCH  29  31
+INPUT-LIGAND-PDBQT: ATOM     30  C   UNK A   0      14.055  -1.767   1.605  0.00  0.00    -0.002 A 
+INPUT-LIGAND-PDBQT: ATOM     31  C   UNK A   0      13.658  -2.164   2.886  0.00  0.00    -0.013 A 
+INPUT-LIGAND-PDBQT: ATOM     32  C   UNK A   0      14.339  -3.197   3.526  0.00  0.00    -0.002 A 
+INPUT-LIGAND-PDBQT: ATOM     33  C   UNK A   0      15.403  -3.836   2.885  0.00  0.00    -0.009 A 
+INPUT-LIGAND-PDBQT: ATOM     34  C   UNK A   0      15.795  -3.445   1.607  0.00  0.00    -0.013 A 
+INPUT-LIGAND-PDBQT: ATOM     35  C   UNK A   0      15.122  -2.408   0.968  0.00  0.00    -0.009 A 
+INPUT-LIGAND-PDBQT: ENDBRANCH  29  31
+INPUT-LIGAND-PDBQT: ENDBRANCH  28  29
+INPUT-LIGAND-PDBQT: ENDBRANCH  24  28
+INPUT-LIGAND-PDBQT: ENDBRANCH  23  25
+INPUT-LIGAND-PDBQT: BRANCH  23  36
+INPUT-LIGAND-PDBQT: ATOM     36  C   UNK A   0       6.935  -0.147   2.985  0.00  0.00    +0.114 C 
+INPUT-LIGAND-PDBQT: BRANCH  36  37
+INPUT-LIGAND-PDBQT: ATOM     37  C   UNK A   0       7.470   0.534   1.712  0.00  0.00    -0.039 A 
+INPUT-LIGAND-PDBQT: ATOM     38  C   UNK A   0       7.057   0.098   0.451  0.00  0.00    -0.004 A 
+INPUT-LIGAND-PDBQT: ATOM     39  C   UNK A   0       7.549   0.711  -0.704  0.00  0.00    -0.009 A 
+INPUT-LIGAND-PDBQT: ATOM     40  C   UNK A   0       8.456   1.769  -0.595  0.00  0.00    -0.013 A 
+INPUT-LIGAND-PDBQT: ATOM     41  C   UNK A   0       8.873   2.204   0.664  0.00  0.00    -0.009 A 
+INPUT-LIGAND-PDBQT: ATOM     42  C   UNK A   0       8.384   1.586   1.817  0.00  0.00    -0.004 A 
+INPUT-LIGAND-PDBQT: ENDBRANCH  36  37
+INPUT-LIGAND-PDBQT: ENDBRANCH  23  36
+INPUT-LIGAND-PDBQT: ENDBRANCH  20  23
+INPUT-LIGAND-PDBQT: ENDBRANCH  19  20
+INPUT-LIGAND-PDBQT: ENDBRANCH   1  19
+INPUT-LIGAND-PDBQT: BRANCH   1  43
+INPUT-LIGAND-PDBQT: ATOM     43  C   UNK A   0       3.739  -0.972   3.025  0.00  0.00    +0.145 C 
+INPUT-LIGAND-PDBQT: BRANCH  43  44
+INPUT-LIGAND-PDBQT: ATOM     44  C   UNK A   0       4.096  -1.075   4.522  0.00  0.00    +0.141 A 
+INPUT-LIGAND-PDBQT: ATOM     45  O   UNK A   0       3.266  -1.743   5.364  0.00  0.00    -0.167 OA
+INPUT-LIGAND-PDBQT: ATOM     46  N   UNK A   0       3.838  -1.655   6.640  0.00  0.00    -0.152 NA
+INPUT-LIGAND-PDBQT: ATOM     47  C   UNK A   0       4.963  -0.959   6.529  0.00  0.00    +0.043 A 
+INPUT-LIGAND-PDBQT: ATOM     48  C   UNK A   0       5.123  -0.608   5.238  0.00  0.00    +0.002 A 
+INPUT-LIGAND-PDBQT: BRANCH  47  49
+INPUT-LIGAND-PDBQT: ATOM     49  C   UNK A   0       5.808  -0.680   7.607  0.00  0.00    -0.015 A 
+INPUT-LIGAND-PDBQT: ATOM     50  C   UNK A   0       5.442  -1.077   8.895  0.00  0.00    +0.006 A 
+INPUT-LIGAND-PDBQT: ATOM     51  C   UNK A   0       6.277  -0.808   9.983  0.00  0.00    -0.001 A 
+INPUT-LIGAND-PDBQT: ATOM     52  C   UNK A   0       7.497  -0.155   9.787  0.00  0.00    -0.002 A 
+INPUT-LIGAND-PDBQT: ATOM     53  C   UNK A   0       7.867   0.231   8.501  0.00  0.00    -0.001 A 
+INPUT-LIGAND-PDBQT: ATOM     54  C   UNK A   0       7.025  -0.031   7.419  0.00  0.00    +0.006 A 
+INPUT-LIGAND-PDBQT: ENDBRANCH  47  49
+INPUT-LIGAND-PDBQT: ENDBRANCH  43  44
+INPUT-LIGAND-PDBQT: ENDBRANCH   1  43
+INPUT-LIGAND-PDBQT: TORSDOF 18
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   1 / 10
+Time taken for this run:   0.128s
+
+DOCKED: MODEL        1
+DOCKED: USER    Run = 1
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    =  -4.87 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -10.24 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -10.51 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  +0.27 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -6.71 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +5.37 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -6.71 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  Name = 2xy9_ligand
+DOCKED: REMARK  18 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: CBP_6  and  CBB_7
+DOCKED: REMARK    2  A    between atoms: CBB_7  and  OBJ_8
+DOCKED: REMARK    3  A    between atoms: OBJ_8  and  CBM_9
+DOCKED: REMARK    4  A    between atoms: NBI_11  and  CBX_12
+DOCKED: REMARK    5  A    between atoms: CBX_12  and  CBE_13
+DOCKED: REMARK    6  A    between atoms: CBX_12  and  PBY_20
+DOCKED: REMARK    7  A    between atoms: CBE_13  and  CBQ_14
+DOCKED: REMARK    8  A    between atoms: PBY_20  and  CBF_36
+DOCKED: REMARK    9  A    between atoms: N_23  and  CA_24
+DOCKED: REMARK   10  A    between atoms: CA_24  and  C_25
+DOCKED: REMARK   11  A    between atoms: CA_24  and  CB_28
+DOCKED: REMARK   12  A    between atoms: CB_28  and  CG_29
+DOCKED: REMARK   13  A    between atoms: CZ_32  and  OH_33
+DOCKED: REMARK   14  A    between atoms: CBF_36  and  CBV_37
+DOCKED: REMARK   15  A    between atoms: CBV_37  and  CBN_38
+DOCKED: REMARK   16  A    between atoms: CBV_37  and  CBC_40
+DOCKED: REMARK   17  A    between atoms: CBC_40  and  CBS_41
+DOCKED: REMARK   18  A    between atoms: CBU_45  and  CBT_46
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNK A   0      10.867  -0.246 -12.005 -0.09 -0.03    +0.137 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: ATOM      2  C   UNK A   0      12.067  -1.032 -11.440 -0.20 -0.03    +0.185 C 
+DOCKED: ATOM      3  O   UNK A   0      12.048  -2.262 -11.410 -0.50 +0.04    -0.396 OA
+DOCKED: ATOM      4  N   TYR A   1      13.078  -0.299 -10.969 -0.23 +0.05    -0.269 N 
+DOCKED: ATOM      5  H   TYR A   1      13.059   0.713 -11.094 +0.01 -0.04    +0.188 HD
+DOCKED: BRANCH   4   6
+DOCKED: ATOM      6  CA  TYR A   1      14.219  -0.913 -10.276 -0.39 -0.02    +0.177 C 
+DOCKED: BRANCH   6   7
+DOCKED: ATOM      7  C   TYR A   1      14.319  -0.256  -8.881 -0.54 -0.00    +0.062 C 
+DOCKED: ATOM      8  OXT TYR A   1      13.307  -0.238  -8.149 -1.11 -0.05    -0.567 OA
+DOCKED: ATOM      9  O   TYR A   1      15.405   0.283  -8.599 -0.61 +0.13    -0.567 OA
+DOCKED: ENDBRANCH   6   7
+DOCKED: BRANCH   6  10
+DOCKED: ATOM     10  CB  TYR A   1      15.535  -0.767 -11.050 -0.52 -0.02    +0.100 C 
+DOCKED: BRANCH  10  11
+DOCKED: ATOM     11  CG  TYR A   1      15.804   0.594 -11.703 -0.41 +0.02    -0.050 A 
+DOCKED: ATOM     12  CD2 TYR A   1      16.766   0.711 -12.710 -0.40 +0.01    -0.016 A 
+DOCKED: ATOM     13  CE2 TYR A   1      17.025   1.952 -13.291 -0.40 -0.01    +0.013 A 
+DOCKED: ATOM     14  CZ  TYR A   1      16.325   3.080 -12.865 -0.32 -0.04    +0.081 A 
+DOCKED: ATOM     15  CE1 TYR A   1      15.364   2.970 -11.857 -0.19 -0.01    +0.013 A 
+DOCKED: ATOM     16  CD1 TYR A   1      15.109   1.725 -11.271 -0.27 +0.01    -0.016 A 
+DOCKED: BRANCH  14  17
+DOCKED: ATOM     17  OH  TYR A   1      16.590   4.290 -13.437 -0.39 +0.20    -0.338 OA
+DOCKED: ATOM     18  HH  TYR A   1      15.954   4.459 -14.136 +0.00 -0.12    +0.246 HD
+DOCKED: ENDBRANCH  14  17
+DOCKED: ENDBRANCH  10  11
+DOCKED: ENDBRANCH   6  10
+DOCKED: ENDBRANCH   4   6
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  19
+DOCKED: ATOM     19  C   UNK A   0      11.214   0.362 -13.381 -0.04 -0.03    +0.137 C 
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     20  P   UNK A   0      10.050  -0.078 -14.702 -0.13 -0.00    +0.015 P 
+DOCKED: ATOM     21  O   UNK A   0      10.054   0.842 -15.866 -0.19 +0.06    -0.617 OA
+DOCKED: ATOM     22  O   UNK A   0       8.641  -0.212 -13.980 -0.13 +0.19    -0.617 OA
+DOCKED: BRANCH  20  23
+DOCKED: ATOM     23  C   UNK A   0      10.415  -1.787 -15.273 -0.17 -0.06    +0.196 C 
+DOCKED: BRANCH  23  25
+DOCKED: ATOM     24  C   UNK A   0      11.456  -2.736 -17.310 -0.30 -0.09    +0.323 C 
+DOCKED: ATOM     25  N   UNK A   0      11.027  -1.691 -16.603 -0.20 +0.05    -0.242 N 
+DOCKED: ATOM     26  H   UNK A   0      11.132  -0.763 -17.014 -0.01 -0.02    +0.189 HD
+DOCKED: ATOM     27  O   UNK A   0      11.394  -3.908 -16.924 -0.38 +0.13    -0.377 OA
+DOCKED: BRANCH  24  28
+DOCKED: ATOM     28  O   UNK A   0      12.005  -2.405 -18.511 -0.36 +0.07    -0.251 OA
+DOCKED: BRANCH  28  29
+DOCKED: ATOM     29  C   UNK A   0      13.293  -2.899 -18.923 -0.38 -0.12    +0.267 C 
+DOCKED: BRANCH  29  31
+DOCKED: ATOM     30  C   UNK A   0      14.195  -0.654 -18.916 -0.31 +0.00    -0.002 A 
+DOCKED: ATOM     31  C   UNK A   0      14.362  -2.022 -18.674 -0.30 +0.01    -0.013 A 
+DOCKED: ATOM     32  C   UNK A   0      15.573  -2.486 -18.165 -0.41 +0.00    -0.002 A 
+DOCKED: ATOM     33  C   UNK A   0      16.614  -1.590 -17.910 -0.43 +0.01    -0.009 A 
+DOCKED: ATOM     34  C   UNK A   0      16.450  -0.229 -18.156 -0.34 +0.01    -0.013 A 
+DOCKED: ATOM     35  C   UNK A   0      15.239   0.239 -18.657 -0.32 +0.00    -0.009 A 
+DOCKED: ENDBRANCH  29  31
+DOCKED: ENDBRANCH  28  29
+DOCKED: ENDBRANCH  24  28
+DOCKED: ENDBRANCH  23  25
+DOCKED: BRANCH  23  36
+DOCKED: ATOM     36  C   UNK A   0      11.371  -2.537 -14.334 -0.16 -0.03    +0.114 C 
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   UNK A   0      12.825  -2.074 -14.537 -0.15 +0.01    -0.039 A 
+DOCKED: ATOM     38  C   UNK A   0      13.099  -0.863 -15.176 -0.09 +0.00    -0.004 A 
+DOCKED: ATOM     39  C   UNK A   0      14.419  -0.447 -15.367 -0.15 +0.00    -0.009 A 
+DOCKED: ATOM     40  C   UNK A   0      15.470  -1.247 -14.911 -0.20 +0.01    -0.013 A 
+DOCKED: ATOM     41  C   UNK A   0      15.200  -2.460 -14.275 -0.38 +0.00    -0.009 A 
+DOCKED: ATOM     42  C   UNK A   0      13.879  -2.876 -14.090 -0.32 +0.00    -0.004 A 
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  23  36
+DOCKED: ENDBRANCH  20  23
+DOCKED: ENDBRANCH  19  20
+DOCKED: ENDBRANCH   1  19
+DOCKED: BRANCH   1  43
+DOCKED: ATOM     43  C   UNK A   0      10.342   0.815 -11.021 -0.09 -0.03    +0.145 C 
+DOCKED: BRANCH  43  44
+DOCKED: ATOM     44  C   UNK A   0      11.191   2.096 -10.887 -0.07 -0.03    +0.141 A 
+DOCKED: ATOM     45  O   UNK A   0      12.186   2.147  -9.964 -0.17 +0.04    -0.167 OA
+DOCKED: ATOM     46  N   UNK A   0      12.759   3.421 -10.067 -0.20 +0.05    -0.152 NA
+DOCKED: ATOM     47  C   UNK A   0      12.112   4.078 -11.022 -0.12 -0.01    +0.043 A 
+DOCKED: ATOM     48  C   UNK A   0      11.158   3.270 -11.525 -0.03 -0.00    +0.002 A 
+DOCKED: BRANCH  47  49
+DOCKED: ATOM     49  C   UNK A   0      12.423   5.385 -11.407 -0.17 +0.01    -0.015 A 
+DOCKED: ATOM     50  C   UNK A   0      11.442   6.377 -11.347 -0.15 -0.00    +0.006 A 
+DOCKED: ATOM     51  C   UNK A   0      11.737   7.689 -11.726 -0.20 +0.00    -0.001 A 
+DOCKED: ATOM     52  C   UNK A   0      13.026   8.024 -12.152 -0.29 +0.00    -0.002 A 
+DOCKED: ATOM     53  C   UNK A   0      14.007   7.036 -12.202 -0.32 +0.00    -0.001 A 
+DOCKED: ATOM     54  C   UNK A   0      13.704   5.725 -11.831 -0.19 -0.00    +0.006 A 
+DOCKED: ENDBRANCH  47  49
+DOCKED: ENDBRANCH  43  44
+DOCKED: ENDBRANCH   1  43
+DOCKED: TORSDOF 18
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   2 / 10
+Time taken for this run:   0.128s
+
+DOCKED: MODEL        2
+DOCKED: USER    Run = 2
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    =  -5.86 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -11.23 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -11.46 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  +0.22 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -7.87 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +5.37 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -7.87 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  Name = 2xy9_ligand
+DOCKED: REMARK  18 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: CBP_6  and  CBB_7
+DOCKED: REMARK    2  A    between atoms: CBB_7  and  OBJ_8
+DOCKED: REMARK    3  A    between atoms: OBJ_8  and  CBM_9
+DOCKED: REMARK    4  A    between atoms: NBI_11  and  CBX_12
+DOCKED: REMARK    5  A    between atoms: CBX_12  and  CBE_13
+DOCKED: REMARK    6  A    between atoms: CBX_12  and  PBY_20
+DOCKED: REMARK    7  A    between atoms: CBE_13  and  CBQ_14
+DOCKED: REMARK    8  A    between atoms: PBY_20  and  CBF_36
+DOCKED: REMARK    9  A    between atoms: N_23  and  CA_24
+DOCKED: REMARK   10  A    between atoms: CA_24  and  C_25
+DOCKED: REMARK   11  A    between atoms: CA_24  and  CB_28
+DOCKED: REMARK   12  A    between atoms: CB_28  and  CG_29
+DOCKED: REMARK   13  A    between atoms: CZ_32  and  OH_33
+DOCKED: REMARK   14  A    between atoms: CBF_36  and  CBV_37
+DOCKED: REMARK   15  A    between atoms: CBV_37  and  CBN_38
+DOCKED: REMARK   16  A    between atoms: CBV_37  and  CBC_40
+DOCKED: REMARK   17  A    between atoms: CBC_40  and  CBS_41
+DOCKED: REMARK   18  A    between atoms: CBU_45  and  CBT_46
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNK A   0      15.532   2.023 -13.241 -0.25 -0.06    +0.137 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: ATOM      2  C   UNK A   0      14.627   1.418 -12.149 -0.20 -0.06    +0.185 C 
+DOCKED: ATOM      3  O   UNK A   0      14.084   2.145 -11.317 -0.19 +0.14    -0.396 OA
+DOCKED: ATOM      4  N   TYR A   1      14.510   0.089 -12.154 -0.22 +0.08    -0.269 N 
+DOCKED: ATOM      5  H   TYR A   1      14.927  -0.444 -12.918 -0.01 -0.06    +0.188 HD
+DOCKED: BRANCH   4   6
+DOCKED: ATOM      6  CA  TYR A   1      13.796  -0.628 -11.089 -0.34 -0.03    +0.177 C 
+DOCKED: BRANCH   6   7
+DOCKED: ATOM      7  C   TYR A   1      14.568  -0.387  -9.773 -0.48 -0.01    +0.062 C 
+DOCKED: ATOM      8  OXT TYR A   1      15.708   0.123  -9.827 -0.58 +0.15    -0.567 OA
+DOCKED: ATOM      9  O   TYR A   1      14.022  -0.785  -8.728 -1.14 -0.04    -0.567 OA
+DOCKED: ENDBRANCH   6   7
+DOCKED: BRANCH   6  10
+DOCKED: ATOM     10  CB  TYR A   1      13.650  -2.128 -11.374 -0.29 -0.02    +0.100 C 
+DOCKED: BRANCH  10  11
+DOCKED: ATOM     11  CG  TYR A   1      13.184  -2.520 -12.781 -0.31 +0.01    -0.050 A 
+DOCKED: ATOM     12  CD2 TYR A   1      11.881  -2.983 -12.985 -0.23 +0.00    -0.016 A 
+DOCKED: ATOM     13  CE2 TYR A   1      11.462  -3.359 -14.261 -0.18 -0.00    +0.013 A 
+DOCKED: ATOM     14  CZ  TYR A   1      12.345  -3.275 -15.336 -0.21 -0.02    +0.081 A 
+DOCKED: ATOM     15  CE1 TYR A   1      13.650  -2.816 -15.139 -0.14 -0.00    +0.013 A 
+DOCKED: ATOM     16  CD1 TYR A   1      14.070  -2.444 -13.856 -0.35 +0.00    -0.016 A 
+DOCKED: BRANCH  14  17
+DOCKED: ATOM     17  OH  TYR A   1      11.926  -3.650 -16.580 -0.33 +0.11    -0.338 OA
+DOCKED: ATOM     18  HH  TYR A   1      12.676  -3.963 -17.089 -0.01 -0.08    +0.246 HD
+DOCKED: ENDBRANCH  14  17
+DOCKED: ENDBRANCH  10  11
+DOCKED: ENDBRANCH   6  10
+DOCKED: ENDBRANCH   4   6
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  19
+DOCKED: ATOM     19  C   UNK A   0      14.682   2.700 -14.338 -0.11 -0.05    +0.137 C 
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     20  P   UNK A   0      13.070   1.914 -14.619 -0.04 -0.00    +0.015 P 
+DOCKED: ATOM     21  O   UNK A   0      11.952   2.491 -13.834 -0.02 +0.15    -0.617 OA
+DOCKED: ATOM     22  O   UNK A   0      13.318   0.365 -14.363 -0.09 +0.16    -0.617 OA
+DOCKED: BRANCH  20  23
+DOCKED: ATOM     23  C   UNK A   0      12.669   2.004 -16.411 -0.12 +0.02    +0.196 C 
+DOCKED: BRANCH  23  25
+DOCKED: ATOM     24  C   UNK A   0      14.037   3.535 -17.794 -0.24 +0.04    +0.323 C 
+DOCKED: ATOM     25  N   UNK A   0      13.890   2.394 -17.122 -0.16 -0.01    -0.242 N 
+DOCKED: ATOM     26  H   UNK A   0      14.680   1.748 -17.103 +0.01 -0.03    +0.189 HD
+DOCKED: ATOM     27  O   UNK A   0      13.157   4.396 -17.901 -0.30 -0.15    -0.377 OA
+DOCKED: BRANCH  24  28
+DOCKED: ATOM     28  O   UNK A   0      15.252   3.675 -18.391 -0.38 +0.02    -0.251 OA
+DOCKED: BRANCH  28  29
+DOCKED: ATOM     29  C   UNK A   0      16.152   4.746 -18.052 -0.32 -0.05    +0.267 C 
+DOCKED: BRANCH  29  31
+DOCKED: ATOM     30  C   UNK A   0      17.290   4.372 -15.950 -0.39 +0.00    -0.002 A 
+DOCKED: ATOM     31  C   UNK A   0      16.269   4.996 -16.674 -0.34 +0.00    -0.013 A 
+DOCKED: ATOM     32  C   UNK A   0      15.404   5.874 -16.024 -0.27 +0.00    -0.002 A 
+DOCKED: ATOM     33  C   UNK A   0      15.554   6.118 -14.657 -0.30 +0.01    -0.009 A 
+DOCKED: ATOM     34  C   UNK A   0      16.567   5.493 -13.934 -0.41 +0.01    -0.013 A 
+DOCKED: ATOM     35  C   UNK A   0      17.438   4.622 -14.582 -0.45 +0.01    -0.009 A 
+DOCKED: ENDBRANCH  29  31
+DOCKED: ENDBRANCH  28  29
+DOCKED: ENDBRANCH  24  28
+DOCKED: ENDBRANCH  23  25
+DOCKED: BRANCH  23  36
+DOCKED: ATOM     36  C   UNK A   0      12.163   0.669 -16.976 -0.18 +0.01    +0.114 C 
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   UNK A   0      10.699   0.414 -16.572 -0.20 +0.00    -0.039 A 
+DOCKED: ATOM     38  C   UNK A   0      10.369  -0.680 -15.769 -0.15 +0.00    -0.004 A 
+DOCKED: ATOM     39  C   UNK A   0       9.039  -0.916 -15.409 -0.17 +0.00    -0.009 A 
+DOCKED: ATOM     40  C   UNK A   0       8.037  -0.048 -15.852 -0.27 +0.00    -0.013 A 
+DOCKED: ATOM     41  C   UNK A   0       8.364   1.043 -16.658 -0.33 +0.00    -0.009 A 
+DOCKED: ATOM     42  C   UNK A   0       9.693   1.274 -17.021 -0.31 -0.00    -0.004 A 
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  23  36
+DOCKED: ENDBRANCH  20  23
+DOCKED: ENDBRANCH  19  20
+DOCKED: ENDBRANCH   1  19
+DOCKED: BRANCH   1  43
+DOCKED: ATOM     43  C   UNK A   0      16.516   0.994 -13.826 -0.35 -0.07    +0.145 C 
+DOCKED: BRANCH  43  44
+DOCKED: ATOM     44  C   UNK A   0      16.318   0.633 -15.312 -0.25 -0.07    +0.141 A 
+DOCKED: ATOM     45  O   UNK A   0      16.658   1.532 -16.271 -0.38 +0.07    -0.167 OA
+DOCKED: ATOM     46  N   UNK A   0      16.356   0.935 -17.502 -0.37 +0.06    -0.152 NA
+DOCKED: ATOM     47  C   UNK A   0      15.860  -0.271 -17.253 -0.34 -0.02    +0.043 A 
+DOCKED: ATOM     48  C   UNK A   0      15.840  -0.458 -15.919 -0.28 -0.00    +0.002 A 
+DOCKED: BRANCH  47  49
+DOCKED: ATOM     49  C   UNK A   0      15.455  -1.161 -18.252 -0.36 +0.01    -0.015 A 
+DOCKED: ATOM     50  C   UNK A   0      15.207  -2.497 -17.930 -0.34 -0.00    +0.006 A 
+DOCKED: ATOM     51  C   UNK A   0      14.799  -3.399 -18.917 -0.37 +0.00    -0.001 A 
+DOCKED: ATOM     52  C   UNK A   0      14.617  -2.965 -20.233 -0.46 +0.00    -0.002 A 
+DOCKED: ATOM     53  C   UNK A   0      14.854  -1.630 -20.551 -0.46 +0.00    -0.001 A 
+DOCKED: ATOM     54  C   UNK A   0      15.271  -0.735 -19.564 -0.36 -0.00    +0.006 A 
+DOCKED: ENDBRANCH  47  49
+DOCKED: ENDBRANCH  43  44
+DOCKED: ENDBRANCH   1  43
+DOCKED: TORSDOF 18
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   3 / 10
+Time taken for this run:   0.128s
+
+DOCKED: MODEL        3
+DOCKED: USER    Run = 3
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    =  -8.56 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -13.93 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -13.88 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  -0.04 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -5.06 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +5.37 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -5.06 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  Name = 2xy9_ligand
+DOCKED: REMARK  18 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: CBP_6  and  CBB_7
+DOCKED: REMARK    2  A    between atoms: CBB_7  and  OBJ_8
+DOCKED: REMARK    3  A    between atoms: OBJ_8  and  CBM_9
+DOCKED: REMARK    4  A    between atoms: NBI_11  and  CBX_12
+DOCKED: REMARK    5  A    between atoms: CBX_12  and  CBE_13
+DOCKED: REMARK    6  A    between atoms: CBX_12  and  PBY_20
+DOCKED: REMARK    7  A    between atoms: CBE_13  and  CBQ_14
+DOCKED: REMARK    8  A    between atoms: PBY_20  and  CBF_36
+DOCKED: REMARK    9  A    between atoms: N_23  and  CA_24
+DOCKED: REMARK   10  A    between atoms: CA_24  and  C_25
+DOCKED: REMARK   11  A    between atoms: CA_24  and  CB_28
+DOCKED: REMARK   12  A    between atoms: CB_28  and  CG_29
+DOCKED: REMARK   13  A    between atoms: CZ_32  and  OH_33
+DOCKED: REMARK   14  A    between atoms: CBF_36  and  CBV_37
+DOCKED: REMARK   15  A    between atoms: CBV_37  and  CBN_38
+DOCKED: REMARK   16  A    between atoms: CBV_37  and  CBC_40
+DOCKED: REMARK   17  A    between atoms: CBC_40  and  CBS_41
+DOCKED: REMARK   18  A    between atoms: CBU_45  and  CBT_46
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNK A   0      14.320  -1.921 -17.521 -0.28 -0.05    +0.137 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: ATOM      2  C   UNK A   0      12.815  -1.587 -17.527 -0.22 -0.04    +0.185 C 
+DOCKED: ATOM      3  O   UNK A   0      11.988  -2.438 -17.856 -0.32 +0.11    -0.396 OA
+DOCKED: ATOM      4  N   TYR A   1      12.491  -0.337 -17.192 -0.17 +0.03    -0.269 N 
+DOCKED: ATOM      5  H   TYR A   1      13.220   0.293 -16.857 +0.01 -0.02    +0.188 HD
+DOCKED: BRANCH   4   6
+DOCKED: ATOM      6  CA  TYR A   1      11.110   0.156 -17.291 -0.22 +0.01    +0.177 C 
+DOCKED: BRANCH   6   7
+DOCKED: ATOM      7  C   TYR A   1      11.144   1.679 -17.034 -0.04 +0.02    +0.062 C 
+DOCKED: ATOM      8  OXT TYR A   1      10.099   2.343 -17.203 -0.55 -0.27    -0.567 OA
+DOCKED: ATOM      9  O   TYR A   1      12.249   2.166 -16.734 -0.61 -0.16    -0.567 OA
+DOCKED: ENDBRANCH   6   7
+DOCKED: BRANCH   6  10
+DOCKED: ATOM     10  CB  TYR A   1      10.156  -0.546 -16.317 -0.16 -0.02    +0.100 C 
+DOCKED: BRANCH  10  11
+DOCKED: ATOM     11  CG  TYR A   1      10.771  -1.097 -15.025 -0.10 +0.01    -0.050 A 
+DOCKED: ATOM     12  CD2 TYR A   1      10.485  -2.403 -14.614 -0.13 +0.01    -0.016 A 
+DOCKED: ATOM     13  CE2 TYR A   1      11.028  -2.898 -13.429 -0.15 -0.00    +0.013 A 
+DOCKED: ATOM     14  CZ  TYR A   1      11.856  -2.090 -12.651 -0.18 -0.02    +0.081 A 
+DOCKED: ATOM     15  CE1 TYR A   1      12.143  -0.784 -13.055 -0.09 -0.00    +0.013 A 
+DOCKED: ATOM     16  CD1 TYR A   1      11.592  -0.286 -14.242 -0.05 +0.00    -0.016 A 
+DOCKED: BRANCH  14  17
+DOCKED: ATOM     17  OH  TYR A   1      12.378  -2.585 -11.491 -0.48 +0.05    -0.338 OA
+DOCKED: ATOM     18  HH  TYR A   1      12.550  -1.861 -10.885 -0.03 -0.02    +0.246 HD
+DOCKED: ENDBRANCH  14  17
+DOCKED: ENDBRANCH  10  11
+DOCKED: ENDBRANCH   6  10
+DOCKED: ENDBRANCH   4   6
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  19
+DOCKED: ATOM     19  C   UNK A   0      14.950  -1.571 -16.156 -0.32 -0.04    +0.137 C 
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     20  P   UNK A   0      15.856   0.002 -16.139 -0.39 -0.01    +0.015 P 
+DOCKED: ATOM     21  O   UNK A   0      15.191   1.110 -16.867 -0.20 +0.18    -0.617 OA
+DOCKED: ATOM     22  O   UNK A   0      17.308  -0.355 -16.677 -0.70 +0.34    -0.617 OA
+DOCKED: BRANCH  20  23
+DOCKED: ATOM     23  C   UNK A   0      16.145   0.504 -14.394 -0.22 -0.10    +0.196 C 
+DOCKED: BRANCH  23  25
+DOCKED: ATOM     24  C   UNK A   0      16.044   2.948 -14.774 -0.25 -0.13    +0.323 C 
+DOCKED: ATOM     25  N   UNK A   0      15.565   1.839 -14.212 -0.19 +0.09    -0.242 N 
+DOCKED: ATOM     26  H   UNK A   0      14.742   1.924 -13.616 +0.01 -0.07    +0.189 HD
+DOCKED: ATOM     27  O   UNK A   0      17.036   2.982 -15.508 -0.40 +0.17    -0.377 OA
+DOCKED: BRANCH  24  28
+DOCKED: ATOM     28  O   UNK A   0      15.354   4.076 -14.448 -0.19 +0.11    -0.251 OA
+DOCKED: BRANCH  28  29
+DOCKED: ATOM     29  C   UNK A   0      15.619   5.342 -15.080 -0.30 -0.13    +0.267 C 
+DOCKED: BRANCH  29  31
+DOCKED: ATOM     30  C   UNK A   0      14.658   4.332 -17.057 -0.18 +0.00    -0.002 A 
+DOCKED: ATOM     31  C   UNK A   0      15.403   5.359 -16.468 -0.26 +0.00    -0.013 A 
+DOCKED: ATOM     32  C   UNK A   0      15.894   6.393 -17.262 -0.38 +0.00    -0.002 A 
+DOCKED: ATOM     33  C   UNK A   0      15.651   6.394 -18.638 -0.51 +0.00    -0.009 A 
+DOCKED: ATOM     34  C   UNK A   0      14.914   5.369 -19.226 -0.46 -0.00    -0.013 A 
+DOCKED: ATOM     35  C   UNK A   0      14.415   4.339 -18.434 -0.32 -0.00    -0.009 A 
+DOCKED: ENDBRANCH  29  31
+DOCKED: ENDBRANCH  28  29
+DOCKED: ENDBRANCH  24  28
+DOCKED: ENDBRANCH  23  25
+DOCKED: BRANCH  23  36
+DOCKED: ATOM     36  C   UNK A   0      15.509  -0.462 -13.384 -0.34 -0.05    +0.114 C 
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   UNK A   0      15.507   0.139 -11.967 -0.38 +0.01    -0.039 A 
+DOCKED: ATOM     38  C   UNK A   0      14.514  -0.215 -11.050 -0.33 +0.00    -0.004 A 
+DOCKED: ATOM     39  C   UNK A   0      14.509   0.337  -9.767 -0.38 +0.00    -0.009 A 
+DOCKED: ATOM     40  C   UNK A   0      15.506   1.244  -9.398 -0.46 +0.00    -0.013 A 
+DOCKED: ATOM     41  C   UNK A   0      16.498   1.602 -10.313 -0.34 +0.00    -0.009 A 
+DOCKED: ATOM     42  C   UNK A   0      16.498   1.053 -11.597 -0.47 +0.00    -0.004 A 
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  23  36
+DOCKED: ENDBRANCH  20  23
+DOCKED: ENDBRANCH  19  20
+DOCKED: ENDBRANCH   1  19
+DOCKED: BRANCH   1  43
+DOCKED: ATOM     43  C   UNK A   0      15.073  -1.263 -18.691 -0.40 -0.07    +0.145 C 
+DOCKED: BRANCH  43  44
+DOCKED: ATOM     44  C   UNK A   0      15.066  -2.037 -20.025 -0.48 -0.10    +0.141 A 
+DOCKED: ATOM     45  O   UNK A   0      14.777  -1.381 -21.179 -1.08 +0.09    -0.167 OA
+DOCKED: ATOM     46  N   UNK A   0      14.833  -2.334 -22.204 -0.93 +0.07    -0.152 NA
+DOCKED: ATOM     47  C   UNK A   0      15.147  -3.500 -21.652 -0.53 -0.04    +0.043 A 
+DOCKED: ATOM     48  C   UNK A   0      15.292  -3.319 -20.325 -0.53 -0.00    +0.002 A 
+DOCKED: BRANCH  47  49
+DOCKED: ATOM     49  C   UNK A   0      15.301  -4.683 -22.381 -0.45 +0.02    -0.015 A 
+DOCKED: ATOM     50  C   UNK A   0      15.348  -5.908 -21.712 -0.41 -0.01    +0.006 A 
+DOCKED: ATOM     51  C   UNK A   0      15.498  -7.100 -22.426 -0.39 +0.00    -0.001 A 
+DOCKED: ATOM     52  C   UNK A   0      15.584  -7.076 -23.821 -0.27 +0.00    -0.002 A 
+DOCKED: ATOM     53  C   UNK A   0      15.526  -5.855 -24.489 -0.23 +0.00    -0.001 A 
+DOCKED: ATOM     54  C   UNK A   0      15.385  -4.667 -23.770 -0.36 -0.00    +0.006 A 
+DOCKED: ENDBRANCH  47  49
+DOCKED: ENDBRANCH  43  44
+DOCKED: ENDBRANCH   1  43
+DOCKED: TORSDOF 18
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   4 / 10
+Time taken for this run:   0.128s
+
+DOCKED: MODEL        4
+DOCKED: USER    Run = 4
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    =  -6.06 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -11.43 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -11.83 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  +0.40 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -7.17 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +5.37 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -7.17 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  Name = 2xy9_ligand
+DOCKED: REMARK  18 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: CBP_6  and  CBB_7
+DOCKED: REMARK    2  A    between atoms: CBB_7  and  OBJ_8
+DOCKED: REMARK    3  A    between atoms: OBJ_8  and  CBM_9
+DOCKED: REMARK    4  A    between atoms: NBI_11  and  CBX_12
+DOCKED: REMARK    5  A    between atoms: CBX_12  and  CBE_13
+DOCKED: REMARK    6  A    between atoms: CBX_12  and  PBY_20
+DOCKED: REMARK    7  A    between atoms: CBE_13  and  CBQ_14
+DOCKED: REMARK    8  A    between atoms: PBY_20  and  CBF_36
+DOCKED: REMARK    9  A    between atoms: N_23  and  CA_24
+DOCKED: REMARK   10  A    between atoms: CA_24  and  C_25
+DOCKED: REMARK   11  A    between atoms: CA_24  and  CB_28
+DOCKED: REMARK   12  A    between atoms: CB_28  and  CG_29
+DOCKED: REMARK   13  A    between atoms: CZ_32  and  OH_33
+DOCKED: REMARK   14  A    between atoms: CBF_36  and  CBV_37
+DOCKED: REMARK   15  A    between atoms: CBV_37  and  CBN_38
+DOCKED: REMARK   16  A    between atoms: CBV_37  and  CBC_40
+DOCKED: REMARK   17  A    between atoms: CBC_40  and  CBS_41
+DOCKED: REMARK   18  A    between atoms: CBU_45  and  CBT_46
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNK A   0      13.859  -1.989 -13.632 -0.33 -0.04    +0.137 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: ATOM      2  C   UNK A   0      13.600  -0.516 -13.259 -0.16 -0.05    +0.185 C 
+DOCKED: ATOM      3  O   UNK A   0      14.291   0.381 -13.743 -0.15 +0.13    -0.396 OA
+DOCKED: ATOM      4  N   TYR A   1      12.625  -0.299 -12.374 -0.12 +0.06    -0.269 N 
+DOCKED: ATOM      5  H   TYR A   1      12.044  -1.081 -12.071 -0.00 -0.04    +0.188 HD
+DOCKED: BRANCH   4   6
+DOCKED: ATOM      6  CA  TYR A   1      12.366   1.039 -11.824 -0.09 -0.04    +0.177 C 
+DOCKED: BRANCH   6   7
+DOCKED: ATOM      7  C   TYR A   1      11.817   0.851 -10.392 -0.18 -0.01    +0.062 C 
+DOCKED: ATOM      8  OXT TYR A   1      11.807   1.831  -9.617 -0.20 +0.10    -0.567 OA
+DOCKED: ATOM      9  O   TYR A   1      11.475  -0.303 -10.076 -0.18 +0.05    -0.567 OA
+DOCKED: ENDBRANCH   6   7
+DOCKED: BRANCH   6  10
+DOCKED: ATOM     10  CB  TYR A   1      11.395   1.858 -12.683 -0.02 -0.03    +0.100 C 
+DOCKED: BRANCH  10  11
+DOCKED: ATOM     11  CG  TYR A   1      10.345   1.073 -13.477 -0.02 +0.01    -0.050 A 
+DOCKED: ATOM     12  CD2 TYR A   1      10.286   1.190 -14.869 -0.07 +0.00    -0.016 A 
+DOCKED: ATOM     13  CE2 TYR A   1       9.318   0.491 -15.591 -0.20 -0.00    +0.013 A 
+DOCKED: ATOM     14  CZ  TYR A   1       8.406  -0.324 -14.923 -0.23 -0.03    +0.081 A 
+DOCKED: ATOM     15  CE1 TYR A   1       8.458  -0.443 -13.532 -0.10 -0.00    +0.013 A 
+DOCKED: ATOM     16  CD1 TYR A   1       9.426   0.263 -12.808 -0.04 +0.00    -0.016 A 
+DOCKED: BRANCH  14  17
+DOCKED: ATOM     17  OH  TYR A   1       7.461  -1.000 -15.639 -0.35 +0.19    -0.338 OA
+DOCKED: ATOM     18  HH  TYR A   1       7.199  -1.788 -15.157 -0.57 -0.19    +0.246 HD
+DOCKED: ENDBRANCH  14  17
+DOCKED: ENDBRANCH  10  11
+DOCKED: ENDBRANCH   6  10
+DOCKED: ENDBRANCH   4   6
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  19
+DOCKED: ATOM     19  C   UNK A   0      15.107  -2.110 -14.533 -0.44 -0.05    +0.137 C 
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     20  P   UNK A   0      14.747  -2.073 -16.312 -0.29 -0.00    +0.015 P 
+DOCKED: ATOM     21  O   UNK A   0      13.610  -2.928 -16.732 -0.28 +0.16    -0.617 OA
+DOCKED: ATOM     22  O   UNK A   0      16.126  -2.427 -17.017 -0.92 +0.15    -0.617 OA
+DOCKED: BRANCH  20  23
+DOCKED: ATOM     23  C   UNK A   0      14.425  -0.336 -16.818 -0.19 -0.06    +0.196 C 
+DOCKED: BRANCH  23  25
+DOCKED: ATOM     24  C   UNK A   0      16.669   0.668 -16.521 -0.44 -0.15    +0.323 C 
+DOCKED: ATOM     25  N   UNK A   0      15.403   0.516 -16.134 -0.20 +0.09    -0.242 N 
+DOCKED: ATOM     26  H   UNK A   0      15.095   1.026 -15.305 +0.01 -0.06    +0.189 HD
+DOCKED: ATOM     27  O   UNK A   0      17.167   0.103 -17.500 -0.58 +0.20    -0.377 OA
+DOCKED: BRANCH  24  28
+DOCKED: ATOM     28  O   UNK A   0      17.398   1.494 -15.722 -0.44 +0.12    -0.251 OA
+DOCKED: BRANCH  28  29
+DOCKED: ATOM     29  C   UNK A   0      16.837   2.686 -15.142 -0.32 -0.12    +0.267 C 
+DOCKED: BRANCH  29  31
+DOCKED: ATOM     30  C   UNK A   0      15.309   3.262 -13.358 -0.17 +0.00    -0.002 A 
+DOCKED: ATOM     31  C   UNK A   0      16.425   2.548 -13.806 -0.29 +0.01    -0.013 A 
+DOCKED: ATOM     32  C   UNK A   0      17.089   1.692 -12.931 -0.45 +0.00    -0.002 A 
+DOCKED: ATOM     33  C   UNK A   0      16.647   1.559 -11.613 -0.48 +0.00    -0.009 A 
+DOCKED: ATOM     34  C   UNK A   0      15.540   2.275 -11.163 -0.32 +0.01    -0.013 A 
+DOCKED: ATOM     35  C   UNK A   0      14.869   3.125 -12.037 -0.18 +0.00    -0.009 A 
+DOCKED: ENDBRANCH  29  31
+DOCKED: ENDBRANCH  28  29
+DOCKED: ENDBRANCH  24  28
+DOCKED: ENDBRANCH  23  25
+DOCKED: BRANCH  23  36
+DOCKED: ATOM     36  C   UNK A   0      14.549  -0.125 -18.334 -0.31 -0.03    +0.114 C 
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   UNK A   0      14.034  -1.351 -19.109 -0.31 +0.01    -0.039 A 
+DOCKED: ATOM     38  C   UNK A   0      12.669  -1.648 -19.135 -0.32 +0.00    -0.004 A 
+DOCKED: ATOM     39  C   UNK A   0      12.203  -2.765 -19.832 -0.42 +0.00    -0.009 A 
+DOCKED: ATOM     40  C   UNK A   0      13.108  -3.587 -20.510 -0.43 +0.01    -0.013 A 
+DOCKED: ATOM     41  C   UNK A   0      14.472  -3.295 -20.482 -0.46 +0.01    -0.009 A 
+DOCKED: ATOM     42  C   UNK A   0      14.937  -2.180 -19.780 -0.46 +0.00    -0.004 A 
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  23  36
+DOCKED: ENDBRANCH  20  23
+DOCKED: ENDBRANCH  19  20
+DOCKED: ENDBRANCH   1  19
+DOCKED: BRANCH   1  43
+DOCKED: ATOM     43  C   UNK A   0      12.626  -2.663 -14.261 -0.22 -0.04    +0.145 C 
+DOCKED: BRANCH  43  44
+DOCKED: ATOM     44  C   UNK A   0      11.455  -2.966 -13.304 -0.18 -0.04    +0.141 A 
+DOCKED: ATOM     45  O   UNK A   0      11.562  -2.640 -11.990 -0.51 +0.03    -0.167 OA
+DOCKED: ATOM     46  N   UNK A   0      10.367  -3.044 -11.381 -0.78 +0.03    -0.152 NA
+DOCKED: ATOM     47  C   UNK A   0       9.600  -3.584 -12.320 -0.20 -0.02    +0.043 A 
+DOCKED: ATOM     48  C   UNK A   0      10.261  -3.534 -13.493 -0.17 -0.00    +0.002 A 
+DOCKED: BRANCH  47  49
+DOCKED: ATOM     49  C   UNK A   0       8.321  -4.091 -12.074 -0.22 +0.01    -0.015 A 
+DOCKED: ATOM     50  C   UNK A   0       7.272  -3.774 -12.941 -0.27 -0.00    +0.006 A 
+DOCKED: ATOM     51  C   UNK A   0       5.988  -4.276 -12.711 -0.39 +0.00    -0.001 A 
+DOCKED: ATOM     52  C   UNK A   0       5.747  -5.116 -11.620 -0.36 +0.00    -0.002 A 
+DOCKED: ATOM     53  C   UNK A   0       6.795  -5.441 -10.763 -0.32 +0.00    -0.001 A 
+DOCKED: ATOM     54  C   UNK A   0       8.074  -4.929 -10.991 -0.30 -0.00    +0.006 A 
+DOCKED: ENDBRANCH  47  49
+DOCKED: ENDBRANCH  43  44
+DOCKED: ENDBRANCH   1  43
+DOCKED: TORSDOF 18
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   5 / 10
+Time taken for this run:   0.128s
+
+DOCKED: MODEL        5
+DOCKED: USER    Run = 5
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    =  -9.71 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -15.08 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -16.26 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  +1.18 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -2.73 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +5.37 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -2.73 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  Name = 2xy9_ligand
+DOCKED: REMARK  18 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: CBP_6  and  CBB_7
+DOCKED: REMARK    2  A    between atoms: CBB_7  and  OBJ_8
+DOCKED: REMARK    3  A    between atoms: OBJ_8  and  CBM_9
+DOCKED: REMARK    4  A    between atoms: NBI_11  and  CBX_12
+DOCKED: REMARK    5  A    between atoms: CBX_12  and  CBE_13
+DOCKED: REMARK    6  A    between atoms: CBX_12  and  PBY_20
+DOCKED: REMARK    7  A    between atoms: CBE_13  and  CBQ_14
+DOCKED: REMARK    8  A    between atoms: PBY_20  and  CBF_36
+DOCKED: REMARK    9  A    between atoms: N_23  and  CA_24
+DOCKED: REMARK   10  A    between atoms: CA_24  and  C_25
+DOCKED: REMARK   11  A    between atoms: CA_24  and  CB_28
+DOCKED: REMARK   12  A    between atoms: CB_28  and  CG_29
+DOCKED: REMARK   13  A    between atoms: CZ_32  and  OH_33
+DOCKED: REMARK   14  A    between atoms: CBF_36  and  CBV_37
+DOCKED: REMARK   15  A    between atoms: CBV_37  and  CBN_38
+DOCKED: REMARK   16  A    between atoms: CBV_37  and  CBC_40
+DOCKED: REMARK   17  A    between atoms: CBC_40  and  CBS_41
+DOCKED: REMARK   18  A    between atoms: CBU_45  and  CBT_46
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNK A   0      13.644  -3.629 -24.354 +0.07 -0.06    +0.137 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: ATOM      2  C   UNK A   0      14.792  -3.431 -25.364 -0.33 -0.09    +0.185 C 
+DOCKED: ATOM      3  O   UNK A   0      15.866  -2.950 -25.001 -0.48 +0.28    -0.396 OA
+DOCKED: ATOM      4  N   TYR A   1      14.528  -3.774 -26.626 -0.37 +0.10    -0.269 N 
+DOCKED: ATOM      5  H   TYR A   1      13.644  -4.236 -26.842 -0.00 -0.04    +0.188 HD
+DOCKED: BRANCH   4   6
+DOCKED: ATOM      6  CA  TYR A   1      15.479  -3.507 -27.714 -0.44 -0.09    +0.177 C 
+DOCKED: BRANCH   6   7
+DOCKED: ATOM      7  C   TYR A   1      15.392  -2.000 -28.043 -0.54 -0.03    +0.062 C 
+DOCKED: ATOM      8  OXT TYR A   1      14.393  -1.575 -28.662 -0.74 +0.16    -0.567 OA
+DOCKED: ATOM      9  O   TYR A   1      16.373  -1.306 -27.724 -0.73 +0.44    -0.567 OA
+DOCKED: ENDBRANCH   6   7
+DOCKED: BRANCH   6  10
+DOCKED: ATOM     10  CB  TYR A   1      15.211  -4.359 -28.962 -0.41 -0.04    +0.100 C 
+DOCKED: BRANCH  10  11
+DOCKED: ATOM     11  CG  TYR A   1      16.433  -4.773 -29.790 -0.26 +0.02    -0.050 A 
+DOCKED: ATOM     12  CD2 TYR A   1      17.716  -4.389 -29.388 -0.34 +0.01    -0.016 A 
+DOCKED: ATOM     13  CE2 TYR A   1      18.826  -4.747 -30.152 -0.37 -0.00    +0.013 A 
+DOCKED: ATOM     14  CZ  TYR A   1      18.657  -5.488 -31.320 -0.35 -0.00    +0.081 A 
+DOCKED: ATOM     15  CE1 TYR A   1      17.378  -5.873 -31.729 -0.39 -0.00    +0.013 A 
+DOCKED: ATOM     16  CD1 TYR A   1      16.263  -5.508 -30.964 -0.30 +0.00    -0.016 A 
+DOCKED: BRANCH  14  17
+DOCKED: ATOM     17  OH  TYR A   1      19.751  -5.830 -32.063 -0.40 -0.03    -0.338 OA
+DOCKED: ATOM     18  HH  TYR A   1      19.981  -6.745 -31.888 -0.01 -0.09    +0.246 HD
+DOCKED: ENDBRANCH  14  17
+DOCKED: ENDBRANCH  10  11
+DOCKED: ENDBRANCH   6  10
+DOCKED: ENDBRANCH   4   6
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  19
+DOCKED: ATOM     19  C   UNK A   0      14.059  -4.624 -23.249 -0.46 -0.09    +0.137 C 
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     20  P   UNK A   0      14.460  -3.842 -21.660 -0.64 -0.01    +0.015 P 
+DOCKED: ATOM     21  O   UNK A   0      14.960  -2.449 -21.762 -1.05 +0.39    -0.617 OA
+DOCKED: ATOM     22  O   UNK A   0      15.467  -4.847 -20.951 -0.55 +0.91    -0.617 OA
+DOCKED: BRANCH  20  23
+DOCKED: ATOM     23  C   UNK A   0      12.970  -3.880 -20.585 -0.52 -0.12    +0.196 C 
+DOCKED: BRANCH  23  25
+DOCKED: ATOM     24  C   UNK A   0      12.537  -4.851 -18.349 -0.47 -0.16    +0.323 C 
+DOCKED: ATOM     25  N   UNK A   0      13.241  -4.804 -19.479 -0.36 +0.18    -0.242 N 
+DOCKED: ATOM     26  H   UNK A   0      14.021  -5.455 -19.582 -0.57 -0.24    +0.189 HD
+DOCKED: ATOM     27  O   UNK A   0      11.577  -4.115 -18.098 -0.43 +0.14    -0.377 OA
+DOCKED: BRANCH  24  28
+DOCKED: ATOM     28  O   UNK A   0      12.983  -5.778 -17.456 -0.60 +0.12    -0.251 OA
+DOCKED: BRANCH  28  29
+DOCKED: ATOM     29  C   UNK A   0      12.130  -6.325 -16.434 -0.52 -0.09    +0.267 C 
+DOCKED: BRANCH  29  31
+DOCKED: ATOM     30  C   UNK A   0      12.520  -4.271 -15.218 -0.24 +0.00    -0.002 A 
+DOCKED: ATOM     31  C   UNK A   0      12.145  -5.618 -15.220 -0.44 +0.00    -0.013 A 
+DOCKED: ATOM     32  C   UNK A   0      11.768  -6.227 -14.025 -0.48 +0.00    -0.002 A 
+DOCKED: ATOM     33  C   UNK A   0      11.775  -5.497 -12.835 -0.34 +0.00    -0.009 A 
+DOCKED: ATOM     34  C   UNK A   0      12.154  -4.156 -12.831 -0.33 +0.00    -0.013 A 
+DOCKED: ATOM     35  C   UNK A   0      12.524  -3.543 -14.024 -0.27 +0.00    -0.009 A 
+DOCKED: ENDBRANCH  29  31
+DOCKED: ENDBRANCH  28  29
+DOCKED: ENDBRANCH  24  28
+DOCKED: ENDBRANCH  23  25
+DOCKED: BRANCH  23  36
+DOCKED: ATOM     36  C   UNK A   0      12.615  -2.501 -20.010 -0.41 -0.05    +0.114 C 
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   UNK A   0      13.841  -1.841 -19.352 -0.33 +0.02    -0.039 A 
+DOCKED: ATOM     38  C   UNK A   0      14.083  -0.476 -19.517 -0.35 +0.00    -0.004 A 
+DOCKED: ATOM     39  C   UNK A   0      15.200   0.120 -18.927 -0.33 +0.00    -0.009 A 
+DOCKED: ATOM     40  C   UNK A   0      16.077  -0.655 -18.163 -0.39 +0.01    -0.013 A 
+DOCKED: ATOM     41  C   UNK A   0      15.840  -2.020 -17.999 -0.42 +0.01    -0.009 A 
+DOCKED: ATOM     42  C   UNK A   0      14.725  -2.615 -18.595 -0.35 +0.00    -0.004 A 
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  23  36
+DOCKED: ENDBRANCH  20  23
+DOCKED: ENDBRANCH  19  20
+DOCKED: ENDBRANCH   1  19
+DOCKED: BRANCH   1  43
+DOCKED: ATOM     43  C   UNK A   0      12.326  -4.039 -25.035 -0.34 -0.03    +0.145 C 
+DOCKED: BRANCH  43  44
+DOCKED: ATOM     44  C   UNK A   0      12.159  -5.541 -25.344 -0.41 +0.02    +0.141 A 
+DOCKED: ATOM     45  O   UNK A   0      11.366  -5.928 -26.376 -1.59 -0.18    -0.167 OA
+DOCKED: ATOM     46  N   UNK A   0      11.399  -7.329 -26.400 -0.70 -0.22    -0.152 NA
+DOCKED: ATOM     47  C   UNK A   0      12.190  -7.729 -25.412 -0.31 +0.01    +0.043 A 
+DOCKED: ATOM     48  C   UNK A   0      12.657  -6.640 -24.770 -0.27 -0.00    +0.002 A 
+DOCKED: BRANCH  47  49
+DOCKED: ATOM     49  C   UNK A   0      12.467  -9.072 -25.141 -0.23 +0.00    -0.015 A 
+DOCKED: ATOM     50  C   UNK A   0      13.784  -9.474 -24.904 -0.16 -0.00    +0.006 A 
+DOCKED: ATOM     51  C   UNK A   0      14.076 -10.813 -24.629 -0.17 +0.00    -0.001 A 
+DOCKED: ATOM     52  C   UNK A   0      13.049 -11.758 -24.568 -0.25 +0.00    -0.002 A 
+DOCKED: ATOM     53  C   UNK A   0      11.735 -11.355 -24.792 -0.27 +0.00    -0.001 A 
+DOCKED: ATOM     54  C   UNK A   0      11.449 -10.019 -25.077 -0.33 +0.00    +0.006 A 
+DOCKED: ENDBRANCH  47  49
+DOCKED: ENDBRANCH  43  44
+DOCKED: ENDBRANCH   1  43
+DOCKED: TORSDOF 18
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   6 / 10
+Time taken for this run:   0.128s
+
+DOCKED: MODEL        6
+DOCKED: USER    Run = 6
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    =  -5.70 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -11.07 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -10.78 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  -0.29 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -6.37 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +5.37 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -6.37 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  Name = 2xy9_ligand
+DOCKED: REMARK  18 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: CBP_6  and  CBB_7
+DOCKED: REMARK    2  A    between atoms: CBB_7  and  OBJ_8
+DOCKED: REMARK    3  A    between atoms: OBJ_8  and  CBM_9
+DOCKED: REMARK    4  A    between atoms: NBI_11  and  CBX_12
+DOCKED: REMARK    5  A    between atoms: CBX_12  and  CBE_13
+DOCKED: REMARK    6  A    between atoms: CBX_12  and  PBY_20
+DOCKED: REMARK    7  A    between atoms: CBE_13  and  CBQ_14
+DOCKED: REMARK    8  A    between atoms: PBY_20  and  CBF_36
+DOCKED: REMARK    9  A    between atoms: N_23  and  CA_24
+DOCKED: REMARK   10  A    between atoms: CA_24  and  C_25
+DOCKED: REMARK   11  A    between atoms: CA_24  and  CB_28
+DOCKED: REMARK   12  A    between atoms: CB_28  and  CG_29
+DOCKED: REMARK   13  A    between atoms: CZ_32  and  OH_33
+DOCKED: REMARK   14  A    between atoms: CBF_36  and  CBV_37
+DOCKED: REMARK   15  A    between atoms: CBV_37  and  CBN_38
+DOCKED: REMARK   16  A    between atoms: CBV_37  and  CBC_40
+DOCKED: REMARK   17  A    between atoms: CBC_40  and  CBS_41
+DOCKED: REMARK   18  A    between atoms: CBU_45  and  CBT_46
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNK A   0       9.844   3.492 -14.109 -0.03 -0.04    +0.137 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: ATOM      2  C   UNK A   0      10.235   3.108 -12.668 -0.01 -0.06    +0.185 C 
+DOCKED: ATOM      3  O   UNK A   0      11.339   2.617 -12.431 -0.03 +0.11    -0.396 OA
+DOCKED: ATOM      4  N   TYR A   1       9.303   3.308 -11.734 -0.03 +0.08    -0.269 N 
+DOCKED: ATOM      5  H   TYR A   1       8.439   3.788 -11.989 +0.00 -0.07    +0.188 HD
+DOCKED: BRANCH   4   6
+DOCKED: ATOM      6  CA  TYR A   1       9.488   2.857 -10.348 -0.10 -0.03    +0.177 C 
+DOCKED: BRANCH   6   7
+DOCKED: ATOM      7  C   TYR A   1       8.333   3.450  -9.512 -0.15 +0.01    +0.062 C 
+DOCKED: ATOM      8  OXT TYR A   1       8.448   3.489  -8.268 -0.81 -0.27    -0.567 OA
+DOCKED: ATOM      9  O   TYR A   1       7.314   3.794 -10.138 -0.18 -0.09    -0.567 OA
+DOCKED: ENDBRANCH   6   7
+DOCKED: BRANCH   6  10
+DOCKED: ATOM     10  CB  TYR A   1      10.851   3.260  -9.769 -0.15 -0.02    +0.100 C 
+DOCKED: BRANCH  10  11
+DOCKED: ATOM     11  CG  TYR A   1      11.825   2.122  -9.442 -0.19 +0.01    -0.050 A 
+DOCKED: ATOM     12  CD2 TYR A   1      11.841   0.965 -10.226 -0.16 +0.00    -0.016 A 
+DOCKED: ATOM     13  CE2 TYR A   1      12.713  -0.078  -9.917 -0.15 -0.00    +0.013 A 
+DOCKED: ATOM     14  CZ  TYR A   1      13.570   0.031  -8.823 -0.37 -0.00    +0.081 A 
+DOCKED: ATOM     15  CE1 TYR A   1      13.557   1.184  -8.034 -0.46 -0.00    +0.013 A 
+DOCKED: ATOM     16  CD1 TYR A   1      12.677   2.228  -8.341 -0.33 +0.00    -0.016 A 
+DOCKED: BRANCH  14  17
+DOCKED: ATOM     17  OH  TYR A   1      14.416  -0.998  -8.528 -1.15 -0.01    -0.338 OA
+DOCKED: ATOM     18  HH  TYR A   1      14.905  -1.245  -9.316 -0.03 -0.02    +0.246 HD
+DOCKED: ENDBRANCH  14  17
+DOCKED: ENDBRANCH  10  11
+DOCKED: ENDBRANCH   6  10
+DOCKED: ENDBRANCH   4   6
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  19
+DOCKED: ATOM     19  C   UNK A   0       9.531   2.230 -14.942 -0.09 -0.03    +0.137 C 
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     20  P   UNK A   0       8.830   0.860 -13.979 -0.11 -0.00    +0.015 P 
+DOCKED: ATOM     21  O   UNK A   0       8.017  -0.099 -14.765 -0.26 +0.23    -0.617 OA
+DOCKED: ATOM     22  O   UNK A   0       8.047   1.556 -12.785 -0.07 +0.17    -0.617 OA
+DOCKED: BRANCH  20  23
+DOCKED: ATOM     23  C   UNK A   0      10.197  -0.040 -13.143 -0.06 -0.05    +0.196 C 
+DOCKED: BRANCH  23  25
+DOCKED: ATOM     24  C   UNK A   0      10.272  -1.990 -11.618 -0.12 -0.06    +0.323 C 
+DOCKED: ATOM     25  N   UNK A   0       9.595  -1.022 -12.235 -0.09 +0.06    -0.242 N 
+DOCKED: ATOM     26  H   UNK A   0       8.590  -0.961 -12.065 +0.01 -0.05    +0.189 HD
+DOCKED: ATOM     27  O   UNK A   0      11.487  -2.176 -11.745 -0.60 +0.05    -0.377 OA
+DOCKED: BRANCH  24  28
+DOCKED: ATOM     28  O   UNK A   0       9.501  -2.795 -10.837 -0.70 +0.06    -0.251 OA
+DOCKED: BRANCH  28  29
+DOCKED: ATOM     29  C   UNK A   0       9.455  -4.222 -11.023 -0.33 -0.12    +0.267 C 
+DOCKED: BRANCH  29  31
+DOCKED: ATOM     30  C   UNK A   0       9.385  -4.689 -13.395 -0.28 +0.00    -0.002 A 
+DOCKED: ATOM     31  C   UNK A   0      10.091  -4.680 -12.188 -0.32 +0.01    -0.013 A 
+DOCKED: ATOM     32  C   UNK A   0      11.420  -5.099 -12.168 -0.34 +0.00    -0.002 A 
+DOCKED: ATOM     33  C   UNK A   0      12.034  -5.533 -13.344 -0.43 +0.00    -0.009 A 
+DOCKED: ATOM     34  C   UNK A   0      11.329  -5.548 -14.546 -0.40 +0.01    -0.013 A 
+DOCKED: ATOM     35  C   UNK A   0      10.005  -5.123 -14.571 -0.33 +0.01    -0.009 A 
+DOCKED: ENDBRANCH  29  31
+DOCKED: ENDBRANCH  28  29
+DOCKED: ENDBRANCH  24  28
+DOCKED: ENDBRANCH  23  25
+DOCKED: BRANCH  23  36
+DOCKED: ATOM     36  C   UNK A   0      11.121  -0.769 -14.129 -0.08 -0.03    +0.114 C 
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   UNK A   0      12.602  -0.552 -13.767 -0.07 +0.01    -0.039 A 
+DOCKED: ATOM     38  C   UNK A   0      13.081   0.731 -13.492 -0.05 +0.00    -0.004 A 
+DOCKED: ATOM     39  C   UNK A   0      14.426   0.929 -13.172 -0.12 +0.00    -0.009 A 
+DOCKED: ATOM     40  C   UNK A   0      15.295  -0.164 -13.123 -0.29 +0.01    -0.013 A 
+DOCKED: ATOM     41  C   UNK A   0      14.820  -1.447 -13.400 -0.37 +0.00    -0.009 A 
+DOCKED: ATOM     42  C   UNK A   0      13.476  -1.641 -13.726 -0.20 +0.00    -0.004 A 
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  23  36
+DOCKED: ENDBRANCH  20  23
+DOCKED: ENDBRANCH  19  20
+DOCKED: ENDBRANCH   1  19
+DOCKED: BRANCH   1  43
+DOCKED: ATOM     43  C   UNK A   0      10.898   4.385 -14.787 -0.04 -0.04    +0.145 C 
+DOCKED: BRANCH  43  44
+DOCKED: ATOM     44  C   UNK A   0      11.989   3.654 -15.596 -0.07 -0.01    +0.141 A 
+DOCKED: ATOM     45  O   UNK A   0      11.644   2.962 -16.712 -0.76 -0.07    -0.167 OA
+DOCKED: ATOM     46  N   UNK A   0      12.827   2.403 -17.215 -0.44 -0.06    -0.152 NA
+DOCKED: ATOM     47  C   UNK A   0      13.818   2.768 -16.411 -0.09 -0.00    +0.043 A 
+DOCKED: ATOM     48  C   UNK A   0      13.309   3.533 -15.425 -0.05 -0.00    +0.002 A 
+DOCKED: BRANCH  47  49
+DOCKED: ATOM     49  C   UNK A   0      15.151   2.399 -16.612 -0.15 +0.00    -0.015 A 
+DOCKED: ATOM     50  C   UNK A   0      15.463   1.076 -16.933 -0.21 -0.00    +0.006 A 
+DOCKED: ATOM     51  C   UNK A   0      16.791   0.692 -17.140 -0.42 +0.00    -0.001 A 
+DOCKED: ATOM     52  C   UNK A   0      17.817   1.635 -17.045 -0.51 +0.00    -0.002 A 
+DOCKED: ATOM     53  C   UNK A   0      17.505   2.957 -16.735 -0.37 +0.00    -0.001 A 
+DOCKED: ATOM     54  C   UNK A   0      16.178   3.333 -16.520 -0.28 -0.00    +0.006 A 
+DOCKED: ENDBRANCH  47  49
+DOCKED: ENDBRANCH  43  44
+DOCKED: ENDBRANCH   1  43
+DOCKED: TORSDOF 18
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   7 / 10
+Time taken for this run:   0.128s
+
+DOCKED: MODEL        7
+DOCKED: USER    Run = 7
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    =  -5.73 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -11.10 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -11.51 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  +0.41 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -6.18 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +5.37 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -6.18 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  Name = 2xy9_ligand
+DOCKED: REMARK  18 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: CBP_6  and  CBB_7
+DOCKED: REMARK    2  A    between atoms: CBB_7  and  OBJ_8
+DOCKED: REMARK    3  A    between atoms: OBJ_8  and  CBM_9
+DOCKED: REMARK    4  A    between atoms: NBI_11  and  CBX_12
+DOCKED: REMARK    5  A    between atoms: CBX_12  and  CBE_13
+DOCKED: REMARK    6  A    between atoms: CBX_12  and  PBY_20
+DOCKED: REMARK    7  A    between atoms: CBE_13  and  CBQ_14
+DOCKED: REMARK    8  A    between atoms: PBY_20  and  CBF_36
+DOCKED: REMARK    9  A    between atoms: N_23  and  CA_24
+DOCKED: REMARK   10  A    between atoms: CA_24  and  C_25
+DOCKED: REMARK   11  A    between atoms: CA_24  and  CB_28
+DOCKED: REMARK   12  A    between atoms: CB_28  and  CG_29
+DOCKED: REMARK   13  A    between atoms: CZ_32  and  OH_33
+DOCKED: REMARK   14  A    between atoms: CBF_36  and  CBV_37
+DOCKED: REMARK   15  A    between atoms: CBV_37  and  CBN_38
+DOCKED: REMARK   16  A    between atoms: CBV_37  and  CBC_40
+DOCKED: REMARK   17  A    between atoms: CBC_40  and  CBS_41
+DOCKED: REMARK   18  A    between atoms: CBU_45  and  CBT_46
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNK A   0      10.863   1.481 -16.847 -0.21 +0.03    +0.137 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: ATOM      2  C   UNK A   0      11.477   0.122 -17.236 -0.23 +0.01    +0.185 C 
+DOCKED: ATOM      3  O   UNK A   0      11.457  -0.259 -18.407 -0.11 -0.04    -0.396 OA
+DOCKED: ATOM      4  N   TYR A   1      11.982  -0.601 -16.235 -0.12 +0.05    -0.269 N 
+DOCKED: ATOM      5  H   TYR A   1      12.032  -0.192 -15.302 +0.01 -0.04    +0.188 HD
+DOCKED: BRANCH   4   6
+DOCKED: ATOM      6  CA  TYR A   1      12.468  -1.972 -16.441 -0.19 -0.04    +0.177 C 
+DOCKED: BRANCH   6   7
+DOCKED: ATOM      7  C   TYR A   1      12.774  -2.568 -15.049 -0.21 -0.02    +0.062 C 
+DOCKED: ATOM      8  OXT TYR A   1      12.901  -3.806 -14.938 -0.32 +0.10    -0.567 OA
+DOCKED: ATOM      9  O   TYR A   1      12.808  -1.766 -14.098 -0.16 +0.15    -0.567 OA
+DOCKED: ENDBRANCH   6   7
+DOCKED: BRANCH   6  10
+DOCKED: ATOM     10  CB  TYR A   1      13.703  -2.035 -17.351 -0.25 -0.03    +0.100 C 
+DOCKED: BRANCH  10  11
+DOCKED: ATOM     11  CG  TYR A   1      13.543  -2.782 -18.680 -0.30 +0.02    -0.050 A 
+DOCKED: ATOM     12  CD2 TYR A   1      14.669  -3.099 -19.446 -0.41 +0.01    -0.016 A 
+DOCKED: ATOM     13  CE2 TYR A   1      14.523  -3.761 -20.665 -0.47 -0.01    +0.013 A 
+DOCKED: ATOM     14  CZ  TYR A   1      13.253  -4.106 -21.122 -0.44 -0.06    +0.081 A 
+DOCKED: ATOM     15  CE1 TYR A   1      12.124  -3.791 -20.362 -0.50 -0.01    +0.013 A 
+DOCKED: ATOM     16  CD1 TYR A   1      12.271  -3.121 -19.142 -0.41 +0.01    -0.016 A 
+DOCKED: BRANCH  14  17
+DOCKED: ATOM     17  OH  TYR A   1      13.122  -4.751 -22.318 -0.51 +0.25    -0.338 OA
+DOCKED: ATOM     18  HH  TYR A   1      12.523  -5.493 -22.216 -0.60 -0.23    +0.246 HD
+DOCKED: ENDBRANCH  14  17
+DOCKED: ENDBRANCH  10  11
+DOCKED: ENDBRANCH   6  10
+DOCKED: ENDBRANCH   4   6
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  19
+DOCKED: ATOM     19  C   UNK A   0      10.917   1.685 -15.318 -0.09 -0.01    +0.137 C 
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     20  P   UNK A   0      12.548   2.181 -14.692 -0.04 -0.00    +0.015 P 
+DOCKED: ATOM     21  O   UNK A   0      13.207   1.182 -13.817 -0.06 +0.16    -0.617 OA
+DOCKED: ATOM     22  O   UNK A   0      12.312   3.595 -14.008 -0.03 +0.18    -0.617 OA
+DOCKED: BRANCH  20  23
+DOCKED: ATOM     23  C   UNK A   0      13.643   2.560 -16.120 -0.10 -0.02    +0.196 C 
+DOCKED: BRANCH  23  25
+DOCKED: ATOM     24  C   UNK A   0      13.858   4.532 -17.601 -0.25 +0.02    +0.323 C 
+DOCKED: ATOM     25  N   UNK A   0      13.461   3.975 -16.458 -0.12 +0.01    -0.242 N 
+DOCKED: ATOM     26  H   UNK A   0      13.000   4.574 -15.771 +0.00 -0.04    +0.189 HD
+DOCKED: ATOM     27  O   UNK A   0      14.432   3.920 -18.508 -0.35 -0.05    -0.377 OA
+DOCKED: BRANCH  24  28
+DOCKED: ATOM     28  O   UNK A   0      13.600   5.865 -17.688 -0.30 +0.03    -0.251 OA
+DOCKED: BRANCH  28  29
+DOCKED: ATOM     29  C   UNK A   0      14.356   6.839 -16.945 -0.30 -0.18    +0.267 C 
+DOCKED: BRANCH  29  31
+DOCKED: ATOM     30  C   UNK A   0      14.936   6.234 -14.676 -0.24 +0.00    -0.002 A 
+DOCKED: ATOM     31  C   UNK A   0      15.274   6.294 -16.032 -0.21 +0.01    -0.013 A 
+DOCKED: ATOM     32  C   UNK A   0      16.500   5.787 -16.456 -0.38 +0.00    -0.002 A 
+DOCKED: ATOM     33  C   UNK A   0      17.387   5.234 -15.530 -0.49 +0.01    -0.009 A 
+DOCKED: ATOM     34  C   UNK A   0      17.053   5.179 -14.179 -0.47 +0.01    -0.013 A 
+DOCKED: ATOM     35  C   UNK A   0      15.826   5.677 -13.752 -0.31 +0.01    -0.009 A 
+DOCKED: ENDBRANCH  29  31
+DOCKED: ENDBRANCH  28  29
+DOCKED: ENDBRANCH  24  28
+DOCKED: ENDBRANCH  23  25
+DOCKED: BRANCH  23  36
+DOCKED: ATOM     36  C   UNK A   0      15.126   2.302 -15.817 -0.15 -0.03    +0.114 C 
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   UNK A   0      15.668   1.129 -16.654 -0.22 +0.01    -0.039 A 
+DOCKED: ATOM     38  C   UNK A   0      15.406   1.059 -18.024 -0.29 +0.00    -0.004 A 
+DOCKED: ATOM     39  C   UNK A   0      15.892  -0.010 -18.781 -0.31 +0.01    -0.009 A 
+DOCKED: ATOM     40  C   UNK A   0      16.647  -1.011 -18.164 -0.35 +0.01    -0.013 A 
+DOCKED: ATOM     41  C   UNK A   0      16.907  -0.945 -16.794 -0.32 +0.00    -0.009 A 
+DOCKED: ATOM     42  C   UNK A   0      16.416   0.122 -16.038 -0.30 +0.00    -0.004 A 
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  23  36
+DOCKED: ENDBRANCH  20  23
+DOCKED: ENDBRANCH  19  20
+DOCKED: ENDBRANCH   1  19
+DOCKED: BRANCH   1  43
+DOCKED: ATOM     43  C   UNK A   0       9.440   1.665 -17.404 -0.39 +0.04    +0.145 C 
+DOCKED: BRANCH  43  44
+DOCKED: ATOM     44  C   UNK A   0       8.285   1.426 -16.410 -0.33 -0.02    +0.141 A 
+DOCKED: ATOM     45  O   UNK A   0       8.152   0.211 -15.818 -0.39 +0.05    -0.167 OA
+DOCKED: ATOM     46  N   UNK A   0       7.023   0.291 -14.993 -0.31 +0.08    -0.152 NA
+DOCKED: ATOM     47  C   UNK A   0       6.527   1.517 -15.109 -0.11 -0.02    +0.043 A 
+DOCKED: ATOM     48  C   UNK A   0       7.297   2.210 -15.970 -0.25 -0.00    +0.002 A 
+DOCKED: BRANCH  47  49
+DOCKED: ATOM     49  C   UNK A   0       5.397   1.962 -14.416 -0.26 +0.01    -0.015 A 
+DOCKED: ATOM     50  C   UNK A   0       4.548   2.901 -15.006 -0.33 -0.00    +0.006 A 
+DOCKED: ATOM     51  C   UNK A   0       3.413   3.354 -14.328 -0.37 +0.00    -0.001 A 
+DOCKED: ATOM     52  C   UNK A   0       3.107   2.854 -13.059 -0.36 +0.00    -0.002 A 
+DOCKED: ATOM     53  C   UNK A   0       3.948   1.909 -12.476 -0.31 +0.00    -0.001 A 
+DOCKED: ATOM     54  C   UNK A   0       5.086   1.467 -13.153 -0.23 -0.00    +0.006 A 
+DOCKED: ENDBRANCH  47  49
+DOCKED: ENDBRANCH  43  44
+DOCKED: ENDBRANCH   1  43
+DOCKED: TORSDOF 18
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   8 / 10
+Time taken for this run:   0.128s
+
+DOCKED: MODEL        8
+DOCKED: USER    Run = 8
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    =  -5.04 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -10.41 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -10.27 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  -0.14 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -6.96 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +5.37 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -6.96 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  Name = 2xy9_ligand
+DOCKED: REMARK  18 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: CBP_6  and  CBB_7
+DOCKED: REMARK    2  A    between atoms: CBB_7  and  OBJ_8
+DOCKED: REMARK    3  A    between atoms: OBJ_8  and  CBM_9
+DOCKED: REMARK    4  A    between atoms: NBI_11  and  CBX_12
+DOCKED: REMARK    5  A    between atoms: CBX_12  and  CBE_13
+DOCKED: REMARK    6  A    between atoms: CBX_12  and  PBY_20
+DOCKED: REMARK    7  A    between atoms: CBE_13  and  CBQ_14
+DOCKED: REMARK    8  A    between atoms: PBY_20  and  CBF_36
+DOCKED: REMARK    9  A    between atoms: N_23  and  CA_24
+DOCKED: REMARK   10  A    between atoms: CA_24  and  C_25
+DOCKED: REMARK   11  A    between atoms: CA_24  and  CB_28
+DOCKED: REMARK   12  A    between atoms: CB_28  and  CG_29
+DOCKED: REMARK   13  A    between atoms: CZ_32  and  OH_33
+DOCKED: REMARK   14  A    between atoms: CBF_36  and  CBV_37
+DOCKED: REMARK   15  A    between atoms: CBV_37  and  CBN_38
+DOCKED: REMARK   16  A    between atoms: CBV_37  and  CBC_40
+DOCKED: REMARK   17  A    between atoms: CBC_40  and  CBS_41
+DOCKED: REMARK   18  A    between atoms: CBU_45  and  CBT_46
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNK A   0      10.674   0.108 -14.020 -0.06 -0.03    +0.137 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: ATOM      2  C   UNK A   0      11.282   0.692 -12.729 -0.04 -0.04    +0.185 C 
+DOCKED: ATOM      3  O   UNK A   0      11.248   1.904 -12.517 -0.03 +0.10    -0.396 OA
+DOCKED: ATOM      4  N   TYR A   1      11.860  -0.184 -11.905 -0.11 +0.06    -0.269 N 
+DOCKED: ATOM      5  H   TYR A   1      11.785  -1.182 -12.108 -0.00 -0.04    +0.188 HD
+DOCKED: BRANCH   4   6
+DOCKED: ATOM      6  CA  TYR A   1      12.600   0.249 -10.713 -0.21 -0.03    +0.177 C 
+DOCKED: BRANCH   6   7
+DOCKED: ATOM      7  C   TYR A   1      13.466  -0.943 -10.248 -0.18 -0.00    +0.062 C 
+DOCKED: ATOM      8  OXT TYR A   1      13.492  -1.977 -10.948 -0.42 +0.07    -0.567 OA
+DOCKED: ATOM      9  O   TYR A   1      14.038  -0.818  -9.150 -1.00 -0.02    -0.567 OA
+DOCKED: ENDBRANCH   6   7
+DOCKED: BRANCH   6  10
+DOCKED: ATOM     10  CB  TYR A   1      11.681   0.735  -9.585 -0.25 -0.01    +0.100 C 
+DOCKED: BRANCH  10  11
+DOCKED: ATOM     11  CG  TYR A   1      10.188   0.851  -9.913 -0.17 +0.01    -0.050 A 
+DOCKED: ATOM     12  CD2 TYR A   1       9.599   2.109 -10.070 -0.11 +0.00    -0.016 A 
+DOCKED: ATOM     13  CE2 TYR A   1       8.237   2.215 -10.349 -0.11 -0.00    +0.013 A 
+DOCKED: ATOM     14  CZ  TYR A   1       7.459   1.065 -10.470 -0.13 -0.01    +0.081 A 
+DOCKED: ATOM     15  CE1 TYR A   1       8.041  -0.196 -10.312 -0.14 -0.00    +0.013 A 
+DOCKED: ATOM     16  CD1 TYR A   1       9.407  -0.301 -10.026 -0.19 +0.00    -0.016 A 
+DOCKED: BRANCH  14  17
+DOCKED: ATOM     17  OH  TYR A   1       6.126   1.181 -10.739 -0.20 +0.00    -0.338 OA
+DOCKED: ATOM     18  HH  TYR A   1       5.955   0.887 -11.637 +0.00 -0.04    +0.246 HD
+DOCKED: ENDBRANCH  14  17
+DOCKED: ENDBRANCH  10  11
+DOCKED: ENDBRANCH   6  10
+DOCKED: ENDBRANCH   4   6
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  19
+DOCKED: ATOM     19  C   UNK A   0      11.682   0.199 -15.185 -0.07 -0.02    +0.137 C 
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     20  P   UNK A   0      12.146   1.896 -15.635 -0.09 -0.00    +0.015 P 
+DOCKED: ATOM     21  O   UNK A   0      11.864   2.914 -14.593 -0.04 +0.12    -0.617 OA
+DOCKED: ATOM     22  O   UNK A   0      11.423   2.165 -17.024 -0.71 -0.34    -0.617 OA
+DOCKED: BRANCH  20  23
+DOCKED: ATOM     23  C   UNK A   0      13.935   1.932 -16.055 -0.10 -0.03    +0.196 C 
+DOCKED: BRANCH  23  25
+DOCKED: ATOM     24  C   UNK A   0      15.322   3.344 -17.544 -0.30 -0.05    +0.323 C 
+DOCKED: ATOM     25  N   UNK A   0      14.159   3.069 -16.954 -0.15 +0.01    -0.242 N 
+DOCKED: ATOM     26  H   UNK A   0      13.372   3.692 -17.140 -0.01 +0.03    +0.189 HD
+DOCKED: ATOM     27  O   UNK A   0      16.350   2.675 -17.396 -0.40 +0.12    -0.377 OA
+DOCKED: BRANCH  24  28
+DOCKED: ATOM     28  O   UNK A   0      15.299   4.461 -18.322 -0.40 +0.02    -0.251 OA
+DOCKED: BRANCH  28  29
+DOCKED: ATOM     29  C   UNK A   0      15.663   5.756 -17.809 -0.44 -0.05    +0.267 C 
+DOCKED: BRANCH  29  31
+DOCKED: ATOM     30  C   UNK A   0      14.877   6.111 -15.549 -0.22 +0.00    -0.002 A 
+DOCKED: ATOM     31  C   UNK A   0      15.916   5.787 -16.427 -0.35 +0.01    -0.013 A 
+DOCKED: ATOM     32  C   UNK A   0      17.174   5.475 -15.917 -0.42 +0.00    -0.002 A 
+DOCKED: ATOM     33  C   UNK A   0      17.394   5.497 -14.537 -0.53 +0.01    -0.009 A 
+DOCKED: ATOM     34  C   UNK A   0      16.361   5.825 -13.663 -0.37 +0.01    -0.013 A 
+DOCKED: ATOM     35  C   UNK A   0      15.101   6.130 -14.169 -0.28 +0.01    -0.009 A 
+DOCKED: ENDBRANCH  29  31
+DOCKED: ENDBRANCH  28  29
+DOCKED: ENDBRANCH  24  28
+DOCKED: ENDBRANCH  23  25
+DOCKED: BRANCH  23  36
+DOCKED: ATOM     36  C   UNK A   0      14.834   2.085 -14.820 -0.12 -0.04    +0.114 C 
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   UNK A   0      15.087   0.724 -14.146 -0.17 +0.01    -0.039 A 
+DOCKED: ATOM     38  C   UNK A   0      15.645   0.662 -12.867 -0.29 +0.00    -0.004 A 
+DOCKED: ATOM     39  C   UNK A   0      15.881  -0.574 -12.259 -0.46 +0.00    -0.009 A 
+DOCKED: ATOM     40  C   UNK A   0      15.553  -1.753 -12.934 -0.44 +0.01    -0.013 A 
+DOCKED: ATOM     41  C   UNK A   0      14.998  -1.694 -14.213 -0.37 +0.00    -0.009 A 
+DOCKED: ATOM     42  C   UNK A   0      14.768  -0.457 -14.821 -0.19 +0.00    -0.004 A 
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  23  36
+DOCKED: ENDBRANCH  20  23
+DOCKED: ENDBRANCH  19  20
+DOCKED: ENDBRANCH   1  19
+DOCKED: BRANCH   1  43
+DOCKED: ATOM     43  C   UNK A   0       9.321   0.749 -14.375 -0.10 -0.04    +0.145 C 
+DOCKED: BRANCH  43  44
+DOCKED: ATOM     44  C   UNK A   0       8.067   0.041 -13.824 -0.13 -0.05    +0.141 A 
+DOCKED: ATOM     45  O   UNK A   0       6.896   0.724 -13.734 -0.18 +0.06    -0.167 OA
+DOCKED: ATOM     46  N   UNK A   0       5.958  -0.164 -13.193 -0.23 +0.06    -0.152 NA
+DOCKED: ATOM     47  C   UNK A   0       6.574  -1.321 -12.982 -0.19 -0.02    +0.043 A 
+DOCKED: ATOM     48  C   UNK A   0       7.858  -1.198 -13.369 -0.14 -0.00    +0.002 A 
+DOCKED: BRANCH  47  49
+DOCKED: ATOM     49  C   UNK A   0       5.939  -2.449 -12.454 -0.25 +0.01    -0.015 A 
+DOCKED: ATOM     50  C   UNK A   0       5.738  -2.551 -11.076 -0.22 -0.00    +0.006 A 
+DOCKED: ATOM     51  C   UNK A   0       5.102  -3.671 -10.533 -0.34 +0.00    -0.001 A 
+DOCKED: ATOM     52  C   UNK A   0       4.644  -4.692 -11.370 -0.41 +0.00    -0.002 A 
+DOCKED: ATOM     53  C   UNK A   0       4.834  -4.585 -12.746 -0.52 +0.00    -0.001 A 
+DOCKED: ATOM     54  C   UNK A   0       5.478  -3.469 -13.282 -0.35 -0.00    +0.006 A 
+DOCKED: ENDBRANCH  47  49
+DOCKED: ENDBRANCH  43  44
+DOCKED: ENDBRANCH   1  43
+DOCKED: TORSDOF 18
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   9 / 10
+Time taken for this run:   0.128s
+
+DOCKED: MODEL        9
+DOCKED: USER    Run = 9
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    =  -9.31 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -14.68 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -15.58 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  +0.90 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -5.06 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +5.37 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -5.06 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  Name = 2xy9_ligand
+DOCKED: REMARK  18 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: CBP_6  and  CBB_7
+DOCKED: REMARK    2  A    between atoms: CBB_7  and  OBJ_8
+DOCKED: REMARK    3  A    between atoms: OBJ_8  and  CBM_9
+DOCKED: REMARK    4  A    between atoms: NBI_11  and  CBX_12
+DOCKED: REMARK    5  A    between atoms: CBX_12  and  CBE_13
+DOCKED: REMARK    6  A    between atoms: CBX_12  and  PBY_20
+DOCKED: REMARK    7  A    between atoms: CBE_13  and  CBQ_14
+DOCKED: REMARK    8  A    between atoms: PBY_20  and  CBF_36
+DOCKED: REMARK    9  A    between atoms: N_23  and  CA_24
+DOCKED: REMARK   10  A    between atoms: CA_24  and  C_25
+DOCKED: REMARK   11  A    between atoms: CA_24  and  CB_28
+DOCKED: REMARK   12  A    between atoms: CB_28  and  CG_29
+DOCKED: REMARK   13  A    between atoms: CZ_32  and  OH_33
+DOCKED: REMARK   14  A    between atoms: CBF_36  and  CBV_37
+DOCKED: REMARK   15  A    between atoms: CBV_37  and  CBN_38
+DOCKED: REMARK   16  A    between atoms: CBV_37  and  CBC_40
+DOCKED: REMARK   17  A    between atoms: CBC_40  and  CBS_41
+DOCKED: REMARK   18  A    between atoms: CBU_45  and  CBT_46
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNK A   0      15.104  -0.258 -19.276 -0.40 -0.07    +0.137 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: ATOM      2  C   UNK A   0      14.261   0.885 -18.677 -0.32 -0.02    +0.185 C 
+DOCKED: ATOM      3  O   UNK A   0      13.163   0.651 -18.171 -0.26 -0.05    -0.396 OA
+DOCKED: ATOM      4  N   TYR A   1      14.779   2.111 -18.777 -0.35 +0.02    -0.269 N 
+DOCKED: ATOM      5  H   TYR A   1      15.726   2.222 -19.140 -0.11 -0.06    +0.188 HD
+DOCKED: BRANCH   4   6
+DOCKED: ATOM      6  CA  TYR A   1      14.021   3.304 -18.377 -0.14 +0.05    +0.177 C 
+DOCKED: BRANCH   6   7
+DOCKED: ATOM      7  C   TYR A   1      14.800   4.537 -18.885 -0.47 +0.00    +0.062 C 
+DOCKED: ATOM      8  OXT TYR A   1      14.210   5.637 -18.955 -0.47 -0.06    -0.567 OA
+DOCKED: ATOM      9  O   TYR A   1      15.969   4.338 -19.264 -0.52 +0.03    -0.567 OA
+DOCKED: ENDBRANCH   6   7
+DOCKED: BRANCH   6  10
+DOCKED: ATOM     10  CB  TYR A   1      13.791   3.384 -16.863 -0.16 +0.00    +0.100 C 
+DOCKED: BRANCH  10  11
+DOCKED: ATOM     11  CG  TYR A   1      14.931   3.970 -16.021 -0.12 +0.01    -0.050 A 
+DOCKED: ATOM     12  CD2 TYR A   1      14.929   5.327 -15.686 -0.19 +0.01    -0.016 A 
+DOCKED: ATOM     13  CE2 TYR A   1      15.975   5.865 -14.938 -0.33 -0.01    +0.013 A 
+DOCKED: ATOM     14  CZ  TYR A   1      17.027   5.050 -14.524 -0.46 -0.05    +0.081 A 
+DOCKED: ATOM     15  CE1 TYR A   1      17.036   3.693 -14.858 -0.33 -0.01    +0.013 A 
+DOCKED: ATOM     16  CD1 TYR A   1      15.988   3.155 -15.615 -0.21 +0.01    -0.016 A 
+DOCKED: BRANCH  14  17
+DOCKED: ATOM     17  OH  TYR A   1      18.048   5.588 -13.796 -0.68 +0.24    -0.338 OA
+DOCKED: ATOM     18  HH  TYR A   1      17.844   6.502 -13.587 -0.60 -0.24    +0.246 HD
+DOCKED: ENDBRANCH  14  17
+DOCKED: ENDBRANCH  10  11
+DOCKED: ENDBRANCH   6  10
+DOCKED: ENDBRANCH   4   6
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  19
+DOCKED: ATOM     19  C   UNK A   0      14.213  -1.472 -19.613 -0.43 -0.06    +0.137 C 
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     20  P   UNK A   0      15.074  -2.803 -20.499 -0.70 -0.01    +0.015 P 
+DOCKED: ATOM     21  O   UNK A   0      16.394  -3.173 -19.932 -0.67 +0.97    -0.617 OA
+DOCKED: ATOM     22  O   UNK A   0      15.124  -2.323 -22.013 -1.10 +0.42    -0.617 OA
+DOCKED: BRANCH  20  23
+DOCKED: ATOM     23  C   UNK A   0      13.990  -4.287 -20.544 -0.50 -0.16    +0.196 C 
+DOCKED: BRANCH  23  25
+DOCKED: ATOM     24  C   UNK A   0      12.141  -3.733 -18.993 -0.50 -0.14    +0.323 C 
+DOCKED: ATOM     25  N   UNK A   0      13.285  -4.362 -19.260 -0.44 +0.16    -0.242 N 
+DOCKED: ATOM     26  H   UNK A   0      13.697  -4.934 -18.522 -0.54 -0.16    +0.189 HD
+DOCKED: ATOM     27  O   UNK A   0      11.545  -3.006 -19.795 -0.58 +0.15    -0.377 OA
+DOCKED: BRANCH  24  28
+DOCKED: ATOM     28  O   UNK A   0      11.679  -3.934 -17.728 -0.43 +0.09    -0.251 OA
+DOCKED: BRANCH  28  29
+DOCKED: ATOM     29  C   UNK A   0      12.148  -3.157 -16.611 -0.28 -0.08    +0.267 C 
+DOCKED: BRANCH  29  31
+DOCKED: ATOM     30  C   UNK A   0      12.605  -3.184 -14.236 -0.23 +0.00    -0.002 A 
+DOCKED: ATOM     31  C   UNK A   0      12.141  -3.838 -15.382 -0.25 +0.00    -0.013 A 
+DOCKED: ATOM     32  C   UNK A   0      11.656  -5.140 -15.281 -0.36 +0.00    -0.002 A 
+DOCKED: ATOM     33  C   UNK A   0      11.645  -5.788 -14.043 -0.44 +0.00    -0.009 A 
+DOCKED: ATOM     34  C   UNK A   0      12.111  -5.139 -12.902 -0.36 +0.00    -0.013 A 
+DOCKED: ATOM     35  C   UNK A   0      12.589  -3.836 -12.998 -0.31 +0.00    -0.009 A 
+DOCKED: ENDBRANCH  29  31
+DOCKED: ENDBRANCH  28  29
+DOCKED: ENDBRANCH  24  28
+DOCKED: ENDBRANCH  23  25
+DOCKED: BRANCH  23  36
+DOCKED: ATOM     36  C   UNK A   0      12.960  -4.237 -21.681 -0.38 -0.08    +0.114 C 
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   UNK A   0      13.612  -4.567 -23.036 -0.41 +0.02    -0.039 A 
+DOCKED: ATOM     38  C   UNK A   0      12.901  -4.386 -24.225 -0.37 +0.00    -0.004 A 
+DOCKED: ATOM     39  C   UNK A   0      13.491  -4.693 -25.453 -0.37 +0.00    -0.009 A 
+DOCKED: ATOM     40  C   UNK A   0      14.800  -5.181 -25.492 -0.22 +0.01    -0.013 A 
+DOCKED: ATOM     41  C   UNK A   0      15.511  -5.367 -24.305 -0.28 +0.01    -0.009 A 
+DOCKED: ATOM     42  C   UNK A   0      14.917  -5.064 -23.077 -0.38 +0.00    -0.004 A 
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  23  36
+DOCKED: ENDBRANCH  20  23
+DOCKED: ENDBRANCH  19  20
+DOCKED: ENDBRANCH   1  19
+DOCKED: BRANCH   1  43
+DOCKED: ATOM     43  C   UNK A   0      16.293  -0.645 -18.379 -0.40 -0.09    +0.145 C 
+DOCKED: BRANCH  43  44
+DOCKED: ATOM     44  C   UNK A   0      15.962  -0.938 -16.901 -0.37 -0.06    +0.141 A 
+DOCKED: ATOM     45  O   UNK A   0      15.730  -2.217 -16.508 -0.84 +0.04    -0.167 OA
+DOCKED: ATOM     46  N   UNK A   0      15.446  -2.167 -15.137 -0.42 +0.05    -0.152 NA
+DOCKED: ATOM     47  C   UNK A   0      15.516  -0.897 -14.758 -0.17 -0.02    +0.043 A 
+DOCKED: ATOM     48  C   UNK A   0      15.834  -0.147 -15.832 -0.27 -0.00    +0.002 A 
+DOCKED: BRANCH  47  49
+DOCKED: ATOM     49  C   UNK A   0      15.300  -0.469 -13.445 -0.29 +0.01    -0.015 A 
+DOCKED: ATOM     50  C   UNK A   0      15.129  -1.412 -12.429 -0.44 -0.00    +0.006 A 
+DOCKED: ATOM     51  C   UNK A   0      14.914  -1.001 -11.110 -0.40 +0.00    -0.001 A 
+DOCKED: ATOM     52  C   UNK A   0      14.889   0.361 -10.795 -0.33 +0.00    -0.002 A 
+DOCKED: ATOM     53  C   UNK A   0      15.070   1.300 -11.806 -0.24 +0.00    -0.001 A 
+DOCKED: ATOM     54  C   UNK A   0      15.274   0.885 -13.123 -0.22 -0.00    +0.006 A 
+DOCKED: ENDBRANCH  47  49
+DOCKED: ENDBRANCH  43  44
+DOCKED: ENDBRANCH   1  43
+DOCKED: TORSDOF 18
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    FINAL DOCKED STATE:
+    ________________________
+
+
+Run:   10 / 10
+Time taken for this run:   0.128s
+
+DOCKED: MODEL        10
+DOCKED: USER    Run = 10
+DOCKED: USER
+DOCKED: USER    Estimated Free Energy of Binding    =  -8.62 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER
+DOCKED: USER    (1) Final Intermolecular Energy     = -13.99 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     = -14.27 kcal/mol
+DOCKED: USER        Electrostatic Energy            =  +0.28 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =  -4.52 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =  +5.37 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy         =  -4.52 kcal/mol
+DOCKED: USER
+DOCKED: USER
+DOCKED: REMARK  Name = 2xy9_ligand
+DOCKED: REMARK  18 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: CBP_6  and  CBB_7
+DOCKED: REMARK    2  A    between atoms: CBB_7  and  OBJ_8
+DOCKED: REMARK    3  A    between atoms: OBJ_8  and  CBM_9
+DOCKED: REMARK    4  A    between atoms: NBI_11  and  CBX_12
+DOCKED: REMARK    5  A    between atoms: CBX_12  and  CBE_13
+DOCKED: REMARK    6  A    between atoms: CBX_12  and  PBY_20
+DOCKED: REMARK    7  A    between atoms: CBE_13  and  CBQ_14
+DOCKED: REMARK    8  A    between atoms: PBY_20  and  CBF_36
+DOCKED: REMARK    9  A    between atoms: N_23  and  CA_24
+DOCKED: REMARK   10  A    between atoms: CA_24  and  C_25
+DOCKED: REMARK   11  A    between atoms: CA_24  and  CB_28
+DOCKED: REMARK   12  A    between atoms: CB_28  and  CG_29
+DOCKED: REMARK   13  A    between atoms: CZ_32  and  OH_33
+DOCKED: REMARK   14  A    between atoms: CBF_36  and  CBV_37
+DOCKED: REMARK   15  A    between atoms: CBV_37  and  CBN_38
+DOCKED: REMARK   16  A    between atoms: CBV_37  and  CBC_40
+DOCKED: REMARK   17  A    between atoms: CBC_40  and  CBS_41
+DOCKED: REMARK   18  A    between atoms: CBU_45  and  CBT_46
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNK A   0      12.402  -1.100 -13.001 -0.14 -0.03    +0.137 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   1   2
+DOCKED: ATOM      2  C   UNK A   0      12.545  -0.911 -11.478 -0.24 -0.03    +0.185 C 
+DOCKED: ATOM      3  O   UNK A   0      13.112  -1.764 -10.795 -0.33 +0.04    -0.396 OA
+DOCKED: ATOM      4  N   TYR A   1      11.994   0.193 -10.969 -0.15 +0.05    -0.269 N 
+DOCKED: ATOM      5  H   TYR A   1      11.607   0.893 -11.603 +0.00 -0.04    +0.188 HD
+DOCKED: BRANCH   4   6
+DOCKED: ATOM      6  CA  TYR A   1      11.933   0.429  -9.521 -0.25 -0.02    +0.177 C 
+DOCKED: BRANCH   6   7
+DOCKED: ATOM      7  C   TYR A   1      10.957   1.603  -9.285 -0.24 -0.01    +0.062 C 
+DOCKED: ATOM      8  OXT TYR A   1      10.776   2.010  -8.118 -0.31 +0.03    -0.567 OA
+DOCKED: ATOM      9  O   TYR A   1      10.352   2.030 -10.284 -0.11 +0.10    -0.567 OA
+DOCKED: ENDBRANCH   6   7
+DOCKED: BRANCH   6  10
+DOCKED: ATOM     10  CB  TYR A   1      13.308   0.723  -8.907 -0.41 -0.01    +0.100 C 
+DOCKED: BRANCH  10  11
+DOCKED: ATOM     11  CG  TYR A   1      14.499   0.769  -9.871 -0.34 +0.01    -0.050 A 
+DOCKED: ATOM     12  CD2 TYR A   1      14.573   1.766 -10.848 -0.24 +0.01    -0.016 A 
+DOCKED: ATOM     13  CE2 TYR A   1      15.646   1.796 -11.738 -0.32 -0.01    +0.013 A 
+DOCKED: ATOM     14  CZ  TYR A   1      16.647   0.830 -11.655 -0.46 -0.02    +0.081 A 
+DOCKED: ATOM     15  CE1 TYR A   1      16.577  -0.171 -10.682 -0.53 -0.00    +0.013 A 
+DOCKED: ATOM     16  CD1 TYR A   1      15.497  -0.204  -9.793 -0.51 +0.00    -0.016 A 
+DOCKED: BRANCH  14  17
+DOCKED: ATOM     17  OH  TYR A   1      17.690   0.867 -12.534 -1.13 +0.07    -0.338 OA
+DOCKED: ATOM     18  HH  TYR A   1      17.615   0.135 -13.150 -0.64 -0.17    +0.246 HD
+DOCKED: ENDBRANCH  14  17
+DOCKED: ENDBRANCH  10  11
+DOCKED: ENDBRANCH   6  10
+DOCKED: ENDBRANCH   4   6
+DOCKED: ENDBRANCH   1   2
+DOCKED: BRANCH   1  19
+DOCKED: ATOM     19  C   UNK A   0      11.915  -2.528 -13.329 -0.21 -0.04    +0.137 C 
+DOCKED: BRANCH  19  20
+DOCKED: ATOM     20  P   UNK A   0      10.663  -3.167 -12.179 -0.31 -0.00    +0.015 P 
+DOCKED: ATOM     21  O   UNK A   0      10.027  -2.140 -11.320 -0.74 +0.10    -0.617 OA
+DOCKED: ATOM     22  O   UNK A   0      11.397  -4.327 -11.378 -0.58 +0.19    -0.617 OA
+DOCKED: BRANCH  20  23
+DOCKED: ATOM     23  C   UNK A   0       9.367  -4.048 -13.141 -0.25 -0.11    +0.196 C 
+DOCKED: BRANCH  23  25
+DOCKED: ATOM     24  C   UNK A   0       6.893  -3.965 -13.176 -0.37 -0.21    +0.323 C 
+DOCKED: ATOM     25  N   UNK A   0       8.064  -3.540 -12.701 -0.20 +0.13    -0.242 N 
+DOCKED: ATOM     26  H   UNK A   0       8.052  -2.813 -11.986 +0.01 -0.08    +0.189 HD
+DOCKED: ATOM     27  O   UNK A   0       6.771  -4.832 -14.046 -0.52 +0.38    -0.377 OA
+DOCKED: BRANCH  24  28
+DOCKED: ATOM     28  O   UNK A   0       5.814  -3.336 -12.633 -0.36 +0.13    -0.251 OA
+DOCKED: BRANCH  28  29
+DOCKED: ATOM     29  C   UNK A   0       5.707  -3.087 -11.219 -0.30 -0.10    +0.267 C 
+DOCKED: BRANCH  29  31
+DOCKED: ATOM     30  C   UNK A   0       5.190  -5.377 -10.636 -0.44 +0.00    -0.002 A 
+DOCKED: ATOM     31  C   UNK A   0       5.931  -4.212 -10.409 -0.29 +0.01    -0.013 A 
+DOCKED: ATOM     32  C   UNK A   0       6.894  -4.197  -9.402 -0.29 +0.00    -0.002 A 
+DOCKED: ATOM     33  C   UNK A   0       7.108  -5.335  -8.622 -0.35 +0.00    -0.009 A 
+DOCKED: ATOM     34  C   UNK A   0       6.367  -6.494  -8.844 -0.47 +0.01    -0.013 A 
+DOCKED: ATOM     35  C   UNK A   0       5.410  -6.515  -9.854 -0.51 +0.00    -0.009 A 
+DOCKED: ENDBRANCH  29  31
+DOCKED: ENDBRANCH  28  29
+DOCKED: ENDBRANCH  24  28
+DOCKED: ENDBRANCH  23  25
+DOCKED: BRANCH  23  36
+DOCKED: ATOM     36  C   UNK A   0       9.504  -3.838 -14.656 -0.32 -0.06    +0.114 C 
+DOCKED: BRANCH  36  37
+DOCKED: ATOM     37  C   UNK A   0      10.578  -4.767 -15.251 -0.30 +0.02    -0.039 A 
+DOCKED: ATOM     38  C   UNK A   0      10.840  -6.008 -14.667 -0.40 +0.00    -0.004 A 
+DOCKED: ATOM     39  C   UNK A   0      11.820  -6.847 -15.202 -0.57 +0.00    -0.009 A 
+DOCKED: ATOM     40  C   UNK A   0      12.538  -6.443 -16.332 -0.55 +0.00    -0.013 A 
+DOCKED: ATOM     41  C   UNK A   0      12.280  -5.201 -16.915 -0.41 +0.00    -0.009 A 
+DOCKED: ATOM     42  C   UNK A   0      11.304  -4.362 -16.374 -0.28 +0.00    -0.004 A 
+DOCKED: ENDBRANCH  36  37
+DOCKED: ENDBRANCH  23  36
+DOCKED: ENDBRANCH  20  23
+DOCKED: ENDBRANCH  19  20
+DOCKED: ENDBRANCH   1  19
+DOCKED: BRANCH   1  43
+DOCKED: ATOM     43  C   UNK A   0      13.689  -0.740 -13.763 -0.17 -0.04    +0.145 C 
+DOCKED: BRANCH  43  44
+DOCKED: ATOM     44  C   UNK A   0      13.531   0.246 -14.939 -0.07 -0.04    +0.141 A 
+DOCKED: ATOM     45  O   UNK A   0      12.294   0.500 -15.437 -0.07 +0.03    -0.167 OA
+DOCKED: ATOM     46  N   UNK A   0      12.468   1.408 -16.490 -0.20 -0.01    -0.152 NA
+DOCKED: ATOM     47  C   UNK A   0      13.766   1.665 -16.589 -0.10 -0.00    +0.043 A 
+DOCKED: ATOM     48  C   UNK A   0      14.415   0.960 -15.641 -0.09 -0.00    +0.002 A 
+DOCKED: BRANCH  47  49
+DOCKED: ATOM     49  C   UNK A   0      14.311   2.543 -17.531 -0.18 -0.00    -0.015 A 
+DOCKED: ATOM     50  C   UNK A   0      13.809   3.842 -17.639 -0.18 +0.00    +0.006 A 
+DOCKED: ATOM     51  C   UNK A   0      14.344   4.732 -18.574 -0.35 -0.00    -0.001 A 
+DOCKED: ATOM     52  C   UNK A   0      15.401   4.334 -19.397 -0.48 -0.00    -0.002 A 
+DOCKED: ATOM     53  C   UNK A   0      15.908   3.042 -19.282 -0.48 +0.00    -0.001 A 
+DOCKED: ATOM     54  C   UNK A   0      15.364   2.154 -18.354 -0.33 -0.00    +0.006 A 
+DOCKED: ENDBRANCH  47  49
+DOCKED: ENDBRANCH  43  44
+DOCKED: ENDBRANCH   1  43
+DOCKED: TORSDOF 18
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+    CLUSTERING HISTOGRAM
+    ____________________
+
+
+________________________________________________________________________________
+     |           |     |           |     |
+Clus | Lowest    | Run | Mean      | Num | Histogram
+-ter | Binding   |     | Binding   | in  |
+Rank | Energy    |     | Energy    | Clus|    5    10   15   20   25   30   35
+_____|___________|_____|___________|_____|____:____|____:____|____:____|____:___
+   1 |     -9.71 |   5 |     -9.71 |   1 |#
+   2 |     -9.31 |   9 |     -9.31 |   1 |#
+   3 |     -8.62 |  10 |     -8.62 |   1 |#
+   4 |     -8.56 |   3 |     -8.56 |   1 |#
+   5 |     -6.06 |   4 |     -6.06 |   1 |#
+   6 |     -5.86 |   2 |     -5.86 |   1 |#
+   7 |     -5.73 |   7 |     -5.73 |   1 |#
+   8 |     -5.70 |   6 |     -5.70 |   1 |#
+   9 |     -5.04 |   8 |     -5.04 |   1 |#
+  10 |     -4.87 |   1 |     -4.87 |   1 |#
+_____|___________|_____|___________|_____|______________________________________
+
+
+    RMSD TABLE
+    __________
+
+
+_____________________________________________________________________
+     |      |      |           |         |                 |
+Rank | Sub- | Run  | Binding   | Cluster | Reference       | Grep
+     | Rank |      | Energy    | RMSD    | RMSD            | Pattern
+_____|______|______|___________|_________|_________________|___________
+   1      1      5       -9.71      0.00     26.05           RANKING
+   2      1      9       -9.31      0.00     20.24           RANKING
+   3      1     10       -8.62      0.00     15.21           RANKING
+   4      1      3       -8.56      0.00     19.19           RANKING
+   5      1      4       -6.06      0.00     16.55           RANKING
+   6      1      2       -5.86      0.00     17.82           RANKING
+   7      1      7       -5.73      0.00     18.69           RANKING
+   8      1      6       -5.70      0.00     15.09           RANKING
+   9      1      8       -5.04      0.00     15.65           RANKING
+  10      1      1       -4.87      0.00     15.91           RANKING
+
+Run time 1.207 sec
+Idle time 0.000 sec
